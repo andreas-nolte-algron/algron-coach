@@ -24,16 +24,33 @@ if git rev-parse --git-dir &>/dev/null; then
     fi
 fi
 
+MODE="${1:-}"
 PROMPT_FILE="$PROJECT_ROOT/main-agent.md"
-STARTER_PROMPT="Sessionstart: Lies project-status.md und die progress/-Dateien (session-log.md, bestandsaufnahme.md, vision.md, action-plan.md), dann brief mich wo wir stehen. Falls alle leer: Starte die Bestandsaufnahme. Reminder: Sessionende → /commit aufrufen."
+TALK_PROMPT="Sessionstart: Lies project-status.md und die progress/-Dateien (session-log.md, bestandsaufnahme.md, vision.md, action-plan.md), dann brief mich wo wir stehen. Falls alle leer: Starte die Bestandsaufnahme. Reminder: Sessionende → /commit aufrufen."
+ADMIN_PROMPT="Admin-Modus: Du bist im Wartungsmodus mit Andy (Team-Betreuer). Lies project-status.md und CLAUDE.md, dann frag was ansteht. Kein Coach-Verhalten noetig. Reminder: Sessionende → /commit aufrufen."
 
-# --get-prompt: Nur den Starter-Prompt ausgeben (für externe Apps)
-# --remote: Claude ohne Starter-Prompt starten (für Remote Control Flow)
-if [[ "${1:-}" == "--get-prompt" ]]; then
-  echo "$STARTER_PROMPT"
-  exit 0
-elif [[ "${1:-}" == "--remote" ]]; then
-  exec claude --system-prompt-file "$PROMPT_FILE"
-else
-  exec claude --system-prompt-file "$PROMPT_FILE" "$STARTER_PROMPT"
-fi
+case "$MODE" in
+  talk)
+    exec claude --system-prompt-file "$PROMPT_FILE" "$TALK_PROMPT"
+    ;;
+  admin)
+    exec claude "$ADMIN_PROMPT"
+    ;;
+  --get-prompt)
+    echo "$TALK_PROMPT"
+    exit 0
+    ;;
+  --remote)
+    exec claude --system-prompt-file "$PROMPT_FILE"
+    ;;
+  *)
+    echo "Usage: algron-coach <mode>"
+    echo ""
+    echo "  talk    Sparring-Session mit Henrik (Coach-Modus)"
+    echo "  admin   Wartung & Architektur mit Andy"
+    echo ""
+    echo "  --get-prompt  Starter-Prompt ausgeben (fuer externe Apps)"
+    echo "  --remote      Coach ohne Starter-Prompt (Remote Control)"
+    exit 0
+    ;;
+esac
