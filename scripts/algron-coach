@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")" && pwd)"
+PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
+cd "$PROJECT_ROOT"
+
+# Git-Remote-Check: Warnung wenn Remote neuere Commits hat
+if git rev-parse --git-dir &>/dev/null; then
+    git fetch origin --quiet 2>/dev/null || true
+    LOCAL=$(git rev-parse HEAD 2>/dev/null || true)
+    REMOTE=$(git rev-parse origin/main 2>/dev/null || true)
+    if [[ -n "$LOCAL" && -n "$REMOTE" && "$LOCAL" != "$REMOTE" ]]; then
+        BEHIND=$(git rev-list --count HEAD..origin/main 2>/dev/null || echo "0")
+        if [[ "$BEHIND" -gt 0 ]]; then
+            echo ""
+            echo "⚠  Remote hat $BEHIND neuere Commits. Willst du pullen? (j/n)"
+            read -r ANSWER
+            if [[ "$ANSWER" == "j" ]]; then
+                git pull --ff-only origin main || echo "Pull fehlgeschlagen -- bitte manuell lösen."
+            fi
+            echo ""
+        fi
+    fi
+fi
+
+PROMPT_FILE="$PROJECT_ROOT/main-agent.md"
+STARTER_PROMPT="Sessionstart: Lies project-status.md und die progress/-Dateien (session-log.md, bestandsaufnahme.md, vision.md, action-plan.md), dann brief mich wo wir stehen. Falls alle leer: Starte die Bestandsaufnahme. Reminder: Sessionende → /commit aufrufen."
+
+# --get-prompt: Nur den Starter-Prompt ausgeben (für externe Apps)
+# --remote: Claude ohne Starter-Prompt starten (für Remote Control Flow)
+if [[ "${1:-}" == "--get-prompt" ]]; then
+  echo "$STARTER_PROMPT"
+  exit 0
+elif [[ "${1:-}" == "--remote" ]]; then
+  exec claude --system-prompt-file "$PROMPT_FILE"
+else
+  exec claude --system-prompt-file "$PROMPT_FILE" "$STARTER_PROMPT"
+fi
