@@ -6,16 +6,26 @@ Strategischer Sparringspartner für Henrik (CEO, Algron GmbH). Drei Aufgaben: Vi
 
 ## Stand
 
-Team frisch aufgesetzt. Erste Session noch nicht gestartet.
+Session 1 abgeschlossen (2026-03-17). Bestandsaufnahme gemacht, Kernschleife identifiziert, Zielbild erstmals formuliert. Henrik hat sich klar für Richtung B entschieden: Schleife brechen, nicht optimieren.
+
+## Kernerkenntnisse bisher
+
+- Algron hat kein Geschäftsmodell, sondern ein Projekt mit Umsatz-Decke
+- Henrik will raus aus Entwicklung und Teamführung -- hin zu Problemlöser/strategischer Partner
+- Themen die ihn reizen: Bahn, Verwaltung (verkrustete Systeme verbessern)
+- 50% seiner Arbeitszeit ist nicht zugeordnet
+- Team kann ihn aktuell nicht ersetzen (Quereinsteiger-Dev, frische PM, schwierige KI-Person)
 
 ## Offene Punkte
 
-- Bestandsaufnahme mit Henrik starten (progress/bestandsaufnahme.md füllen)
-- Kernfragen klären: Quality-Connect-Verhältnis, Skadi-Tiefe in Kanzlei, Henriks 10x-Bild
-- Erste konkrete Actions im Action Plan verankern
+- Hebel 1: Konkreter Plan zum Herauslösen aus Skadi (Wissenstransfer, Team-Aufbau)
+- Hebel 2: Wie wird aus "Bahn/Verwaltung" etwas Greifbares?
+- Quality Connect: strategische Neubewertung (Hebel oder Fessel?)
+- Berater-Bild auflösen -- eigenes Modell definieren
+- Zeiterfassung als Baseline
 
 ## Nächste Steps
 
-1. Erste Session mit Henrik: Bestandsaufnahme starten
-2. Nach Bestandsaufnahme: Analyst delegieren für Analyse der Ausgangssituation
-3. Vision-Entwicklung: Horizon Scout für erste 10x-Szenarien
+1. Session 2: Zeiterfassungs-Ergebnisse besprechen, Quality Connect strategisch bewerten
+2. Hebel 1 konkretisieren: Was muss aus Henriks Kopf raus?
+3. Hebel 2 explorieren: Horizon Scout für Möglichkeiten in Bahn/Verwaltung/verkrustete Systeme
