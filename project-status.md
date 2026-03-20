@@ -6,26 +6,26 @@ Strategischer Sparringspartner für Henrik (CEO, Algron GmbH). Drei Aufgaben: Vi
 
 ## Stand
 
-Session 1 abgeschlossen (2026-03-17). Bestandsaufnahme gemacht, Kernschleife identifiziert, Zielbild erstmals formuliert. Henrik hat sich klar für Richtung B entschieden: Schleife brechen, nicht optimieren.
+Session 2 abgeschlossen (2026-03-20). Alle naheliegenden Hebel geprüft -- jeder hat Gegenwind. Finanz-Paradox klar benannt: Henrik braucht Investitionen um rauszukommen, kann sie sich aber nicht leisten. Eigentlicher Code-Engpass ist Vier-Augen-Prinzip, nicht Wissenstransfer.
 
 ## Kernerkenntnisse bisher
 
 - Algron hat kein Geschäftsmodell, sondern ein Projekt mit Umsatz-Decke
-- Henrik will raus aus Entwicklung und Teamführung -- hin zu Problemlöser/strategischer Partner
-- Themen die ihn reizen: Bahn, Verwaltung (verkrustete Systeme verbessern)
-- 50% seiner Arbeitszeit ist nicht zugeordnet
-- Team kann ihn aktuell nicht ersetzen (Quereinsteiger-Dev, frische PM, schwierige KI-Person)
+- Henrik will raus aus Entwicklung -- hin zu Problemlöser/strategischer Partner
+- Vier-Augen-Prinzip hält ihn im Code (nur 1 anderer Dev, Quereinsteiger)
+- Zweiter Dev nicht finanzierbar, KI-Exit hat kein Datum
+- Kein Netzwerk für Neukundengewinnung
+- Lösung liegt wahrscheinlich außerhalb der bisherigen Denkrichtungen
 
 ## Offene Punkte
 
-- Hebel 1: Konkreter Plan zum Herauslösen aus Skadi (Wissenstransfer, Team-Aufbau)
-- Hebel 2: Wie wird aus "Bahn/Verwaltung" etwas Greifbares?
-- Quality Connect: strategische Neubewertung (Hebel oder Fessel?)
-- Berater-Bild auflösen -- eigenes Modell definieren
-- Zeiterfassung als Baseline
+- Kanzlei-Kunde als Netzwerk nutzen (Action: beiläufig fragen)
+- Übersehene Ressourcen/Verbindungen identifizieren
+- Quality Connect: strategische Neubewertung noch ausstehend
+- Berater-Aversion vs. eigenes Modell definieren
 
 ## Nächste Steps
 
-1. Session 2: Zeiterfassungs-Ergebnisse besprechen, Quality Connect strategisch bewerten
-2. Hebel 1 konkretisieren: Was muss aus Henriks Kopf raus?
-3. Hebel 2 explorieren: Horizon Scout für Möglichkeiten in Bahn/Verwaltung/verkrustete Systeme
+1. Henrik führt Kanzlei-Gespräch (Netzwerk-Frage)
+2. Henrik reflektiert: übersehene Ressourcen?
+3. Session 3: Ergebnisse besprechen, ggf. Horizon Scout für neue Ansätze

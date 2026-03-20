@@ -24,3 +24,30 @@ Chronologisches Log aller Sessions.
 - 50% unbekannte Zeitverteilung -- Tracking starten
 - Quality Connect: strategische Neubewertung (Hebel oder Fessel?)
 - Berater-Bild auflösen vs. eigenes Modell definieren
+
+## 2026-03-20 -- Hebel gesucht, Paradox gefunden
+
+**Kernerkenntnisse:**
+
+1. **Wissenstransfer ist nicht der Engpass.** Henrik wird nur 2-3x/Woche kurz gefragt. Das eigentliche Problem: Vier-Augen-Prinzip im Code -- ohne Henrik gibt es keine vier Augen.
+
+2. **KI als Exit-Plan hat kein Datum.** Henrik setzt darauf, dass KI Code-Review übernimmt, stellt deshalb keinen zweiten Dev ein. Aber "bald" ist kein Termin. Klassisches "erst wenn X, dann Y"-Muster.
+
+3. **Das Finanz-Paradox.** Henrik braucht einen zweiten Dev um rauszukommen, kann ihn sich aber nicht leisten. Kann ihn sich nicht leisten, weil das Geschäftsmodell nicht skaliert. Skaliert nicht, weil er keine Zeit für Strategie hat. Hat keine Zeit, weil er im Code steckt.
+
+4. **Neuer Kunde = logischer Hebel, aber kein Netzwerk.** Henrik hat quasi keine Kontakte außerhalb seines einen Kunden. Hat nie verkaufen müssen.
+
+5. **Alle naheliegenden Hebel haben Gegenwind:**
+   - Zweiter Dev → kein Geld
+   - KI übernimmt Review → kein Datum
+   - Neuer Kunde → kein Netzwerk
+   - Wissen verkaufen → Berater-Aversion
+   - Wissenstransfer → ist gar nicht der Engpass
+
+6. **Lösungsansatz: Kanzlei-Kunde als Netzwerk nutzen.** Einfache Frage: "Kennt ihr andere Kanzleien mit ähnlichen Herausforderungen?"
+
+**Was offen blieb:**
+- Henrik überlegt: Gibt es übersehene Ressourcen oder Verbindungen?
+- Kanzlei-Kunde als Netzwerk-Einstieg -- Gespräch führen
+- Die Lösung liegt wahrscheinlich außerhalb der bisherigen Denkrichtungen
+- Quality Connect noch nicht strategisch bewertet
