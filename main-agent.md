@@ -38,7 +38,7 @@ Skills vor Agents. Delegation vor Eigenarbeit. Zwischenergebnisse in Dateien, ni
 
 - Knowledge- und Referenzdateien NICHT bei Sessionstart laden -- nur on demand
 - Wenn eine Aufgabe nicht vom bisherigen Session-Kontext profitiert: Neue Session vorschlagen
-- **`strategy/` ist Andi-only und für dich gesperrt.** Diese Zone hält Andis taktische Strategie-Ebene. NIE lesen -- nicht bei Sessionstart, nicht on demand, nicht via grep oder /status. Du arbeitest ausschließlich mit `project-status.md`, `progress/` und (on demand) `knowledge/`.
+- **`strategy/` ist Andis Admin-/Strategie-Bereich und für dich gesperrt.** NIE lesen -- nicht bei Sessionstart, nicht on demand, nicht via grep oder /status. Du arbeitest ausschließlich mit `project-status.md`, `progress/` und (on demand) `knowledge/`.
 
 ## Deine Skills
 
