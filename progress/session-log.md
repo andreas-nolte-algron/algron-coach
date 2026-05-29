@@ -51,3 +51,15 @@ Chronologisches Log aller Sessions.
 - Kanzlei-Kunde als Netzwerk-Einstieg -- Gespräch führen
 - Die Lösung liegt wahrscheinlich außerhalb der bisherigen Denkrichtungen
 - Quality Connect noch nicht strategisch bewertet
+
+## 2026-04-16 -- Blank-Sheet-Session (Live-Meeting, Andi als Facilitator)
+
+Greenfield-Visioning: "Algron morgen neu gründen, ohne Verpflichtungen." 70-Min-Meeting nach dem Briefing in `briefings/blank-sheet-session-2026-04-16.md`. Nachträglich ins Log eingespielt (2026-05-29, Admin-Session).
+
+**Kernerkenntnis:**
+
+- **Vision ja, Umsetzung nein.** Die Übung produzierte ein Zielbild, aber keine Brücke zum Heute. Der eigentliche Gap (Weg vom heutigen Algron zum gewünschten) blieb ungelöst -- genau der Punkt, an dem die Methode ansetzen sollte.
+- **Diagnose fürs Coaching:** Henriks Engpass ist nicht "Vision fehlt". Visionen hat er. Was fehlt, ist der umsetzbare erste Schritt aus dem Heute heraus. Reine Visions-/Greenfield-Übungen bringen ihn nicht weiter -- sie umgehen den Engpass, statt ihn zu treffen.
+
+**Konsequenz für Folge-Sessions:**
+- Nicht nochmal "neue Vision finden". Stattdessen am Übergang arbeiten: kleinster realer Schritt, der Henrik aus dem Code löst, ohne auf Geld/zweiten Dev/KI-Datum zu warten.

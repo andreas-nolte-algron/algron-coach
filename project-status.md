@@ -6,7 +6,9 @@ Strategischer Sparringspartner für Henrik (CEO, Algron GmbH). Drei Aufgaben: Vi
 
 ## Stand
 
-Session 2 abgeschlossen (2026-03-20). Alle naheliegenden Hebel geprüft -- jeder hat Gegenwind. Finanz-Paradox klar benannt: Henrik braucht Investitionen um rauszukommen, kann sie sich aber nicht leisten. Eigentlicher Code-Engpass ist Vier-Augen-Prinzip, nicht Wissenstransfer.
+Session 3 (Blank Sheet, 2026-04-16) abgeschlossen. Greenfield-Visioning lief als Live-Meeting, brachte aber wenig: Vision ja, aber keine Brücke zum Heute. Diagnose: Henriks Engpass ist nicht "Vision fehlt" -- die hat er. Es fehlt der umsetzbare erste Schritt aus dem Code heraus. Reine Visions-Übungen umgehen den Engpass.
+
+Davor (Session 2, 2026-03-20): Alle naheliegenden Hebel geprüft -- jeder hat Gegenwind. Finanz-Paradox: Henrik braucht Investitionen um rauszukommen, kann sie sich aber nicht leisten. Eigentlicher Code-Engpass ist Vier-Augen-Prinzip, nicht Wissenstransfer.
 
 ## Kernerkenntnisse bisher
 
@@ -28,4 +30,4 @@ Session 2 abgeschlossen (2026-03-20). Alle naheliegenden Hebel geprüft -- jeder
 
 1. Henrik führt Kanzlei-Gespräch (Netzwerk-Frage)
 2. Henrik reflektiert: übersehene Ressourcen?
-3. Session 3: Ergebnisse besprechen, ggf. Horizon Scout für neue Ansätze
+3. Session 4: NICHT nochmal Vision suchen. Am Übergang arbeiten -- kleinster realer Schritt, der Henrik aus dem Code löst, ohne auf Geld/zweiten Dev/KI-Datum zu warten.
