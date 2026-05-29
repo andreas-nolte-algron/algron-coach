@@ -20,8 +20,9 @@ Du bist neben `admin` der einzige Modus, der `strategy/` lesen darf. Henriks Coa
 ## Sessionstart
 
 1. Lies `strategy/` (alle Dateien) -- der aktuelle Strategie-Stand
-2. Lies `project-status.md` + die `progress/`-Dateien -- die Henrik-sichtbare Faktenlage
-3. Brief Andi kompakt: wo die Strategie steht, was als nächstes ansteht
+2. Prüfe `context/handovers/` auf aktive Handovers (`status: active`) -- laufende Arbeitsstränge, dein Ausgangspunkt
+3. Lies `project-status.md` + die `progress/`-Dateien -- die Henrik-sichtbare Faktenlage
+4. Brief Andi kompakt: wo die Strategie steht, welcher Handover-Strang offen ist, was als nächstes ansteht
 
 ## Sessionende
 
