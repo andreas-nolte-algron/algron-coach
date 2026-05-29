@@ -75,3 +75,26 @@ Kein Henrik-Gespräch, sondern ein Stand-Update (Erkenntnisse aus paralleler Str
 - Engpass präzisiert: Henrik = **Nadelöhr** (einziger GF-Kanal + alleiniger Wissensträger) -- strukturell, nicht nur Loslassen.
 
 **Konsequenz:** Nächste Coaching-Session arbeitet an der Entflechtung (Frage A), nicht an neuer Vision.
+
+## 2026-05-29 (Nachmittag) -- Henrik-Gespräch: Feedback-Plan + Wissenstransfer-Übereinkunft
+
+1:1 mit Henrik. Von beiden als produktiv und konkret erlebt ("wir haben richtig was geschafft").
+
+**Feedback-Plan verfeinert (Voigt-Freiwillige):**
+- Aufteilung nach Skill-Set: technisch Interessierte mit Vorstellungskraft (z.B. NL-Leitungen) geben *frühes* Feedback zu unfertigen Versionen (Übertragungsleistung: „später geht das auch mit XY"). Nicht-technische geben *spätes* Feedback zu schon fertigeren Versionen -- sie repräsentieren die breite Masse der Mitarbeitenden.
+- „Motiviert" heißt: schaut sich Neues an, auch wenn's für die akute Arbeit noch nichts bringt; lässt sich von Fehlern nicht abschrecken; bereit, Zeit zu investieren (z.B. 2-3 Wochen je 10-20 min), trägt aber auch 2-3 Monate Leerlauf ohne neue Features.
+- Offene operative Frage: wie hält man die Freiwilligen über Leerlauf-Phasen regelmäßig eingebunden?
+- Henrik ist offen dafür, dass die NL-Kommunikation **nicht nur über ihn** läuft -- Paula darf sie mitgestalten. Vorsicht: dass sich die NLs dabei nicht abgestempelt fühlen.
+
+**Geld-Erkenntnis (von Henrik benannt):** „Kommunikation ist schön, bringt aber kein Geld rein." Bei stundenbasierter Abrechnung zahlt Effizienz nicht auf Einnahmen ein -- höchstens irgendwann auf einen höheren Stundensatz (bessere Qualität). Ausnahme Quality Connect: dort wird ein Stundenkontingent verhandelt statt konkret abgerechnet -- da zahlt Effizienz direkter ein, verlangt aber gute Planung. (Strukturproblem stundenbasierter Abrechnung.)
+
+**Wissenstransfer-Übereinkunft (Kern des Tages):** Delegieren ohne ausreichende Wissensübergabe führt zu Frust -- andere fabrizieren etwas auf dünner Wissenslage, Henrik sieht „so geht das nicht" und ist demotiviert. Gemeinsame Einsicht (von Henrik mitgetragen): Abgeben spart Zeit -- aber nicht sofort. Am Anfang muss Henrik bewusst Zeit investieren, um das nötige Wissen zu übertragen und zu **verschriftlichen** (damit alle Zugriff haben). Sobald das Projekt läuft, sinkt sein Zusatzaufwand auf Feinjustierung. So kann er abgeben *und* Zeit sparen -- nur nicht am Tag eins.
+- **Neuer Standardschritt:** Bei jeder Projektinitialisierung/-übergabe ist ein fester erster Punkt: „Was muss die übernehmende Person zusätzlich an Kontext wissen, um den Job wirklich umsetzen zu können?" Verschriftlichen. Irgendwann bewusst stoppen -- man kann nicht ewig nach Lücken suchen.
+
+**Ausgänge:**
+- NL-Infos sammeln (Anzahl Mitarbeitende je Niederlassung) -- Henrik.
+- Speicherform dafür: Paula übernächste Woche ansprechen (Henrik egal, wie).
+- Den Mitarbeiter, der zuletzt gut mitgearbeitet hat, per Mail fragen, *warum* er so gern mitgearbeitet hat (Motivations-Recherche am echten Fall).
+- Coaching-Launcher (Andis Bau): Henrik hat Lust, weiter zu verfolgen -- vorerst Nebenthema.
+
+**Fürs nächste Mal:** Wie gehen wir mit dem Konflikt um, dass Delegieren ohne Wissensübertragung zu Ineffizienz führt? (Wissenstransfer-Schritt in der Praxis durchspielen.)

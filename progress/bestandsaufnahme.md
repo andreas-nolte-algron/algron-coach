@@ -11,15 +11,13 @@ Fakten über Algron und Henrik -- wächst mit jeder Session.
 
 ## Team (4 Personen)
 
-- **Henrik** -- CEO, Entwickler, Teamleitung, Kundenkontakt. Steckt in allem drin.
-- **1 Dev** -- Quereinsteiger, 3 Jahre dabei, voll ausgelastet. Konzepte haben "Luft nach oben", braucht Anleitung.
-- **1 PM** -- Noch recht neu, braucht viel Input von Henrik (Funktionen, Priorisierung).
-- **1 KI-Person** -- Beschäftigt sich mit KI. "Persönlich nicht ganz einfach."
-- Ein längster Mitarbeiter wurde Anfang 2025 getrennt wegen starker inhaltlicher Differenzen.
+Rollen-Zuordnung bestätigt (2026-05-29):
 
-**Namen (aus 2026-05-29, Zuordnung zu obigen Rollen noch unbestätigt):**
-- **Florian** -- Dev, "zuverlässig für die technische Umsetzung". Skadi Feature A (Schwärzung) ist an ihn delegiert.
-- **Paula** -- Kollegin, sucht aktiv Co-Explorer bei Voigt (Leute, die mit Algron an den großen Fragen arbeiten wollen).
+- **Henrik** -- CEO, Entwickler, Teamleitung, Kundenkontakt. Steckt in allem drin.
+- **Philipp** -- Dev (Skadi-Kernprodukt). Quereinsteiger, 3 Jahre dabei, voll ausgelastet. Konzepte haben "Luft nach oben", braucht Anleitung.
+- **Paula** -- PM, noch recht neu, braucht viel Input von Henrik (Funktionen, Priorisierung). Sucht aktiv Co-Explorer bei Voigt (Leute, die mit Algron an den großen Fragen arbeiten wollen).
+- **Florian** -- KI-/LLM-Mann. Hat Algrons eigenes On-prem-LLM gebaut (datenschutz-stark). Arbeitet NICHT am Skadi-Kernprodukt, sondern baut Skadi Feature A (Dokument-Schwärzung). Technisch zuverlässig, "persönlich nicht ganz einfach".
+- Ein früherer Mitarbeiter (längste Zugehörigkeit) wurde Anfang 2025 getrennt wegen starker inhaltlicher Differenzen.
 
 ## Projekte
 
@@ -35,7 +33,10 @@ Fakten über Algron und Henrik -- wächst mit jeder Session.
 ### Skadi -- aktuelles Leitthema: KI für Voigt (Stand 2026-05-29)
 - Der GF von Voigt weiß, dass er KI braucht, aber nicht wohin -- gibt den Ball an Henrik.
 - Skadi ist der Kanal, über den KI bei Voigt ankommt -- damit die strategische Antwort aufs Klumpenrisiko.
-- **Feature A (Dokument-Schwärzung):** nur noch technisches Detail, an Florian delegiert. Compliance-Checkliste: `knowledge/skadi-compliance.md`.
+- **Voigt hat eine eigene Rechtsabteilung, die sich bereits mit KI befasst.** Algron muss die Compliance nicht allein stemmen -- Ziel ist, an der Schnittstelle zur Rechtsabteilung souverän zu sein (richtige Fragen stellen, technisches Gegenstück liefern, Delegierbares abgeben).
+- **Feature A (Dokument-Schwärzung):** läuft on-prem auf Algrons GPU. Die Schwärzungs-*Mechanik* ist technisches Detail (an Florian). ABER eine Teilfrage ist strategisch, nicht technisch -- siehe Versand-Frage. Compliance-Checkliste: `knowledge/skadi-compliance.md`.
+- **Versand-Frage (offen, strategisch):** Sendet Skadi selbst ans LLM (Szenario A) oder gibt nur geschwärzt aus und Voigt sendet (Szenario B)? Entscheidet, ob Algron in die AVV-/Haftungskette eintritt. Empfehlungsrichtung B; heutiger Flow tendiert ohnehin B, ist aber nicht festgenagelt. Darf nicht implizit durch die Implementierung fallen. (Szenario C: Florians eigenes On-prem-LLM nutzen -- kein externer Versand, Haftungskette bleibt intern; sauberste Variante, sofern das eigene LLM die Use-Cases trägt.)
+- **Produkthaftung als Risikovektor:** Skadi auszuliefern macht Algron zum Hersteller (verschuldensunabhängig, Beweislastumkehr bei KI) -- nicht der EU AI Act ist Algrons Hauptrisiko, sondern das. Mit Voigts Juristen gegenchecken.
 
 ### Quality Connect (Nebenprojekt)
 - Lange Findungsphase, jetzt konkreter

@@ -10,6 +10,8 @@ Leitthema ist jetzt: **KI nutzbar machen für die Kanzlei Voigt** (Hauptkunde). 
 
 Der Move ist nicht visionieren, sondern entflechten: Henriks „großer Brei" sind vier getrennte Fragen, drei hängen an einer Wurzel. Sobald getrennt, wird jede handhabbar.
 
+Erstes echtes Coaching-Gespräch zum Thema (29.05., Nachmittag) lief gut: Feedback-Plan für Voigt-Freiwillige verfeinert, und -- der eigentliche Fortschritt -- Henrik trägt eine **Wissenstransfer-Übereinkunft** mit: Abgeben spart Zeit, aber nicht sofort; am Anfang muss er Wissen bewusst übertragen und verschriftlichen. Damit greift der Nadelöhr-Engpass erstmals operativ an, mit Henriks Zustimmung.
+
 Davor (Sessions 1–3): Schleife erkannt (Henrik steckt im Code), Vision formuliert, aber keine Brücke zum Heute. Diagnose: Henrik fehlt nicht die Vision, sondern der umsetzbare erste Schritt aus dem Code heraus.
 
 ## Die vier Fragen (aktueller Arbeitsrahmen)
@@ -30,8 +32,13 @@ Henrik ist das **Nadelöhr**: einziger Kanal zum GF Voigt *und* alleiniger Wisse
 
 - Algron hat kein Geschäftsmodell, sondern Projekte mit Umsatz-Decke (Skadi + Quality Connect)
 - Henrik will raus aus Entwicklung -- hin zu Problemlöser/strategischer Partner
-- Skadi Feature A (Dokument-Schwärzung) ist nur noch technisches Detail → an Florian delegiert, kein Strategiethema mehr
+- Skadi Feature A: Schwärzungs-*Mechanik* an Florian delegiert -- ABER die Versand-Frage (sendet Skadi selbst?) ist eine strategische Haftungs-Weiche, kein technisches Detail
 - Skadi als Kanal für KI bei Voigt = strategische Antwort aufs Klumpenrisiko
+- Versand-Frage hat jetzt Entscheidungsgrundlage (Compliance-Sichtung): Empfehlung Szenario B (Skadi sendet nicht selbst), echt offen, heutiger Flow tendiert ohnehin B
+- Übersehener Risikovektor: Produkthaftung (Algron = Hersteller, verschuldensunabhängig) -- größer als die AI-Act-Klasse
+- Voigt hat eigene Rechtsabteilung -- Compliance nicht allein stemmen, an der Schnittstelle souverän sein
+- **Wissenstransfer ist der Hebel gegen das Nadelöhr:** Delegieren ohne Wissensübergabe frustriert Henrik (andere fabrizieren auf dünner Lage). Lösung als Standardschritt jeder Übergabe verankert: erst Wissen übertragen + verschriftlichen, dann sinkt Henriks Aufwand auf Feinjustierung
+- **Geld-Realität:** Bei stundenbasierter Abrechnung bringt Effizienz keine Mehreinnahmen -- der Kommunikations-/Experimentier-Strang zahlt auf Haltung und Struktur ein, aber nicht direkt auf den Geld-Schmerz. Offene Brücke: Henriks freigewordene Zeit muss in geld-bringende Arbeit fließen, sonst Effizienz ohne Ertrag
 
 ## Offene Punkte
 
@@ -41,6 +48,6 @@ Henrik ist das **Nadelöhr**: einziger Kanal zum GF Voigt *und* alleiniger Wisse
 
 ## Nächste Steps
 
-1. Henrik-Gespräch zum KI-Thema (Entflechtung der vier Fragen) -- Antworten festhalten
-2. Wenn Frage A greifbar: schlankes Use-Case-Findungs-Vorgehen für den GF
-3. Kandidat erster Schritt: Henrik fragt GF, ob Algron mit 1–2 mitwilligen Voigt-Leuten direkt arbeiten darf
+1. Co-Explorer-/Feedback-Plan weitertreiben: NL-Infos sammeln, Freiwillige finden (Paula + Henrik, Kanal nicht nur über Henrik)
+2. Erstes Übergabe-Projekt für den Wissenstransfer-Schritt klein und gewinnbar wählen -- es muss Henrik die versprochene Entlastung spürbar liefern, sonst kippt die Übereinkunft
+3. Frage A (wo lohnt KI im Voigt-Alltag) bleibt offen -- über die gefundenen Co-Explorer angehen, nicht über abstrakte Entflechtung
