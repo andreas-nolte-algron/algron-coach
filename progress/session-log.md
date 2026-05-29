@@ -63,3 +63,15 @@ Greenfield-Visioning: "Algron morgen neu gründen, ohne Verpflichtungen." 70-Min
 
 **Konsequenz für Folge-Sessions:**
 - Nicht nochmal "neue Vision finden". Stattdessen am Übergang arbeiten: kleinster realer Schritt, der Henrik aus dem Code löst, ohne auf Geld/zweiten Dev/KI-Datum zu warten.
+
+## 2026-05-29 -- Admin/Strategie-Update: KI-Thema für Voigt wird Leitthema
+
+Kein Henrik-Gespräch, sondern ein Stand-Update (Erkenntnisse aus paralleler Strategie-Arbeit eingepflegt).
+
+**Neuer Stand:**
+- Leitthema verschiebt sich auf **KI nutzbar machen für die Kanzlei Voigt**. Der GF weiß, dass er KI braucht, aber nicht wohin -- gibt den Ball an Henrik.
+- Henriks "großer Brei" wird in **vier getrennte Fragen** zerlegt (A: Wo lohnt KI im Alltag? B: Mitarbeitende befähigen. C: Skadi-Roadmap. D: Algron-Strategie). Drei hängen an Wurzel A. Einstieg über den Alltag, nicht über Tools.
+- Skadi Feature A (Schwärzung) ist nur noch ein technisches Detail → an **Florian** delegiert.
+- Engpass präzisiert: Henrik = **Nadelöhr** (einziger GF-Kanal + alleiniger Wissensträger) -- strukturell, nicht nur Loslassen.
+
+**Konsequenz:** Nächste Coaching-Session arbeitet an der Entflechtung (Frage A), nicht an neuer Vision.

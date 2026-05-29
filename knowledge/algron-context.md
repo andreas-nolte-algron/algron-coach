@@ -1,13 +1,13 @@
 # Algron Context -- Firmenfakten
 
-Stand: 2026-03-12 (aus Build-Brief)
+Stand: 2026-03-12 (aus Build-Brief). Lebende Faktenlage: `progress/bestandsaufnahme.md`.
 
 ## Unternehmen
 
 - **Name:** Algron GmbH
 - **Teamgröße:** 3 Personen
 - **Produkt:** Skadi (SaaS für Anwaltskanzlei -- Schnittstellen + UI)
-- **Hauptkunde:** Eine große Kanzlei (Klumpenrisiko, nahezu 100% Revenue-Abhängigkeit)
+- **Hauptkunde:** Die Kanzlei **Voigt** (Klumpenrisiko, nahezu 100% Revenue-Abhängigkeit)
 
 ## Nebenprojekt
 

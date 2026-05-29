@@ -17,16 +17,25 @@ Fakten über Algron und Henrik -- wächst mit jeder Session.
 - **1 KI-Person** -- Beschäftigt sich mit KI. "Persönlich nicht ganz einfach."
 - Ein längster Mitarbeiter wurde Anfang 2025 getrennt wegen starker inhaltlicher Differenzen.
 
+**Namen (aus 2026-05-29, Zuordnung zu obigen Rollen noch unbestätigt):**
+- **Florian** -- Dev, "zuverlässig für die technische Umsetzung". Skadi Feature A (Schwärzung) ist an ihn delegiert.
+- **Paula** -- Kollegin, sucht aktiv Co-Explorer bei Voigt (Leute, die mit Algron an den großen Fragen arbeiten wollen).
+
 ## Projekte
 
 ### Skadi (Hauptprojekt)
 - Läuft seit 9 Jahren (5 Jahre vor Algron gestartet)
-- **1 Kunde:** Eine große Anwaltskanzlei
+- **1 Kunde:** Die Anwaltskanzlei **Voigt** (Klumpenrisiko, ~100% Umsatz-Abhängigkeit)
 - Vereinfacht Bearbeitung digitaler Akten
 - Entwicklung: Anfangs Datensammlung, jetzt Automatisierung + Anbindung externer Dienstleister
 - Aktuell spannendste Funktion: Dashboard für Fallstatus-Überblick
 - **Budget-Decke erreicht** -- kein Wachstum möglich, weder Stundenansatz noch Headcount
 - Gegenseitige Abhängigkeit: Kanzlei braucht Henrik (kennt Software + Prozesse besser als jeder dort), Henrik braucht den Umsatz
+
+### Skadi -- aktuelles Leitthema: KI für Voigt (Stand 2026-05-29)
+- Der GF von Voigt weiß, dass er KI braucht, aber nicht wohin -- gibt den Ball an Henrik.
+- Skadi ist der Kanal, über den KI bei Voigt ankommt -- damit die strategische Antwort aufs Klumpenrisiko.
+- **Feature A (Dokument-Schwärzung):** nur noch technisches Detail, an Florian delegiert. Compliance-Checkliste: `knowledge/skadi-compliance.md`.
 
 ### Quality Connect (Nebenprojekt)
 - Lange Findungsphase, jetzt konkreter

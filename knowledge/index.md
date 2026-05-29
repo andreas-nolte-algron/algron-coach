@@ -9,3 +9,4 @@ Alle Dateien werden on demand geladen -- NICHT bei Sessionstart.
 | `team-scaling.md` | Micro-Team, Fractional, KI-augmented Dev, Engpass-Management | Coach, Action Architect |
 | `algron-context.md` | Firmenfakten: Algron, Skadi, Quality Connect, Henrik | Alle Agents |
 | `research-notes.md` | Akkumulierte Recherche-Ergebnisse | Coach, Horizon Scout |
+| `skadi-compliance.md` | Skadi Feature A (Dokument-Schwärzung): AI-Act/DSGVO/Verschwiegenheit -- Compliance-by-Design-Checkliste | Coach (on demand) |

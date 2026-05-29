@@ -38,9 +38,12 @@ algron-coach/
   briefings/             # Briefings für direkte Agent-Sessions
   progress/              # Laufende Erkenntnisse (session-log, bestandsaufnahme, vision, action-plan)
   knowledge/             # Domänenwissen (on demand)
-  scripts/algron-coach   # Startscript für Henrik
+  strategy/              # Andi-only: Strategie-Ebene über Henrik. NIE im Coach-Modus lesen (Firewall)
+  scripts/algron-coach   # Startscript (Modi: talk / strategy / admin)
   config/                # Instanz-spezifisch (.gitignore), on demand lesen
 ```
+
+**Firewall:** `strategy/` ist Andis Zone (taktischer Read über Henrik, Interventions-Design). Henriks Coach-Modus (`talk`) lädt nur die Whitelist (main-agent.md, project-status.md, progress/) und darf `strategy/` nie lesen. Gelesen wird `strategy/` nur im `strategy`-Modus (Andis Strategist) und im `admin`-Modus. Die Zone liegt bewusst top-level (nicht unter `progress/`), weil `/status` dort sweept.
 
 Zentrale Dateien:
 - `project-status.md` -- Projektstatus (bei Sessionstart gelesen, bei Sessionende aktualisiert)
