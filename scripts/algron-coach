@@ -25,37 +25,74 @@ if git rev-parse --git-dir &>/dev/null; then
 fi
 
 MODE="${1:-}"
+shift || true
+# Optionale Flags nach dem Modus: --mobile / --handoff [titel]
+MOBILE=""
+HANDOFF=""
+TITLE=""
+while [ $# -gt 0 ]; do
+  case "$1" in
+    --mobile) MOBILE=1 ;;
+    --handoff) HANDOFF=1 ;;
+    *) TITLE="$1" ;;
+  esac
+  shift
+done
+
 PROMPT_FILE="$PROJECT_ROOT/main-agent.md"
 TALK_PROMPT="Sessionstart: Lies project-status.md und die progress/-Dateien (session-log.md, bestandsaufnahme.md, vision.md, action-plan.md), dann brief mich wo wir stehen. Falls alle leer: Starte die Bestandsaufnahme. Reminder: Sessionende → /commit aufrufen."
 STRATEGY_PROMPT="Strategie-Modus: Du bist Andis strategischer Sparringspartner fuer die Algron/Henrik-Lage. Lies strategy/ (alle Dateien) plus project-status.md und die progress/-Dateien. Pruefe context/handovers/ auf aktive Handovers (status: active) -- laufende Arbeitsstraenge, nimm sie als Ausgangspunkt. Dann brief Andi wo die Strategie steht. Reminder: Sessionende → /commit aufrufen."
 ADMIN_PROMPT="Admin-Modus: Du bist im Wartungsmodus mit Andy (Team-Betreuer). Lies project-status.md und CLAUDE.md, pruefe context/handovers/ auf aktive Handovers (status: active), dann frag was ansteht. Kein Coach-Verhalten noetig. Reminder: Sessionende → /commit aufrufen."
 
+# Cockpit-Hülle für --mobile / --handoff.
+COCKPIT="$HOME/workspace/products/mobile-cockpit/scripts/clauderc"
+
+# Startet die Agenten-Zeile. Ohne Flag: lokal (wie bisher). Mit --mobile: frisch
+# durch die Cockpit-Hülle, MIT Starter-Prompt. Mit --handoff: die gerade
+# verlassene Session via `claude --continue` fortsetzen — OHNE Starter-Prompt,
+# aber mit demselben System-Prompt (Persona bleibt beim Resume erhalten).
+#   $1 = Default-Name, $2 = Starter-Prompt, Rest = claude-Zeile (ohne Starter)
+launch_agent() {
+  local def="$1" starter="$2"; shift 2
+  local name="${TITLE:-$def}"
+  if [ -n "$HANDOFF" ]; then
+    exec "$COCKPIT" handoff "$name" -- "$@"
+  elif [ -n "$MOBILE" ]; then
+    exec "$COCKPIT" run "$name" -- "$@" "$starter"
+  else
+    exec "$@" "$starter"
+  fi
+}
+
 case "$MODE" in
   talk)
-    exec claude --system-prompt-file "$PROMPT_FILE" "$TALK_PROMPT"
+    launch_agent "algron-coach – talk" "$TALK_PROMPT" \
+      claude --system-prompt-file "$PROMPT_FILE"
     ;;
   strategy)
-    exec claude --system-prompt-file "$PROJECT_ROOT/strategy/strategy-agent.md" "$STRATEGY_PROMPT"
+    launch_agent "algron-coach – strategy" "$STRATEGY_PROMPT" \
+      claude --system-prompt-file "$PROJECT_ROOT/strategy/strategy-agent.md"
     ;;
   admin)
-    exec claude "$ADMIN_PROMPT"
+    launch_agent "algron-coach – admin" "$ADMIN_PROMPT" \
+      claude
     ;;
   --get-prompt)
     echo "$TALK_PROMPT"
     exit 0
     ;;
-  --remote)
-    exec claude --system-prompt-file "$PROMPT_FILE"
-    ;;
   *)
-    echo "Usage: algron-coach <mode>"
+    echo "Usage: algron-coach <mode> [--mobile|--handoff [titel]]"
     echo ""
     echo "  talk      Sparring-Session mit Henrik (Coach-Modus)"
     echo "  strategy  Strategie-Sparring mit Andi (Andi-Zone, liest strategy/)"
     echo "  admin     Wartung & Architektur mit Andy"
     echo ""
-    echo "  --get-prompt  Starter-Prompt ausgeben (fuer externe Apps)"
-    echo "  --remote      Coach ohne Starter-Prompt (Remote Control)"
+    echo "  --mobile [titel]   Frisch mobil starten (tmux + Remote Control,"
+    echo "                     in der Cockpit-App steuerbar; optionaler Titel)"
+    echo "  --handoff [titel]  Gerade verlassene Session mobil weiterreichen"
+    echo "                     (claude --continue, Persona bleibt; vorher Exit)"
+    echo "  --get-prompt       Starter-Prompt ausgeben (fuer externe Apps)"
     exit 0
     ;;
 esac
