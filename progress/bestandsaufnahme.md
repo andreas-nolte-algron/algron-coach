@@ -38,6 +38,11 @@ Rollen-Zuordnung bestätigt (2026-05-29):
 - **Versand-Frage (offen, strategisch):** Sendet Skadi selbst ans LLM (Szenario A) oder gibt nur geschwärzt aus und Voigt sendet (Szenario B)? Entscheidet, ob Algron in die AVV-/Haftungskette eintritt. Empfehlungsrichtung B; heutiger Flow tendiert ohnehin B, ist aber nicht festgenagelt. Darf nicht implizit durch die Implementierung fallen. (Szenario C: Florians eigenes On-prem-LLM nutzen -- kein externer Versand, Haftungskette bleibt intern; sauberste Variante, sofern das eigene LLM die Use-Cases trägt.)
 - **Produkthaftung als Risikovektor:** Skadi auszuliefern macht Algron zum Hersteller (verschuldensunabhängig, Beweislastumkehr bei KI) -- nicht der EU AI Act ist Algrons Hauptrisiko, sondern das. Mit Voigts Juristen gegenchecken.
 
+### Feedback-Plan / Co-Explorer bei Voigt (Stand 2026-06-02)
+- **Aufwand aktive Mitarbeit ≈ 20-30 min/Woche** (Henriks Schätzung). Geringe Hürde -- kein schwerer Vergütungs-/Freistellungsapparat nötig. Die eigentliche Herausforderung ist nicht die Zeit, sondern die Bindung über Leerlauf-Phasen (Wochen ohne neue Features).
+- **GF-Beziehung (8-Jahre-Modus):** GF lässt viel Freiraum, hakt wenig nach. Reaktiv: Henrik klärt mit NL-Leitung → die erwähnt es beim GF → GF wird hellhörig, fragt Henrik → Henrik erklärt → GF ist fein. Vorab um Erlaubnis fragen ist nicht der übliche Weg.
+- **Voigt-Kanal:** Henrik hat direkten Draht zu NL-Leitungen und bekannten Mitarbeitenden -- braucht keine GF-Erlaubnis, um mit ihnen zu arbeiten.
+
 ### Quality Connect (Nebenprojekt)
 - Lange Findungsphase, jetzt konkreter
 - Bestehende QA-Software modernisieren (wenig Weiterentwicklung in letzten 5-10 Jahren)

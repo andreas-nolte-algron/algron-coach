@@ -10,7 +10,7 @@ Leitthema ist jetzt: **KI nutzbar machen für die Kanzlei Voigt** (Hauptkunde). 
 
 Der Move ist nicht visionieren, sondern entflechten: Henriks „großer Brei" sind vier getrennte Fragen, drei hängen an einer Wurzel. Sobald getrennt, wird jede handhabbar.
 
-Erstes echtes Coaching-Gespräch zum Thema (29.05., Nachmittag) lief gut: Feedback-Plan für Voigt-Freiwillige verfeinert, und -- der eigentliche Fortschritt -- Henrik trägt eine **Wissenstransfer-Übereinkunft** mit: Abgeben spart Zeit, aber nicht sofort; am Anfang muss er Wissen bewusst übertragen und verschriftlichen. Damit greift der Nadelöhr-Engpass erstmals operativ an, mit Henriks Zustimmung.
+Gespräch 29.05. brachte die **Wissenstransfer-Übereinkunft** (Abgeben spart Zeit -- aber erst nach bewusstem Wissens-Transfer + Verschriftlichen). Gespräch 02.06. zwei Schritte weiter: (1) **erster Delegations-Fall angesetzt** -- Henrik delegiert die Leerlauf-Bindungsfrage an Paula (Typ 2, kein eigenes Experten-Wissen zu verteidigen → gewinnbarer Einstieg, aber noch nicht der Lackmustest). (2) **Haltungs-Treffer:** Henrik wusste nicht mehr, warum „Feedback" auf dem Tisch liegt (es hängt am KI-Strang) -- nahm die Spiegelung an, dass er im Themen-Tunnel die Zusammenhänge verliert. Daraus: nächstes Mal strategische Top-Level-Sicht (Andi baut das Gerüst, Henrik füllt).
 
 Davor (Sessions 1–3): Schleife erkannt (Henrik steckt im Code), Vision formuliert, aber keine Brücke zum Heute. Diagnose: Henrik fehlt nicht die Vision, sondern der umsetzbare erste Schritt aus dem Code heraus.
 
@@ -48,6 +48,6 @@ Henrik ist das **Nadelöhr**: einziger Kanal zum GF Voigt *und* alleiniger Wisse
 
 ## Nächste Steps
 
-1. Co-Explorer-/Feedback-Plan weitertreiben: NL-Infos sammeln, Freiwillige finden (Paula + Henrik, Kanal nicht nur über Henrik)
-2. Erstes Übergabe-Projekt für den Wissenstransfer-Schritt klein und gewinnbar wählen -- es muss Henrik die versprochene Entlastung spürbar liefern, sonst kippt die Übereinkunft
-3. Frage A (wo lohnt KI im Voigt-Alltag) bleibt offen -- über die gefundenen Co-Explorer angehen, nicht über abstrakte Entflechtung
+1. Wissenstransfer-Probelauf läuft: Henrik delegiert die Leerlauf-Frage an Paula (Gespräch + Todo-Liste + Checkup nach 1-2 Wochen). Nicht als Beweis verbuchen -- der echte Test ist ein Fall, bei dem Henrik eigenes Experten-Wissen abgibt
+2. Strategische Top-Level-Sicht vorbereiten (Andi mit Henrik, Gerüst + Leitfragen) und den Feedback-Ursprung klären
+3. NL-Infos abgrenzen (welche Einträge sind relevant); Frage A (wo lohnt KI im Voigt-Alltag) weiter über die Co-Explorer, nicht abstrakt

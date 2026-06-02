@@ -98,3 +98,28 @@ Kein Henrik-Gespräch, sondern ein Stand-Update (Erkenntnisse aus paralleler Str
 - Coaching-Launcher (Andis Bau): Henrik hat Lust, weiter zu verfolgen -- vorerst Nebenthema.
 
 **Fürs nächste Mal:** Wie gehen wir mit dem Konflikt um, dass Delegieren ohne Wissensübertragung zu Ineffizienz führt? (Wissenstransfer-Schritt in der Praxis durchspielen.)
+
+## 2026-06-02 -- Henrik-Gespräch: erster Delegations-Fall angesetzt + Haltungs-Spiegelung
+
+1:1 mit Henrik. Zwei Ebenen -- ein operativer Schritt und ein Haltungs-Treffer.
+
+**Abgeholt aus der Vorwoche:**
+- MR-Review-KI meckert manchmal bei Dingen, die ok sind (klein, operativ).
+- NL-Infos: Henrik hat einen Endpunkt aufgemacht. Offene Klärung: zentrale NL (Dortmund = Hauptsitz) hat 40-50 Einträge -- brauchen wir alle? Hat jeder einen Account? Sind alle mit Account relevant?
+- Motivations-Mail (Ex-Mitarbeiter): nachgeschaut, nichts Inhaltliches zu holen (Stadtverwaltung Bielefeld). Schritt erledigt, kein Ertrag.
+
+**Wissenstransfer am echten Fall (zwei Fall-Typen unterschieden):**
+- *Typ 1:* hochspezifisches Thema, (fast nur) Henrik kennt sich aus → Experten-Wissen übertragen/verschriftlichen.
+- *Typ 2:* neues Thema, auch Henrik hat wenig Infos/Erfahrung → aus Erfahrung lernen, wo genaues Vorüberlegen nötig ist.
+- **Gewählter erster Fall:** die offene Leerlauf-Bindungsfrage (wie hält man Freiwillige über Leerlauf-Phasen eingebunden) an Paula delegieren -- Typ 2, weil Henrik nicht glaubt, dass er das besser kann als jemand anderes. Henrik braucht nichts mehr, um es morgen zu delegieren -- will es ausprobieren. Vorgehen: 1. Gespräch mit Paula, dann Todo-Liste mit Checkup nach 1-2 Wochen, ob es gut geklappt hat.
+
+**GF-Rückendeckung diskutiert:** Idee, den GF einzubinden, damit MA Rückendeckung spüren („mein Chef findet's gut"). Henrik verschiebt das auf die NL-Leitungen (GF führt nicht die Quartalsgespräche mit den MA). Henriks Sorge: Was, wenn der GF nein sagt? Bisher arbeitet Algron am oft-abwesenden GF vorbei („wir suchen uns die Infos zusammen, wir machen einfach"), weil der GF sich lange Phasen nicht mit Projekten beschäftigt. Den GF aktiv einzubinden fühlt sich wie ein extrem starker Kurswechsel an -- Henrik hat Sorge, ihn nicht überzeugen zu können, dass strategische Arbeit „es wert" ist.
+
+**Haltungs-Spiegelung (Kern des Tages):** Henrik wusste nicht mehr, *warum* sie überhaupt über Feedback reden -- hielt es für ein isoliert delegierbares Thema. Tatsächlich hängt es am KI-Strategie-Strang: Um zu wissen, wo Skadi/KI in der Kanzlei hilft, braucht es Feedback. Andi spiegelte: Henrik notiert sich wenig, bereitet wenig vor und nach, hält selten mehrere Themen gleichzeitig sichtbar -- arbeitet fokussiert in der Tiefe eines Themas und verliert dabei die Zusammenhänge. Henrik nahm es an („könnte sein, dass da was dran ist").
+
+**Raus mit:**
+- Wichtiger, sich mit den größeren Dingen zu beschäftigen.
+- Genauer schauen: woher kam das Feedback-Thema überhaupt (von Paula? aus dem strategischen Meeting)?
+- Andi baut eine Visualisierung der Top-Level-Themen + Feedback-Ursprung.
+
+**Fürs nächste Mal:** strategische Top-Level-Sicht anschauen, erzeugt aus dem Feedback-Thema.
