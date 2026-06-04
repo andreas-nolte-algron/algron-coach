@@ -16,8 +16,6 @@ Chronologisches Log aller Sessions.
 
 5. **Themen die ihn reizen:** Bahn, Verwaltung -- nicht wegen Technik, sondern weil er es für sinnvoll hält und selbst nutzt/betrifft.
 
-6. **Rationalisierungen identifiziert:** KI-Produktivität als Grund für mehr Arbeit statt als Hebel zum Loslassen. Quality Connect als "finanzieller Push" obwohl temporär und schrumpfend. "Ich kann nichts abgeben" trotz Delegation-Anspruch.
-
 **Was offen blieb:**
 - Hebel 1: Konkreter Plan zum Herauslösen aus Skadi
 - Hebel 2: Wie aus "Bahn/Verwaltung" etwas Greifbares wird

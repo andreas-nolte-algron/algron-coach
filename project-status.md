@@ -10,7 +10,7 @@ Leitthema ist jetzt: **KI nutzbar machen für die Kanzlei Voigt** (Hauptkunde). 
 
 Der Move ist nicht visionieren, sondern entflechten: Henriks „großer Brei" sind vier getrennte Fragen, drei hängen an einer Wurzel. Sobald getrennt, wird jede handhabbar.
 
-29.05. **Wissenstransfer-Übereinkunft** (Abgeben spart Zeit -- aber erst nach Wissens-Transfer + Verschriftlichen). 02.06. **erster Delegations-Fall** (Leerlauf-Frage → Paula, Typ 2, noch nicht der Lackmustest) + **Haltungs-Treffer** (Henrik nahm die Spiegelung an, dass er im Themen-Tunnel die Zusammenhänge verliert).
+29.05. **Wissenstransfer-Übereinkunft** (Abgeben spart Zeit -- aber erst nach Wissens-Transfer + Verschriftlichen). 02.06. **erster Delegations-Fall** (Leerlauf-Frage → Paula, Typ 2 -- Einstieg, nicht der schwere Experten-Fall) + **Haltungs-Treffer** (Henrik nahm die Spiegelung an, dass er im Themen-Tunnel die Zusammenhänge verliert).
 
 Workshop 04.06.: die Top-Level-Sicht erarbeitet -- erstmals im Format, das Henrik selbst „Workshop" nennt. Bottom-up von Einzelthemen zu 4 Strängen, Henrik überwiegend selbst am Stift (Map im session-log). Sein Fazit: half, Themen zu sortieren ohne sich in Details zu verlieren -- dafür lohnt es, sich 2 Stunden zu nehmen. Beim Ziel-Feld kam von Henrik selbst nur ein Gedanke: **„guten Gewissens höhere Rechnungen stellen"** (Geld als Kern-Ziel). Seine weiterführende Frage treibt das nächste Mal: **wie kommen wir von den großen Themen ins Handeln?**
 
@@ -51,5 +51,5 @@ Henrik ist das **Nadelöhr**: einziger Kanal zum GF Voigt *und* alleiniger Wisse
 ## Nächste Steps
 
 1. **Nächste Session -- Ziel-Ebene + Brücke ins Handeln:** zuerst die offene Ziel-Ebene erarbeiten („wo wollen wir hin?", Ausgangspunkt Henriks Gedanke „guten Gewissens höhere Rechnungen"), dann von den 4 Strängen zu konkreten nächsten Schritten -- pro Strang ein kleinster realer Schritt. Henrik baut die Brücke selbst (Experiment mit verschobener Messbarkeit, kein großer Plan). Das ist der Punkt, an dem frühere Visions-Übungen gescheitert sind (Vision ja, Umsetzung nein)
-2. Wissenstransfer-Probelauf läuft: Henrik delegiert die Leerlauf-Frage an Paula (Gespräch + Todo-Liste + Checkup nach 1-2 Wochen). Nicht als Beweis verbuchen -- der echte Test ist ein Fall, bei dem Henrik eigenes Experten-Wissen abgibt
+2. Wissenstransfer-Probelauf läuft: Henrik delegiert die Leerlauf-Frage an Paula (Gespräch + Todo-Liste + Checkup nach 1-2 Wochen). Der eigentlich schwierige Fall ist einer, bei dem Henrik eigenes Experten-Wissen abgibt
 3. NL-Infos abgrenzen (welche Einträge sind relevant); Frage A (wo lohnt KI im Voigt-Alltag) weiter über die Co-Explorer, nicht abstrakt

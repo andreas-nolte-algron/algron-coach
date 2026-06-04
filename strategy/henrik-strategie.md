@@ -112,6 +112,10 @@ Beste Haltungs-Bewegung im ganzen Strang bisher. Aber im Hoch nicht überbuchen 
 - **Ebene-1-Autonomie bestätigt -- mit einer aufschlussreichen Ausnahme.** Die grünen Karten (konkrete Themen) kamen fast komplett von Henrik -- die untere Ebene, seine Stärke, sprudelte aus ihm (stützt den Falltest). Die *einzige* Andi-Karte: „zielgerichtete, umsichtige Kommunikation mit dem GF". Henrik wäre nicht draufgekommen -- **blinder Fleck aus 8-10 Jahren gelebter GF-Beziehung, er kann den GF-Kanal nicht „mal eben" neu denken.** Legitimes Coaching (fehlende Perspektive ergänzen), nicht das Vermeidungsmuster -- aber bewusst halten: genau an der GF-Stelle ist Henrik nicht autonom, und das ist die Nadelöhr-Hälfte (Strang 2, GF = einziger Kanal).
 - **Der GF-Knoten der nächsten Session.** Vier Dinge hängen zusammen: Geld-Ziel (höhere Rechnungen) + Henriks GF-Rechtfertigungs-Sorge („wie rechtfertigen wir strategische, kommunikative Arbeit?", die 02.06.-Sorge) + der aktive GF-Kommunikations-Schritt (sein blinder Fleck) + GF-Kanal-Nadelöhr. Henrik *fühlt* die GF-Spannung (die Sorge ist seine Karte), sieht den Weg (aktive GF-Kommunikation, Andis Karte) aber nicht. Hebel: wenn strategische Arbeit zu „guten Gewissens höheren Rechnungen" führt, *ist* sie gegenüber dem GF gerechtfertigt -- diese Verbindung könnte Henriks Sorge entschärfen. Aufheben fürs Ziel-Gespräch.
 
+## Historische Reads (aus Pre-Firewall-Sessions hierher verschoben)
+
+- **Session 1 (2026-03-17) -- Rationalisierungen, die Henrik nie gespiegelt bekam** (04.06. aus dem Henrik-sichtbaren session-log hierher verschoben): KI-Produktivität als Grund für *mehr* Arbeit statt als Hebel zum Loslassen. Quality Connect als „finanzieller Push", obwohl temporär + schrumpfend. „Ich kann nichts abgeben" trotz Delegations-Anspruch. -- Verdeckter Read über Henrik; gehört nicht in die sichtbare Ebene (Lackmustest: hat er nicht angenommen, war kein offenes Gesprächsthema).
+
 ## Offene Punkte (Andi)
 
 - Andis Mandat für das große KI-Thema bei Voigt -- wie weit reicht es?
