@@ -123,3 +123,46 @@ Kein Henrik-Gespräch, sondern ein Stand-Update (Erkenntnisse aus paralleler Str
 - Andi baut eine Visualisierung der Top-Level-Themen + Feedback-Ursprung.
 
 **Fürs nächste Mal:** strategische Top-Level-Sicht anschauen, erzeugt aus dem Feedback-Thema.
+
+## 2026-06-04 -- Workshop: Top-Level-Sicht erarbeitet (Henrik am Stift)
+
+Erstes Treffen im neuen Format -- Henrik nennt es selbst „Workshop" statt „Meeting". ~2 Stunden, Miro, bottom-up: von vielen konkreten Einzelthemen hoch zu Strängen/Bereichen und Zielen. Henrik hat überwiegend selbst gearbeitet -- Sticky Notes gesetzt, geordnet, auf Aufforderung mehrfach rausgezoomt („worum geht's hier wirklich?").
+
+**Einstieg:** Henrik kam mit einer eigenen Frage rein, die er sich schon am Ende des 02.06. gestellt hatte: „Wie hängt das Feedback-Thema mit den großen Themen von Algron zusammen?" -- genau die Verbindung, die ihm am 02.06. noch entfallen war, jetzt selbst mitgebracht. Seine Vorstellung vom Einstieg: „Wir gehen unsere Sichtweisen durch, dann ergibt sich was." Andis Vorschlag stattdessen: nicht direkt beim Feedback-Thema starten, sondern von konkreten Einzelthemen hochhangeln zu Strängen/Bereichen und Zielen.
+
+**Ergebnis -- die Miro-Map (3 Ebenen, bottom-up):**
+
+*Ebene 1 -- konkrete Themen (Rohsammlung, grün):*
+- Wir kennen den Workflow der Mitarbeitenden kaum
+- Workflow der MA in der Software abbilden
+- Entwicklung weg von isolierten Features
+- „In 5 Jahren deutlich weniger MA" (Voigt)
+- KI -- aber wie?
+- Keine KI à la ClickUp
+- Was kann man sinnvoll mit KI machen?
+- Es fehlt eine Übersichtskarte, was alles zu „KI" gehört -- abseits technischer Details
+- Zielgerichtete und umsichtige Kommunikation mit dem GF (um was geht's wirklich?)
+- Wie rechtfertigen wir strategische, kommunikative Arbeit?
+- Wunsch nach Feedback
+- Wir brauchen Einsicht in die Arbeitsweisen, nicht nur klassisches Feedback
+- Kontakte (für Paula)
+
+*Ebene 2 -- Bereiche/Stränge (die „blauen Bereiche", 4 Stück):*
+1. Zielgerichteter und fokussierter Ressourcen-Einsatz
+2. Aufklärungsarbeit in der Kanzlei bzgl. KI
+3. KI muss echten Mehrwert für die Mitarbeitenden haben
+4. Herausfinden der realen, hinterliegenden Kundenwünsche (um was geht's wirklich)
+
+*Ebene 3 -- übergeordnetes Ziel („Wo wollen wir hin?"):*
+- Noch offen. Bis dahin sind sie heute nicht wirklich gekommen -- ein erster Gedanke notiert: „Guten Gewissens höhere Rechnungen stellen." Die Ziel-Ebene ist Thema fürs nächste Mal.
+
+**Henriks Selbsteinsicht (mündlich vs. schriftlich):** Henrik hat für sich geklärt, warum er rein mündliche Meetings bevorzugt -- Mitschreiben lenkt ihn ab, verursacht Pausen, ist für ihn anstrengend; mündlich kann er weg vom PC, auch mal rumlaufen. Sein Arbeitstag ist stark durchgetaktet; sobald jemand zum Nachdenken pausiert, will er parallel etwas anderes erledigen („kommt zum Punkt, wir haben keine Zeit"). Trotzdem hat er am Ende bewusst sein volles OK zum sichtbaren Zustand in Miro gegeben (statt es rein mündlich zu lassen).
+
+**Henriks Fazit zum Workshop:**
+- Hat sich gelohnt, die Methode auszuprobieren -- half, die vielen Einzelthemen zu sortieren und zu wissen, was gerade dazugehört und was nicht, ohne sich in Details zu verlieren.
+- Rauszoomen, um zu merken: worum geht's hier gerade wirklich?
+- Sich 2 Stunden Zeit zu nehmen ist für so etwas wirklich wichtig.
+- Die „blauen Bereiche" (Stränge) sind echter Mehrwert -- am Anfang wären sie nicht so klar und präzise formulierbar gewesen.
+- Neues Framing: für Henrik ist das kein „Meeting" mehr, sondern hat „Workshop-Charakter".
+
+**Weiterführende Frage (von Henrik):** Wie kommen wir von den größeren Themen nun ins Handeln und in die Realität? -- der Aufhänger fürs nächste Mal.

@@ -37,5 +37,10 @@ Konkrete Wochenschritte -- akkumulativ, erledigte Steps werden abgehakt.
 ## Aus Henrik-Gespräch (2026-06-02)
 
 - [ ] **Wissenstransfer-Probelauf (erster echter Fall):** Henrik delegiert die Leerlauf-Bindungsfrage an Paula. Vorgehen: Gespräch mit Paula → Todo-Liste → Checkup nach 1-2 Wochen, ob es gut geklappt hat. Fertig wenn: delegiert + Checkup terminiert.
-- [ ] Feedback-Ursprung klären: woher kam das Feedback-Thema (Paula? strategisches Meeting)? Fertig wenn: Ursprung benannt.
-- [ ] **Andi:** Visualisierung der Top-Level-Themen + Feedback-Ursprung erstellen (Vorbereitung „strategische Top-Level-Sicht" fürs nächste Gespräch).
+- [~] Feedback-Ursprung klären: woher kam das Feedback-Thema (Paula? strategisches Meeting)? Teilweise: im Workshop 04.06. hat Henrik die Verbindung zum KI-/Use-Case-Strang selbst hergestellt; der konkrete Quell-Anlass wurde nicht eigens benannt.
+- [x] **Andi:** Top-Level-Sicht erstellen -- erledigt als Workshop 04.06.: leeres Gerüst + Leitfragen statt fertiger Visualisierung, Henrik füllte überwiegend selbst.
+
+## Aus Workshop (2026-06-04)
+
+- [ ] **Nächste Session -- Ziel-Ebene + Brücke ins Handeln:** (a) die offene Ziel-Ebene erarbeiten („wo wollen wir hin?", Ausgangspunkt Henriks Gedanke „guten Gewissens höhere Rechnungen stellen"). (b) Pro Strang (4 „blaue Bereiche") einen kleinsten realen nächsten Schritt -- Henrik baut die Brücke selbst, nicht Andi. Fertig wenn: Ziel-Ebene steht + je Strang ein nächster Schritt benannt.
+- [ ] Miro-Map-Inhalte sichern: die 4 Stränge + Zuordnung der Einzelthemen als Substanz festhalten. Fertig wenn: nachgetragen (Henrik-sichtbar).
