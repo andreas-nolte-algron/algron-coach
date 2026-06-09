@@ -44,3 +44,12 @@ Konkrete Wochenschritte -- akkumulativ, erledigte Steps werden abgehakt.
 
 - [ ] **Nächste Session -- Ziel-Ebene + Brücke ins Handeln:** (a) die offene Ziel-Ebene erarbeiten („wo wollen wir hin?", Ausgangspunkt Henriks Gedanke „guten Gewissens höhere Rechnungen stellen"). (b) Pro Strang (4 „blaue Bereiche") einen kleinsten realen nächsten Schritt -- Henrik baut die Brücke selbst, nicht Andi. Fertig wenn: Ziel-Ebene steht + je Strang ein nächster Schritt benannt.
 - [ ] Miro-Map-Inhalte sichern: die 4 Stränge + Zuordnung der Einzelthemen als Substanz festhalten. Fertig wenn: nachgetragen (Henrik-sichtbar).
+
+## Aus Session (2026-06-09)
+
+- [x] Workshop-Rekapitulation durchgeführt (09.06.).
+- [ ] **Henriks Commitment-Rückmeldung** zur zielgerichteten GF-Kommunikation abwarten (Folgetag, schriftlich) und nachhalten. Fertig wenn: Rückmeldung da.
+- [ ] **GF-Kanal beschreiben lassen:** Henrik beschreibt, wie die Kommunikation mit dem GF konkret läuft (Frequenz, Formate, was geht/was nicht). Fertig wenn: beschrieben.
+- [ ] **Falls Commitment kommt -- GF-Vorstoß vorbereiten:** Rollenspiele (Henrik beschreibt den GF, Andi spielt ihn), gemeinsam ein Meeting/eine Termin-Anfrage planen. Erster Schritt bewusst klein. Fertig wenn: erster kleiner Schritt definiert.
+- [ ] **Paula-Delegation (Leerlauf-Frage) klären:** Wer setzt es mit Paula um -- Henrik oder Andi? Und Evaluation terminieren. Fertig wenn: geklärt + Termin steht.
+- [ ] Fürs nächste Mal: Wie übertragen wir das WAS/WIE-Denken auf andere Themen / auf Algron als Ganzes?

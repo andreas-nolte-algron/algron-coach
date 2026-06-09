@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nächste Session — leicht fahren</title>
+<style>
+  :root {
+    --bg: #f7f5f1; --card: #ffffff; --ink: #23211d; --ink-soft: #5c574e; --line: #e3ded5;
+    --accent: #3a5a6c;
+    --green: #3f7d52; --green-bg: #eef6f0; --green-line: #cfe6d6;
+    --amber: #9a6a16; --amber-bg: #faf3e4; --amber-line: #ecdcb8;
+    --blue-bg: #eef2f6; --blue-line: #d3deea;
+    --gold: #b8893f; --gold-bg: #f7eccf; --gold-line: #e7cf9b;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; font-size: 17px; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 24px 96px; }
+
+  .kicker { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 6px 0 10px; font-weight: 760; letter-spacing: -.01em; }
+  .meta { font-size: 13.5px; color: var(--ink-soft); border-left: 3px solid var(--line); padding-left: 12px; }
+  .meta a { color: var(--accent); }
+
+  section { margin-top: 34px; }
+  h2 { font-size: 13px; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-soft); font-weight: 700; margin: 0 0 12px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  h2 .num { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50%; background: var(--accent); color: #fff; font-size: 12px; font-weight: 700; }
+  .badge { font-size: 11px; letter-spacing: .04em; text-transform: uppercase; font-weight: 700; padding: 2px 9px; border-radius: 999px; white-space: nowrap; }
+  .badge.henrik { background: var(--green-bg); color: var(--green); border: 1px solid var(--green-line); }
+  .badge.andi { background: var(--amber-bg); color: var(--amber); border: 1px solid var(--amber-line); }
+  .badge.plain { background: #ececec; color: var(--ink-soft); border: 1px solid var(--line); text-transform: none; letter-spacing: 0; }
+
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; }
+  .card p { margin: 0 0 10px; } .card p:last-child { margin-bottom: 0; }
+  .card.henrik { background: var(--green-bg); border-color: var(--green-line); }
+  .card.andi { background: var(--amber-bg); border-color: var(--amber-line); }
+
+  .lead { font-size: 16px; }
+  em.q { font-style: italic; color: var(--accent); font-weight: 600; }
+
+  ol.steps { margin: 0; padding-left: 0; list-style: none; counter-reset: step; }
+  ol.steps li { position: relative; padding: 0 0 14px 40px; counter-increment: step; }
+  ol.steps li:last-child { padding-bottom: 0; }
+  ol.steps li::before { content: counter(step); position: absolute; left: 0; top: 0; width: 26px; height: 26px; border-radius: 50%; background: var(--green); color: #fff; font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+
+  .opt { border-left: 4px solid var(--accent); padding: 4px 0 4px 16px; margin: 0 0 16px; }
+  .opt:last-child { margin-bottom: 0; }
+  .opt .name { font-weight: 700; font-size: 16.5px; }
+  .opt .fr { font-size: 14.5px; color: var(--ink-soft); margin: 4px 0 0; }
+  .opt .fr b { color: var(--ink); font-weight: 600; }
+
+  .anchor { margin-top: 16px; background: var(--gold-bg); border: 1px solid var(--gold-line); border-radius: 10px; padding: 16px 18px; font-size: 15.5px; }
+  .anchor .tag { font-weight: 700; color: var(--gold); display: block; margin-bottom: 4px; font-size: 13px; letter-spacing:.03em; text-transform: uppercase; }
+
+  ul.watch { list-style: none; margin: 0; padding: 0; }
+  ul.watch li { position: relative; padding: 0 0 14px 24px; }
+  ul.watch li:last-child { padding-bottom: 0; }
+  ul.watch li::before { content: "!"; position: absolute; left: 0; top: 1px; width: 17px; height: 17px; border-radius: 4px; background: var(--amber); color: #fff; font-size: 12px; font-weight: 800; display: flex; align-items: center; justify-content: center; }
+  ul.watch b { color: var(--amber); }
+
+  ul.crit { list-style: none; margin: 0; padding: 0; }
+  ul.crit li { position: relative; padding: 0 0 12px 28px; }
+  ul.crit li:last-child { padding-bottom: 0; }
+  ul.crit li::before { content: "✓"; position: absolute; left: 0; top: 0; color: var(--green); font-weight: 800; font-size: 16px; }
+  ul.crit li.no::before { content: "✕"; color: #b3503f; }
+
+  ol.flow { margin: 0; padding-left: 22px; color: var(--ink-soft); font-size: 15px; }
+  ol.flow li { padding: 2px 0; }
+
+  @media print { body { background: #fff; font-size: 12pt; } .card, .anchor { break-inside: avoid; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="kicker">Nächste Session · Vorbereitung</div>
+    <h1>Leicht fahren — Angebot &amp; Orientierung, kein Programm</h1>
+    <p class="meta">
+      <strong>Andi-only</strong> (strategy/). Vorbereitungs-Leitfaden mit taktischer Schicht.<br>
+      Nur der grüne Block <strong>Einstieg</strong> geht zu Henrik (→ Notion). Alles andere bleibt hier.<br>
+      Bezugsdokument: <a href="../progress/strategie-landkarte.html">progress/strategie-landkarte.html</a> (für die 2-Min-Verortung offen haben).<br>
+      Geplant: 2026-06-09 · <strong>Format: normale Coaching-Stunde, kein Workshop.</strong>
+    </p>
+  </header>
+
+  <section>
+    <h2><span class="num">1</span> Ausgangslage</h2>
+    <div class="card">
+      <p class="lead">Heute ist <strong>kein Workshop-Framing</strong> — eine normale, lockere Coaching-Stunde. Das ist Entlastung, kein Schlamassel.</p>
+      <p>Die <strong>Spitze der Pyramide (Ziel) erarbeiten wir heute NICHT.</strong> Das ist Workshop-Arbeit, hohe Intensität — Henrik hat selbst gesagt, dafür lohnt es sich, „sich zwei Stunden zu nehmen". In eine leichte Stunde gepresst, triggert es seinen „kommt zum Punkt, keine Zeit"-Reflex und gefährdet die schöne Bewegung vom Workshop. Spitze kommt im nächsten echten Workshop.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">2</span> Was Henrik mitbringt</h2>
+    <div class="card">
+      <p>Möglicherweise seine Workshop-Frage (ins Handeln), möglicherweise etwas ganz Aktuelles. <strong>Offen lassen.</strong> Bei einer lockeren Stunde ist der Modus <em class="q">„was ist gerade bei dir dran?"</em> — nicht „wir arbeiten Punkt X ab".</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">3</span> Was heute dran sein könnte <span class="badge plain">Angebot, nichts erzwingen</span></h2>
+    <div class="card">
+      <p style="margin-top:0">Leichte, laufende Fäden, die trotzdem auf die Stränge einzahlen — als Auswahl, die <em>Henrik</em> trifft:</p>
+
+      <div class="opt">
+        <div class="name">Workshop gemeinsam rekapitulieren</div>
+        <p class="fr"><b>Henrik zuerst aus dem Gedächtnis:</b> „Was ist bei dir vom Workshop hängengeblieben? Was waren die Stränge?" — DANN die Landkarte daneben legen und abgleichen. <b>Die Lücke zwischen Erinnerung und Notiz ist der Lernmoment</b> — er erlebt selbst den Wert des Festhaltens (genau sein wunder Punkt: schaut nie in Aufzeichnungen). Nicht weiterbauen, nur wieder ins Bewusstsein holen.</p>
+      </div>
+      <div class="opt">
+        <div class="name">Paula-Probelauf (erster Delegations-Fall)</div>
+        <p class="fr">Hat er die Leerlauf-Frage an Paula delegiert? Wie lief der Checkup? <b>Konkret, leicht — und der erste echte Delegations-Fall (Typ 2).</b></p>
+      </div>
+      <div class="opt">
+        <div class="name">NL-Infos klären</div>
+        <p class="fr">Dortmund (Hauptsitz), 40–50 Einträge — welche sind relevant, hat jeder einen Account? Operativ, niedrigschwellig.</p>
+      </div>
+      <div class="opt">
+        <div class="name">Was ihn gerade umtreibt</div>
+        <p class="fr">Offen für alles Aktuelle. Kommt er von selbst auf die großen Themen → <b>wertvoll, folgen</b>. Kommt er mit was anderem → dann ist das gerade wichtiger.</p>
+      </div>
+
+      <div class="anchor">
+        <span class="tag">Der eine Anker, den du NICHT weglässt</span>
+        Eine kurze <strong>2-Min-Verortung an der Landkarte</strong> — „hier stehen wir, das hängt damit zusammen". Das ist nicht Höflichkeit gegenüber der Workshop-Arbeit, sondern der <strong>Anti-Tunnel-Anker</strong>: Paula und NL sind beide operativ/Typ-2 — eine ganze Stunde nur darin zieht Henrik zurück in den Alltags-Tunnel (seine Schwäche: Zusammenhänge verlieren). Die Verortung ist die Mini-Dosis Haltungsarbeit, die auch leicht reinpasst. Nur zeigen, nicht bearbeiten.
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">4</span> Einstieg <span class="badge henrik">→ Notion · Henrik sieht das</span></h2>
+    <div class="card henrik">
+      <ol class="steps">
+        <li><strong>Offen aufmachen:</strong> „Was ist gerade bei dir dran?" — kein Agenda-Aufschlag.</li>
+        <li><strong>Rekapitulieren anbieten:</strong> „Wollen wir kurz nochmal auf den Workshop schauen — was ist hängengeblieben, gab es noch Fragen?" Erst Henrik aus dem Gedächtnis, dann die Landkarte daneben legen und abgleichen. Die Spitze (Ziel) lassen wir bewusst offen — Stoff für einen nächsten Workshop. Faden halten, nicht weiterbauen.</li>
+        <li><strong>Offen anbieten:</strong> „Was davon — oder was ganz anderes — ist heute dran? Wie lief der Paula-Probelauf? Die NL-Sache?"</li>
+        <li><strong>Nichts erzwingen:</strong> Geht Henrik zu den großen Themen → folgen. Kommt er mit was Aktuellem → auch gut.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">5</span> Wachsamkeiten <span class="badge andi">Andi-only</span></h2>
+    <div class="card andi">
+      <ul class="watch">
+        <li><b>Leicht fahren — heute nichts erzwingen.</b> Kein Output-Druck. Die Spitze ist nicht heute dran.</li>
+        <li><b>Die Verortung nicht weglassen</b> (siehe Anker oben) — sonst zerfällt die leichte Stunde in reinen Alltag.</li>
+        <li><b>Beim Rekapitulieren: Henrik abrufen lassen, nicht du erzählen.</b> Sonst ist er wieder Empfänger und die Lektion (Wert des Festhaltens) ist weg.</li>
+        <li><b>Dein Vermeidungsmuster:</b> auch „leicht" verführt zum Liefern/Lösen operativer Fäden. Henrik bleibt am Stift, du fragst.</li>
+        <li><b>Typ-1-Delegation nicht forcieren.</b> Falls von selbst aufkommt (Zeit fehlt → Code) — „woran liegt's?" und ihn selbst draufstoßen lassen.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">6</span> Woran ich erkenne, dass es lief <span class="badge plain">heute: Beobachtung, kein Output</span></h2>
+    <div class="card">
+      <ul class="crit">
+        <li><strong>Datenpunkt:</strong> Wohin läuft Henriks Energie von selbst, wenn nichts erzwungen wird? Große Themen oder Aktuelles — beides ist wertvoll zu wissen.</li>
+        <li>Die <strong>Verortung</strong> hat den Faden gehalten — Henrik hat den Zusammenhang zur Landkarte kurz gesehen.</li>
+        <li class="no"><strong>Kein</strong> Kriterium heute: „Ziel formuliert" / „Plan abgearbeitet". Das ist Workshop-Stoff.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">7</span> Nach der Session <span class="badge andi">Einpflege-Schritt</span></h2>
+    <div class="card">
+      <ol class="flow">
+        <li>Dieses Dokument → Eintrag oben in <strong>session-log</strong> (mit Feedback: wie lief's, wohin lief Henriks Energie).</li>
+        <li><strong>strategie-landkarte.html</strong> updaten, falls sich was bewegt hat.</li>
+        <li><strong>action-plan</strong> updaten (neu offen / abgehakt).</li>
+        <li>Taktischer Read → <strong>strategy/henrik-strategie.md</strong>. Neues <strong>next-session</strong> anlegen.</li>
+      </ol>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>

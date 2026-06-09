@@ -164,3 +164,22 @@ Erstes Treffen im neuen Format -- Henrik nennt es selbst „Workshop" statt „M
 - Neues Framing: für Henrik ist das kein „Meeting" mehr, sondern hat „Workshop-Charakter".
 
 **Weiterführende Frage (von Henrik):** Wie kommen wir von den größeren Themen nun ins Handeln und in die Realität? -- der Aufhänger fürs nächste Mal.
+
+## 2026-06-09 -- Weiterarbeit an Ebene 2: Zwei-Welten-Teilung (WAS vs. WIE)
+
+Normale Coaching-Stunde (kein Workshop). Aufhänger: Rekapitulation des Workshops 04.06. + Weiterarbeit an Ebene 2 (den „blauen Bereichen"/Strängen).
+
+**Henriks Erinnerung:** Eine Woche später konnte Henrik aus dem Gedächtnis und ohne aufs Board zu schauen fast alle vier Stränge wieder benennen -- nur bei einem wusste er nicht mehr genau, was es war, aber dass es ihn gab.
+
+**Ebene-2-Durchbruch (von Henrik selbst sortiert):** Beim Hin- und Herschieben der Karten fand Henrik eine Teilung in zwei Welten:
+- *LINKS -- Klassische SE:* GF wenig involviert, MA kümmert sich viel drum. Ein „WIE?"-Thema. Stränge: „Zielgerichteter und fokussierter Ressourcen-Einsatz" + „Alltägliche Feature-Entwicklung" (neu hinzugekommen).
+- *RECHTS -- KI-Entwicklung:* GF stark involviert. Ein „WAS?" UND „WIE?"-Thema. Stränge: „Herausfinden der realen, hinterliegenden Wünsche des GF", „Aufklärungsarbeit in der Kanzlei bzgl. KI", „KI muss echten Mehrwert für die Mitarbeitenden haben".
+- *Kern-Unterscheidung (von Henrik):* KI ist ein **WAS?**-Thema (was will man überhaupt?), nicht nur WIE -- anders als klassische SE, wo das WAS klar ist und es nur ums WIE geht.
+
+**Erkenntnis des Tages:** Die zielgerichtete Kommunikation mit dem GF ist dringend und notwendig, gerade weil KI ein WAS-Thema ist -- bei klassischer SE kennt Henrik die GF-Wünsche gut, das Problem ist KI-spezifisch. Bisherige KI-Versuche, an die hinterliegenden Wünsche des GF zu kommen, scheiterten, weil sie nie zielgerichtet darauf ausgelegt waren. Beispiel (Board-Notiz „Bisher versucht"): Bearbeitung eines konkreten GF-Auftrags (Chatbot) → wurde allgemein („KI leistet bessere/schnellere Ergebnisse als viele MA") → führte zu „???". Also: war gar nicht zielgerichtet, die echten Wünsche herauszufinden.
+
+**Henriks Entscheidung steht aus:** Er darf sich überlegen, ob er sich auf diesen Punkt (zielgerichtete GF-Kommunikation) committet -- das erfordert Umdenken, die bisherige sporadische Kommunikation reicht nicht. Mögliche zu lernende Skills: Kommunikation & Gesprächsführung, KI-Einsatz, strategische Beratung. Henrik will eine Nacht drüber schlafen und sich am Folgetag schriftlich melden.
+
+**Methoden-Entscheidung:** Bewusst NICHT vorschnell zu konkreten Ableitungen springen -- erst Ebene 2 weiter sortieren (sonst Voreingenommenheit für die abstrakte Ebene / zu viele „ABERs").
+
+**Raus mit:** Henrik überrascht über das konkrete, direkte Ergebnis. Fürs nächste Mal die Frage: Wie übertragen wir dieses WAS/WIE-Denken auf andere Themen / auf Algron als Ganzes?

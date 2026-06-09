@@ -124,3 +124,27 @@ Beste Haltungs-Bewegung im ganzen Strang bisher. Aber im Hoch nicht überbuchen 
 - Wie konkret ist Voigt gerade? Was sucht der GF: Use-Case-Findung, Umsetzung oder Sounding?
 - Henrik-Gespräch 29.05.: ✓ stattgefunden (Nachmittag), Ergebnis oben unter „Henrik-Gespräch 29.05. -- taktische Lesart". Drehte sich nicht um die 4-Fragen-Entflechtung, sondern um Feedback-Plan + Wissenstransfer-Übereinkunft.
 - **Frage 5 (Andis eigentliches Ziel mit Henrik):** noch offen, jetzt mit Meeting-Material angehen. Material: der Wissenstransfer-Hebel + die Diagnose (a) zeigen eine mögliche Ziel-Formulierung -- Henrik vom Aufgaben-Abgeben zum Wissen-Externalisieren bringen, damit Delegation überhaupt trägt.
+
+## Coaching-Session 09.06. -- taktische Lesart
+
+**Methodischer Höhepunkt des Strangs.** Die ganze Ebene-2-Struktur (Zwei-Welten-Teilung, WAS/WIE, GF-Wünsche als Schlüssel) kam von Henrik. Kein „aus Zeitgründen"-Sternchen wie beim Workshop 04.06. -- Henrik generierte diesmal selbst, Andi hielt nur den Raum und spiegelte an einer Stelle scharf.
+
+**Erlaubnis-Raum funktionierte.** Andis „es gibt kein Falsch, beweg sie einfach" löste Henriks anfängliche Strang-1-Blockade („ich weiß nicht, ob ich das richtig mache") auf. Genau die Erlaubnis-Räume, die als Konsequenz aus dem Mitschreib-Bauchschmerz (04.06.) gefordert waren.
+
+**Das Reframe („es war nie ein Versuch") = wertvollste Intervention.** Henrik bearbeitete die KI-Welt (WAS -- Wünsche herausfinden) mit der Methode der klassischen Welt (WIE -- Auftrag umsetzen). Kategorienverwechslung. Andi spiegelte: der Chatbot war nicht der Versuch, die echten Wünsche zu finden, sondern der Versuch, die oberflächlichen GF-Wünsche umzusetzen -- wie auf der linken (klassischen) Seite. Befreiend formuliert (der echte Versuch steht noch offen), nicht anklagend.
+
+**Strang-4-Auflösung.** „Herausfinden der hinterliegenden Wünsche" war im Workshop geparkt („Position offen -- vielleicht übergeordnet?"). Auflösung: NICHT über allem übergeordnet, sondern der Schlüssel der KI-Welt -- bei KI ist das WAS selbst unklar, und nur der GF kann es klären.
+
+**„KI ist ein WAS-Thema" = Andis Positionierungs-Kern in Henriks eigenen Worten** („nicht jeder Prozess wird mit KI besser -- erst die Unterscheidung treffen"). Andock-Punkt, kein Überzeugungsbedarf.
+
+**GF-Kommunikation: vom blinden Fleck zur selbst erkannten Dringlichkeit -- in einer Session.** Beim Workshop war „zielgerichtete Kommunikation mit dem GF" die EINZIGE Karte, die nicht von Henrik kam (sein blinder Fleck aus 8-10 Jahren GF-Routine). Heute erkennt Henrik selbst die Dringlichkeit. Stärkste Bewegung im Strang.
+
+**Rechtfertigungs-Sorge fast aufgelöst.** Henriks Sorge („ist strategische/kommunikative GF-Arbeit es wert / gegenüber dem GF zu rechtfertigen?") heute fast gefallen -- über das Argument „es ist DER Blocker dafür, mit der Kanzlei bei KI überhaupt weiterzukommen" (intrinsisch begründet), nicht über den früher notierten Geld-Hebel. Messpunkt offen: Henriks schriftliches Commitment am Folgetag.
+
+**Henriks Erinnerungsleistung = Verankerung, nicht Glow.** Eine Woche später fast die ganze Workshop-Struktur aus dem Kopf -- konkretes Nach-Verhalten, das die durchgehende „nicht überbuchen / Zustimmung ≠ Verhalten danach"-Vorsicht diesmal positiv auflöst. Validiert zugleich die Rekapitulations-Methode (aus dem Gedächtnis abrufen lassen).
+
+**GF-Kommunikations-Realität (Andis VORLÄUFIGES Verständnis, von Henrik noch zu bestätigen).** Henrik = einziger Kanal, und der ist oft sehr klein. GF ruft alle paar Wochen an (nicht mal alle 2-3 Wochen), ~30 Min, kommt mit einem konkreten Punkt rein; dazu gelegentlich E-Mails. Henrik hat NIE ein strategisches oder eigen-initiiertes Gespräch mit dem GF geführt -- fast immer rein reaktiv. → Der geplante Vorstoß ist komplettes Neuland, ein großer Sprung. (Noch zu bestätigen: Henrik beschreibt den Kanal selbst -- siehe action-plan. Erst der bestätigte Stand wandert später in bestandsaufnahme.md.)
+
+**GF-Wachsamkeit (Andi-Selbstwachsamkeit).** Beim GF-Thema droht Andi, die Arbeit zu übernehmen -- Gesprächsführung ist sein Können UND sein Vermeidungsmuster (Flucht ins erfüllende Tun), und der GF-Kanal ist das Nadelöhr (Strang 2), wo keine Andi-Abhängigkeit entstehen darf (Andi geht Jahresende). Es MUSS eine Mischung sein (Andi gibt Methode/Ideen rein, weil Henrik null Erfahrung hat), aber mit klarer Arbeitsteilung: Andi = Methoden-Handwerk + Sparring (spielt den GF im Rollenspiel). Henrik = Wissen über den GF (beschreibt ihn) + Framing (in seiner Beziehung/Sprache) + die Reps + das echte Gespräch. **Falltest: Wessen Framing steht am Ende vor dem GF? Henriks.** Rampe bauen (ok) vs. Krücke werden (nicht ok). Erster GF-Schritt KLEIN halten, sonst Strang-1-Blockade (z.B. nur die Termin-Anfrage in leicht neuem Rahmen).
+
+**Paula-Delegation (Leerlauf-Frage) -- Klärung offen.** Gespeichert als „Henrik delegiert an Paula" (02.06.), aber Andi war unsicher, ob Henrik es evtl. an Andi abgegeben hat (mögliche Verwechslung mit dem NL-Speicherform-Strang, der immer Andis war). In der Session nur als offene Frage gestreift, nicht final geklärt. Strategischer Punkt: Falls Henrik an Andi statt an Paula delegiert, ist es KEIN Nadelöhr-Test, sondern ein Risiko (Abhängigkeit von Andi). Beim Klären beachten.

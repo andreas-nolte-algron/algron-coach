@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Strategische Landkarte — Skadi + KI</title>
+<style>
+  :root {
+    --bg: #f7f5f1; --ink: #23211d; --ink-soft: #5c574e; --line: #e3ded5;
+    --blue: #3a5a6c;
+    --gold: #b8893f; --gold-bg: #f9efd4; --gold-line: #e7cf9b;
+    --bl: #2f5d77; --bl-bg: #d9eaf3; --bl-line: #aecde0;
+    --gr: #3f7d52; --gr-bg: #e4f3e7; --gr-line: #bfe0c6;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.4; font-size: 15px;
+  }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 28px 20px 90px; }
+
+  .topbar { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 8px; }
+  .kicker { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--blue); font-weight: 700; }
+  h1 { font-size: 25px; line-height: 1.2; margin: 5px 0 8px; font-weight: 760; letter-spacing: -.01em; }
+  .meta { font-size: 13px; color: var(--ink-soft); border-left: 3px solid var(--line); padding-left: 11px; max-width: 720px; }
+  .actions { display: flex; gap: 8px; align-items: center; }
+  .btn {
+    font: inherit; font-size: 13.5px; font-weight: 600; cursor: pointer;
+    border: 1px solid var(--blue); background: var(--blue); color: #fff;
+    padding: 8px 15px; border-radius: 8px;
+  }
+  .btn.ghost { background: #fff; color: var(--blue); }
+  .btn:active { transform: translateY(1px); }
+  .saved { font-size: 12.5px; color: var(--gr); font-weight: 600; opacity: 0; transition: opacity .2s; }
+  .saved.show { opacity: 1; }
+
+  .band { margin-top: 14px; }
+  .band-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 6px; flex-wrap: wrap; }
+  .band-title { font-size: 12px; letter-spacing: .06em; text-transform: uppercase; font-weight: 700; color: var(--ink-soft); display: flex; align-items: center; gap: 8px; }
+  .lvl-num { display: inline-flex; align-items: center; justify-content: center; width: 19px; height: 19px; border-radius: 50%; color: #fff; font-size: 11px; font-weight: 700; }
+  .gold .lvl-num { background: var(--gold); } .blue .lvl-num { background: var(--bl); } .green .lvl-num { background: var(--gr); }
+  .band-lead { font-size: 13px; color: var(--ink-soft); font-style: italic; flex: 1 1 280px; }
+  .add { font: inherit; font-size: 12.5px; font-weight: 600; cursor: pointer; border: 1px dashed var(--ink-soft); background: transparent; color: var(--ink-soft); padding: 3px 11px; border-radius: 7px; }
+  .add:hover { border-style: solid; }
+
+  .cards { position: relative; border: 1px solid var(--line); border-radius: 12px; background: rgba(255,255,255,.4); }
+
+  .card {
+    position: absolute; border-radius: 9px; padding: 11px 26px 11px 13px;
+    font-size: 13.5px; line-height: 1.34; cursor: grab;
+    box-shadow: 0 1px 3px rgba(0,0,0,.07); user-select: none; touch-action: none;
+  }
+  .card.dragging { cursor: grabbing; box-shadow: 0 6px 16px rgba(0,0,0,.16); z-index: 50; }
+  .card.editing { cursor: text; box-shadow: 0 0 0 2px var(--blue); }
+  .card.editing, .card.editing .txt { user-select: text; -webkit-user-select: text; cursor: text; }
+  .gold .card { background: var(--gold-bg); border: 1px solid var(--gold-line); }
+  .blue .card { background: var(--bl-bg); border: 1px solid var(--bl-line); }
+  .green .card { background: var(--gr-bg); border: 1px solid var(--gr-line); }
+  .card.empty { background: #fffdf5; border: 2px dashed var(--gold-line); display: flex; align-items: center; justify-content: center; text-align: center; font-weight: 600; }
+  .card.note { font-size: 12.5px; }
+  .card.parked { border-style: dashed; border-width: 2px; }
+  .card.parked .ptag { display:block; font-size: 11px; color: var(--gold); font-weight:700; margin-top:6px; text-transform: uppercase; letter-spacing:.03em; }
+
+  .card .txt { outline: none; min-height: 1em; }
+  .card .txt:empty::before { content: attr(data-ph); color: var(--ink-soft); font-style: italic; font-weight: 400; }
+  .card .del {
+    position: absolute; top: 4px; right: 5px; width: 17px; height: 17px; border: none; background: transparent;
+    color: var(--ink-soft); font-size: 15px; line-height: 1; cursor: pointer; border-radius: 4px; opacity: .5;
+  }
+  .card .del:hover { opacity: 1; background: rgba(0,0,0,.07); }
+
+  .bridge { display: flex; flex-direction: column; align-items: center; padding: 12px 0 4px; color: var(--ink-soft); }
+  .bridge .arrows { font-size: 15px; letter-spacing: 6px; color: #b9b1a3; }
+  .bridge .q { font-size: 13.5px; font-style: italic; text-align: center; margin-top: 4px; max-width: 460px; }
+
+  .hint { font-size: 12px; color: var(--ink-soft); margin-top: 6px; }
+  footer.doc { margin-top: 30px; font-size: 12.5px; color: var(--ink-soft); border-top: 1px solid var(--line); padding-top: 14px; }
+  footer.doc p { margin: 3px 0; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <div>
+      <div class="kicker">Strategische Landkarte · Skadi + KI</div>
+      <h1>Wo wollen wir hin — und was hängt daran?</h1>
+      <p class="meta">
+        Gemeinsam erarbeitet im Workshop 04.06.2026 (Henrik &amp; Andi), bottom-up von Einzelthemen zu Strängen.
+        <strong>Ground Truth</strong> — gilt über Monate, wird laufend weiterentwickelt.<br>
+        <span class="hint">Karten ziehen zum Verschieben · Doppelklick zum Bearbeiten · „+ Karte" pro Ebene · „×" zum Löschen · <strong>Export</strong> sichert den Stand als Datei.</span>
+      </p>
+    </div>
+    <div class="actions">
+      <span class="saved" id="saved">exportiert ✓</span>
+      <button class="btn" id="export">⬇ Export</button>
+    </div>
+  </div>
+
+  <div id="board"></div>
+
+  <footer class="doc">
+    <p>Nummerierung von oben: <strong>1 = Ziel (Spitze)</strong>, 2 = Stränge, 3 = Einzelthemen (Basis). Pfeile zeigen die Erarbeitungs-Richtung (von unten aggregiert).</p>
+    <p>Offene Punkte: Ziel-Ebene formulieren (Feld noch leer) · Position von Strang 4 klären.</p>
+  </footer>
+</div>
+
+<!-- Zustand: wird beim Export überschrieben, beim Öffnen gelesen -->
+<script id="state" type="application/json">
+{
+  "levels": [
+    {
+      "id": "ziel", "color": "gold",
+      "title": "Ebene 1 — Ziel · Wohin?",
+      "lead": "",
+      "height": 190,
+      "bridgeBelow": "Wenn das alles klappt — wo steht ihr dann? Was ist das Ziel über allem?",
+      "cards": [
+        { "id": "z-empty", "kind": "empty", "text": "", "ph": "Ziel — noch offen", "x": 380, "y": 40, "w": 250 },
+        { "id": "z-note", "kind": "note", "text": "Guten Gewissens höhere Rechnungen stellen", "x": 720, "y": 28, "w": 165 }
+      ]
+    },
+    {
+      "id": "straenge", "color": "blue",
+      "title": "Ebene 2 — Bereiche / Stränge",
+      "lead": "Die großen Bereiche, auf die die Themen einzahlen.",
+      "height": 260,
+      "bridgeBelow": "Für jedes Ding: warum machen wir das? Worauf zahlt es ein?",
+      "cards": [
+        { "id": "s1", "kind": "normal", "text": "Zielgerichteter und fokussierter Ressourcen-Einsatz", "x": 250, "y": 30, "w": 190 },
+        { "id": "s2", "kind": "normal", "text": "Aufklärungsarbeit in der Kanzlei bzgl. KI", "x": 470, "y": 30, "w": 190 },
+        { "id": "s3", "kind": "normal", "text": "KI muss echten Mehrwert für die Mitarbeitenden haben", "x": 690, "y": 30, "w": 190 },
+        { "id": "s4", "kind": "parked", "text": "Herausfinden der realen, hinterliegenden Kundenwünsche (um was geht's wirklich?)", "ptag": "Position offen — gleichwichtig, unter- oder übergeordnet?", "x": 470, "y": 150, "w": 210 }
+      ]
+    },
+    {
+      "id": "themen", "color": "green",
+      "title": "Ebene 3 — Konkrete Themen",
+      "lead": "Was beschäftigt uns konkret rund um Skadi + KI? Alles raus, ungeordnet — eine Karte pro Ding. Welche gehören zusammen?",
+      "height": 430,
+      "cards": [
+        { "id": "t1", "kind": "normal", "text": "Wir kennen den Workflow der Mitarbeitenden kaum", "x": 230, "y": 25, "w": 175 },
+        { "id": "t2", "kind": "normal", "text": "Workflow der MA in der Software abbilden", "x": 230, "y": 120, "w": 175 },
+        { "id": "t3", "kind": "normal", "text": "Entwicklung weg von isolierten Features", "x": 230, "y": 210, "w": 175 },
+        { "id": "t4", "kind": "normal", "text": "„In 5 Jahren deutlich weniger MA\" (Voigt)", "x": 650, "y": 25, "w": 165 },
+        { "id": "t5", "kind": "normal", "text": "KI — aber wie?", "x": 650, "y": 115, "w": 135 },
+        { "id": "t6", "kind": "normal", "text": "Keine KI à la ClickUp", "x": 805, "y": 115, "w": 150 },
+        { "id": "t7", "kind": "normal", "text": "Was kann man sinnvoll mit KI machen?", "x": 650, "y": 195, "w": 165 },
+        { "id": "t8", "kind": "normal", "text": "Es fehlt eine Übersichtskarte: was gehört alles zu „KI\"?", "x": 830, "y": 195, "w": 175 },
+        { "id": "t9", "kind": "normal", "text": "Zielgerichtete, umsichtige Kommunikation mit dem GF (um was geht's wirklich?)", "x": 250, "y": 320, "w": 195 },
+        { "id": "t10", "kind": "normal", "text": "Wunsch nach Feedback", "x": 480, "y": 340, "w": 150 },
+        { "id": "t11", "kind": "normal", "text": "Wir brauchen Einsicht in die Arbeitsweisen, nicht nur klassisches Feedback", "x": 480, "y": 250, "w": 185 },
+        { "id": "t12", "kind": "normal", "text": "Wie rechtfertigen wir strategische, kommunikative Arbeit?", "x": 680, "y": 320, "w": 185 },
+        { "id": "t13", "kind": "normal", "text": "Kontakte (für Paula)", "x": 250, "y": 250, "w": 150 }
+      ]
+    }
+  ]
+}
+</script>
+
+<script>
+(function(){
+  var state = JSON.parse(document.getElementById('state').textContent);
+  var board = document.getElementById('board');
+  var idc = Date.now();
+  function uid(){ return 'c' + (idc++); }
+
+  function render(){
+    board.innerHTML = '';
+    state.levels.forEach(function(lvl){
+      board.appendChild(makeBand(lvl));
+      if (lvl.bridgeBelow) board.appendChild(makeBridge(lvl.bridgeBelow));
+    });
+  }
+
+  function makeBand(lvl){
+    var sec = document.createElement('section');
+    sec.className = 'band ' + lvl.color;
+
+    var head = document.createElement('div');
+    head.className = 'band-head';
+    var title = document.createElement('div');
+    title.className = 'band-title';
+    var num = lvl.id === 'ziel' ? '1' : lvl.id === 'straenge' ? '2' : '3';
+    title.innerHTML = '<span class="lvl-num">' + num + '</span>' + lvl.title;
+    head.appendChild(title);
+    if (lvl.lead) { var lead = document.createElement('div'); lead.className = 'band-lead'; lead.textContent = lvl.lead; head.appendChild(lead); }
+    var add = document.createElement('button');
+    add.className = 'add'; add.textContent = '+ Karte';
+    add.addEventListener('click', function(){
+      var c = { id: uid(), kind: 'normal', text: '', x: 24, y: 18, w: 175 };
+      lvl.cards.push(c);
+      var el = makeCard(c, lvl);
+      cards.appendChild(el);
+      startEdit(el, c);
+    });
+    head.appendChild(add);
+    sec.appendChild(head);
+
+    var cards = document.createElement('div');
+    cards.className = 'cards';
+    cards.style.minHeight = lvl.height + 'px';
+    lvl.cards.forEach(function(c){ cards.appendChild(makeCard(c, lvl)); });
+    sec.appendChild(cards);
+    return sec;
+  }
+
+  function makeBridge(q){
+    var b = document.createElement('div');
+    b.className = 'bridge';
+    b.innerHTML = '<div class="arrows">▲ ▲ ▲ ▲ ▲</div><div class="q">' + escapeHTML(q) + '</div>';
+    return b;
+  }
+
+  function makeCard(c, lvl){
+    var el = document.createElement('div');
+    el.className = 'card ' + (c.kind || 'normal');
+    el.style.left = c.x + 'px'; el.style.top = c.y + 'px';
+    if (c.w) el.style.width = c.w + 'px';
+
+    var del = document.createElement('button');
+    del.className = 'del'; del.textContent = '×'; del.title = 'Karte löschen';
+    del.addEventListener('click', function(e){
+      e.stopPropagation();
+      var i = lvl.cards.indexOf(c);
+      if (i > -1) lvl.cards.splice(i, 1);
+      el.remove();
+    });
+    el.appendChild(del);
+
+    var txt = document.createElement('div');
+    txt.className = 'txt';
+    txt.textContent = c.text || '';
+    if (c.ph) txt.setAttribute('data-ph', c.ph);
+    el.appendChild(txt);
+
+    if (c.kind === 'parked' && c.ptag){
+      var pt = document.createElement('span');
+      pt.className = 'ptag'; pt.textContent = c.ptag;
+      el.appendChild(pt);
+    }
+
+    txt.addEventListener('dblclick', function(){ startEdit(el, c); });
+    makeDraggable(el, c);
+    return el;
+  }
+
+  function startEdit(el, c){
+    el.classList.add('editing');
+    var txt = el.querySelector('.txt');
+    txt.contentEditable = 'true';
+    txt.focus();
+    var range = document.createRange(); range.selectNodeContents(txt);
+    var sel = window.getSelection(); sel.removeAllRanges(); sel.addRange(range);
+    function done(){
+      el.classList.remove('editing');
+      txt.contentEditable = 'false';
+      c.text = txt.textContent.trim();
+      txt.removeEventListener('blur', done);
+    }
+    txt.addEventListener('blur', done);
+  }
+
+  function makeDraggable(el, c){
+    var sx, sy, ox, oy, pid = null, dragging = false;
+    el.addEventListener('pointerdown', function(e){
+      if (el.classList.contains('editing')) return;
+      if (e.target.classList.contains('del')) return;
+      pid = e.pointerId; dragging = false;
+      sx = e.clientX; sy = e.clientY; ox = c.x; oy = c.y;
+    });
+    el.addEventListener('pointermove', function(e){
+      if (pid === null) return;
+      if (!dragging) {
+        if (Math.abs(e.clientX - sx) + Math.abs(e.clientY - sy) < 4) return; // erst ab echter Bewegung draggen
+        dragging = true;
+        try { el.setPointerCapture(pid); } catch(_){}
+        el.classList.add('dragging');
+      }
+      var box = el.parentElement;
+      var nx = ox + (e.clientX - sx);
+      var ny = oy + (e.clientY - sy);
+      nx = Math.max(0, Math.min(nx, box.clientWidth - el.offsetWidth));
+      ny = Math.max(0, Math.min(ny, box.clientHeight - el.offsetHeight));
+      c.x = nx; c.y = ny;
+      el.style.left = nx + 'px'; el.style.top = ny + 'px';
+    });
+    function end(e){
+      if (pid === null) return;
+      pid = null;
+      if (dragging) { dragging = false; el.classList.remove('dragging'); try { el.releasePointerCapture(e.pointerId); } catch(_){} }
+    }
+    el.addEventListener('pointerup', end);
+    el.addEventListener('pointercancel', end);
+  }
+
+  function escapeHTML(s){ var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+
+  document.getElementById('export').addEventListener('click', function(){
+    document.getElementById('state').textContent = '\n' + JSON.stringify(state, null, 2) + '\n';
+    var clone = document.documentElement.cloneNode(true);
+    var b = clone.querySelector('#board'); if (b) b.innerHTML = '';
+    var s = clone.querySelector('#saved'); if (s) s.className = 'saved';
+    var html = '<!DOCTYPE html>\n' + clone.outerHTML;
+    var blob = new Blob([html], { type: 'text/html' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url; a.download = 'strategie-landkarte.html';
+    document.body.appendChild(a); a.click(); a.remove();
+    URL.revokeObjectURL(url);
+    var saved = document.getElementById('saved');
+    saved.classList.add('show'); setTimeout(function(){ saved.classList.remove('show'); }, 1800);
+  });
+
+  render();
+})();
+</script>
+</body>
+</html>
