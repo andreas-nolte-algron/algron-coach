@@ -10,6 +10,8 @@ Leitthema: **KI nutzbar machen für die Kanzlei Voigt** (Hauptkunde). Der GF wei
 
 09.06. **Ebene-2-Durchbruch (Henrik selbst am Stift):** die Stränge teilen sich in zwei Welten -- **Klassische SE** (GF wenig involviert, „WIE?") vs. **KI-Entwicklung** (GF stark involviert, „WAS?" + „WIE?"). Kern: KI ist ein WAS-Thema (was will man überhaupt?), nicht nur WIE. Daraus die Erkenntnis des Tages: **zielgerichtete GF-Kommunikation ist dringend** -- die bisherigen KI-Versuche waren nie auf die echten Wünsche ausgelegt. (KI-spezifisch: bei klassischer SE kennt Henrik die GF-Wünsche gut.) Henrik überlegt schriftlich (Folgetag), ob er sich darauf committet. Stand gepflegt in `progress/strategie-landkarte.html` (Ground Truth).
 
+10.06. (kein Coaching, Werkzeug-/Doku-Pflege): Landkarte Ebene 2 auf die Zwei-Welten-Struktur gebracht + um direkte Bearbeitung erweitert (Kartengröße ziehen, direktes Speichern); `action-plan` auf Status-Achse umgebaut, `session-log` neueste-oben. Details in `context/handovers/`.
+
 Vorlauf: 04.06. Workshop -- Top-Level-Sicht bottom-up zu 4 Strängen, Ziel-Ebene noch offen (nur „guten Gewissens höhere Rechnungen"). 29.05./02.06. Wissenstransfer-Übereinkunft + erster Delegations-Fall (Leerlauf → Paula) + Haltungs-Treffer (Themen-Tunnel). Sessions 1–3: Schleife erkannt (Henrik im Code), Vision da, Brücke zum Heute fehlt.
 
 ## Die vier Fragen (aktueller Arbeitsrahmen)
