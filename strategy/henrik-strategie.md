@@ -148,3 +148,19 @@ Beste Haltungs-Bewegung im ganzen Strang bisher. Aber im Hoch nicht überbuchen 
 **GF-Wachsamkeit (Andi-Selbstwachsamkeit).** Beim GF-Thema droht Andi, die Arbeit zu übernehmen -- Gesprächsführung ist sein Können UND sein Vermeidungsmuster (Flucht ins erfüllende Tun), und der GF-Kanal ist das Nadelöhr (Strang 2), wo keine Andi-Abhängigkeit entstehen darf (Andi geht Jahresende). Es MUSS eine Mischung sein (Andi gibt Methode/Ideen rein, weil Henrik null Erfahrung hat), aber mit klarer Arbeitsteilung: Andi = Methoden-Handwerk + Sparring (spielt den GF im Rollenspiel). Henrik = Wissen über den GF (beschreibt ihn) + Framing (in seiner Beziehung/Sprache) + die Reps + das echte Gespräch. **Falltest: Wessen Framing steht am Ende vor dem GF? Henriks.** Rampe bauen (ok) vs. Krücke werden (nicht ok). Erster GF-Schritt KLEIN halten, sonst Strang-1-Blockade (z.B. nur die Termin-Anfrage in leicht neuem Rahmen).
 
 **Paula-Delegation (Leerlauf-Frage) -- Klärung offen.** Gespeichert als „Henrik delegiert an Paula" (02.06.), aber Andi war unsicher, ob Henrik es evtl. an Andi abgegeben hat (mögliche Verwechslung mit dem NL-Speicherform-Strang, der immer Andis war). In der Session nur als offene Frage gestreift, nicht final geklärt. Strategischer Punkt: Falls Henrik an Andi statt an Paula delegiert, ist es KEIN Nadelöhr-Test, sondern ein Risiko (Abhängigkeit von Andi). Beim Klären beachten.
+
+## Henrik-Beobachtung 10.06. -- Überblick *wollen* ≠ Überblick *herstellen*
+
+Aufgetaucht aus Andis Paula-Gespräch (operativer Strang, s. `context/handovers/paula-sync.md`). Reiner Read über Henrik -- gehört hinter die Firewall, NICHT ins Paula-Handover.
+
+**Beobachtung.** Henrik weiß oft nicht, wer im Team gerade was tut und wo die Dinge stehen, und das frustriert ihn sichtlich -- er baut aber keine Routine, die den Überblick herstellt. Beispiel: Andi fragt, ob Paula sich gemeldet hat → „nö, hat sie nicht, ich gucke mal was passiert." Passiv, kein Mechanismus. Das Team-Modell ist Hol-Schuld („ich melde mich, wenn's fertig ist / wenn's Probleme gibt"), das genau am Knoten versagt, der den Überblick ohnehin nicht hält (Henrik = Nadelöhr / Überblicks-Verlierer -- Kernthese des Strangs).
+
+**Der Read.** „Will wissen" und „will tun" sind zwei Welten. Henrik zieht sich (legitim) aus dem Operativen zurück -- verliert dabei aber auch das Informiert-Sein, obwohl er das *will*. Das ist die Externalisierungs-/Routine-Lücke an einer neuen Stelle: nicht Wissen RAUS aus Henrik, sondern Status REIN zu Henrik.
+
+**Anti-Projektion (Pflicht-Demut).** Dünne Evidenz (1-2 Datenpunkte). Gegenlesart ernst nehmen: „ich gucke mal" kann Vertrauen / revealed preference sein („brauch ich nicht, kommt hoch wenn relevant"). Unbequemer Test: Wer etwas wirklich braucht, baut sich eine Minimal-Version -- Henrik ist frustriert UND baut keine. Vielleicht ist es ihm weniger wichtig, als der Frust-Moment suggeriert. Konfidenz entsprechend kalibrieren.
+
+**Andi-Selbstwachsamkeit.** Andi ist high-context, mag Sichtbarkeit. Gefahr: die eigene Vorliebe als „Henrik braucht das" tarnen. Test bestanden NUR, wenn Henrik den Bedarf selbst bejaht.
+
+**Intervention.** NICHT eine Push-Pflicht auf Paula designen (großer Wurf auf dünner Lage = Andis Muster; zudem Paula kennt Andi noch zu wenig). Stattdessen Hypothese beim *Eigentümer* testen: Henrik direkt fragen „würde dir ein kurzer Status -- wer steht wo -- helfen, oder bist du fine?". Bei Ja: Henrik baut (mit Andi) eine schlanke *Pull*-Routine -- zahlt direkt auf den Externalisierungs-/Autonomie-Strang ein (er merkt: will Überblick, stellt ihn nicht her). Bei Nein: war Andi-Projektion, fallen lassen. Henriks Antwort entscheidet, nicht Andis Schluss.
+
+> Firewall-Sauberkeit (Lob, festhalten): Andi hat im Paula-Gespräch den *teilbaren* Grund („ich will nicht, dass sich jemand übergangen fühlt") in den Raum gegeben und den Henrik-Read draußen gelassen. Saubere Trennung im echten Gespräch.

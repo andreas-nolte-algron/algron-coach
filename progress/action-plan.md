@@ -21,7 +21,7 @@ Die narrative Spur jeder Session steht im `session-log.md`.
 ### Delegation / Nadelöhr
 - [ ] **Wissenstransfer-Probelauf (erster echter Fall):** Leerlauf-Bindungsfrage an Paula delegieren. Vorgehen: Gespräch → Todo-Liste → Checkup nach 1–2 Wochen. Fertig wenn: delegiert + Checkup terminiert. `[Delegation]` (02.06.)
 - [ ] **Paula-Delegation klären:** Wer setzt es um -- Henrik oder Andi? + Evaluation terminieren. Fertig wenn: geklärt + Termin steht. `[Delegation]` (09.06.)
-- [ ] Speicherform für die NL-Infos: Paula ansprechen. Fertig wenn: Format mit Paula geklärt. `[Delegation]` (29.05.)
+- [~] Speicherform für die Standort-/Personen-Infos: mit Paula gelöst (Liste + Filter-Lösung, zwei Ebenen Standort⊃Person + Feedback-Typ). Offen nur noch: Arbeitsteilung/laufende Pflege final. `[Delegation]` (29.05., gelöst 10.06.)
 
 ### Compliance / Haftung
 - [ ] **Versand-Szenario Feature A klären** (über Henrik): A Skadi sendet selbst / B Skadi gibt nur aus, Voigt sendet / C On-prem-LLM. Fertig wenn: Ist-Stand bekannt. `[Compliance]` (29.05.)
