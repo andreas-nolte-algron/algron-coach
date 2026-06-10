@@ -1,15 +1,15 @@
 ---
 type: handover
-status: active
+status: done
 actor: maintainer
 created: 2026-05-29
-updated: 2026-05-29
-summary: "algron-coach von Henrik-only-Coach zu Hybrid (Henrik-sichtbar + Andi-only strategy/-Zone) umgebaut, mit Firewall."
+updated: 2026-06-10
+summary: "algron-coach von Henrik-only-Coach zu Hybrid (Henrik-sichtbar + Andi-only strategy/-Zone) umgebaut, mit Firewall. DONE: Struktur + Firewall stehen, strategy-Modus laeuft produktiv (mehrere Andi-Sessions seit 29.05.), 29.05.-Gespraech nachgetragen. Restpunkte ausgelagert."
 next-steps:
-  - "strategy-Modus real testen: eine Andi-Session fahren, Lade-Verhalten + Trennung pruefen"
-  - "Server-Symlink aufs Script pruefen; falls fehlt, per SSH setzen"
-  - "Cross-Team-Cleanup (skadi-doku, algron-strategist) in eigener Session"
-  - "Ergebnis Henrik-Gespraech 29.05. nachtragen (strategy/henrik-strategie.md)"
+  - "ERLEDIGT: strategy-Modus getestet -- laeuft produktiv (Sessions 29.05./02.06./04.06./09.06.)"
+  - "ERLEDIGT: Henrik-Gespraech 29.05. nachgetragen (henrik-strategie.md + session-log)"
+  - "AUSGELAGERT: Cross-Team-Cleanup -> Memory deferred-cross-team-cleanup (eigener Strang)"
+  - "OFFEN (Maintenance, low prio): Server-Symlink aufs Script pruefen -- pro-Maschine, blockiert nichts"
 ---
 
 # Hybrid-Restruktur — Andi-Zone & Firewall

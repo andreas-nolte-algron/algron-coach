@@ -1,16 +1,16 @@
 ---
 type: handover
-status: active
+status: done
 actor: maintainer
 created: 2026-06-09
-updated: 2026-06-09
-summary: "Doku-Reorg: session-log/action-plan überschneiden sich (gleiche Zeit-Achse). Struktur auf drei getrennte Achsen + Firewall-Split umbauen. Diagnose steht, Design-Entscheidungen offen."
+updated: 2026-06-10
+summary: "Doku-Reorg KOMPLETT (10.06.): action-plan auf Status-Achse, session-log neueste-oben, Firewall = ganze Doks pro Ebene + Leak-Check, Landkarte-HTML Ebene 2 auf Zwei-Welten. Offen nur noch Andis Browser-Sichtprüfung der Landkarte (Pixel-Feintuning per Drag)."
 next-steps:
-  - "Offene Design-Entscheidungen mit Andi klären (Firewall-Split, action-plan-Achse) -- braucht Sparring, kein reiner Umsetzungs-Job"
-  - "action-plan von Herkunfts-Session auf Zustand/Thema umbauen"
-  - "Reihenfolge session-log + action-plan umdrehen (neueste oben)"
-  - "Formatierung glätten (fett/nicht-fett-Mix, v.a. Workshop-04.06.-Block im action-plan)"
-  - "Landkarte-HTML Ebene 2 auf Zwei-Welten-Struktur aktualisieren (separat, siehe offene Punkte)"
+  - "ERLEDIGT (10.06.): Design-Entscheidungen -- action-plan Status-primär mit Themen-Tag; Firewall = ganze Doks pro Ebene + Leak-Check (kein Split pro Dokument)"
+  - "ERLEDIGT (10.06.): action-plan auf Status-Achse umgebaut (Stehende Prinzipien / Offen / In Arbeit / Ruhend / Erledigt), Themen-Tags + Herkunfts-Datum"
+  - "ERLEDIGT (10.06.): session-log auf neueste-oben gedreht; Meta-Labels (firewall-reviewer) kosmetisch geglättet"
+  - "ERLEDIGT (10.06.): Landkarte-HTML Ebene 2 auf Zwei-Welten (worlds-Metadaten, Trennlinie, WAS/WIE-Badges, Schlüssel-Karte s4); JSON + JS validiert"
+  - "REST (Andi): Landkarte einmal im Browser sichten, Karten-Positionen bei Bedarf per Drag justieren + exportieren"
 ---
 
 # Doku-Reorg — progress/ + strategy/ Struktur

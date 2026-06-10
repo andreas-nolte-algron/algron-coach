@@ -1,55 +1,47 @@
 # Action Plan
 
-Konkrete Wochenschritte -- akkumulativ, erledigte Steps werden abgehakt.
+Arbeitsliste -- „was ist jetzt offen?". Gegliedert nach **Status**, nicht nach Herkunfts-Session.
+Der Themen-Tag `[…]` brückt zur `strategie-landkarte.html` (Strang-Sicht); das Datum ist die Herkunft.
+Die narrative Spur jeder Session steht im `session-log.md`.
 
-## Aus Session 1 (2026-03-17)
+## Stehende Prinzipien (kein Task -- gilt dauerhaft)
 
-- [~] Zeiterfassung starten -- zurückgestellt. Tag zu zerstückelt fürs laufende Tracking. Abend-Rekonstruktion als Alternative möglich, aber keine Priorität.
-- [x] Skadi-Wissen identifizieren -- Ergebnis: Ist nicht der Engpass. Henrik wird nur 2-3x/Woche kurz gefragt. Das eigentliche Problem ist das Vier-Augen-Prinzip, nicht fehlendes Wissen.
+- **Wissenstransfer-Schritt bei jeder Projektübergabe.** Fester erster Punkt jeder Initialisierung/Übergabe: „Was muss die übernehmende Person zusätzlich an Kontext wissen, um den Job umsetzen zu können?" -- verschriftlichen, dann bewusst stoppen. `[Delegation]` (seit 29.05.)
 
-## Aus Session 2 (2026-03-20)
+## Offen
 
-- [ ] Kanzlei-Kunde beiläufig fragen: "Kennt ihr andere Kanzleien mit ähnlichen Herausforderungen?" Fertig wenn: Gespräch geführt, egal was rauskommt.
-- [ ] Nachdenken: Gibt es eine übersehene Ressource, Verbindung oder Möglichkeit in Henriks Situation? Fertig wenn: Henrik hat mindestens eine Idee oder bewusst "nein" gesagt.
+### KI-Welt / GF-Kommunikation
+- [ ] **Henriks Commitment-Rückmeldung** zur zielgerichteten GF-Kommunikation abwarten + nachhalten (Folgetag, schriftlich). Fertig wenn: Rückmeldung da. `[KI-Welt]` (09.06.)
+- [ ] **GF-Kanal beschreiben lassen:** wie die Kommunikation mit dem GF konkret läuft (Frequenz, Formate, was geht/was nicht). Fertig wenn: beschrieben. `[KI-Welt]` (09.06.)
+- [ ] **Falls Commitment kommt -- GF-Vorstoß vorbereiten:** Rollenspiele (Henrik beschreibt den GF, Andi spielt ihn), Termin-Anfrage/Meeting planen. Erster Schritt bewusst klein. Fertig wenn: erster kleiner Schritt definiert. `[KI-Welt]` (09.06.)
+- [ ] 1–2 mitwillige Voigt-Leute direkt ansprechen (NL-Leitungen oder bekannte MA) für direkte Mitarbeit. Fertig wenn: 1–2 Leute angesprochen. `[KI-Welt]` (29.05.)
+- [ ] Schlankes Use-Case-Findungs-Vorgehen bauen, sobald Frage A greifbar wird (für den GF-Einsatz). `[KI-Welt]` (29.05.)
+- [ ] WAS/WIE-Denken auf andere Themen / auf Algron als Ganzes übertragen. `[KI-Welt]` (09.06.)
 
-## Aus Strategie-Update (2026-05-29)
+### Delegation / Nadelöhr
+- [ ] **Wissenstransfer-Probelauf (erster echter Fall):** Leerlauf-Bindungsfrage an Paula delegieren. Vorgehen: Gespräch → Todo-Liste → Checkup nach 1–2 Wochen. Fertig wenn: delegiert + Checkup terminiert. `[Delegation]` (02.06.)
+- [ ] **Paula-Delegation klären:** Wer setzt es um -- Henrik oder Andi? + Evaluation terminieren. Fertig wenn: geklärt + Termin steht. `[Delegation]` (09.06.)
+- [ ] Speicherform für die NL-Infos: Paula ansprechen. Fertig wenn: Format mit Paula geklärt. `[Delegation]` (29.05.)
 
-- [ ] Henrik-Gespräch: das KI-Thema für Voigt entflechten (die vier Fragen A–D, Einstieg über Frage A). Fertig wenn: Henriks Antworten auf die vier Fragen festgehalten.
-- [ ] Kandidat erster Schritt: Henrik spricht 1–2 mitwillige Leute bei Voigt direkt an (NL-Leitungen oder bekannte Mitarbeitende) für direkte Mitarbeit. Fertig wenn: 1–2 Leute angesprochen.
-- [ ] Wenn Frage A greifbar wird: schlankes Use-Case-Findungs-Vorgehen bauen, das Henrik beim GF einsetzen kann.
+### Compliance / Haftung
+- [ ] **Versand-Szenario Feature A klären** (über Henrik): A Skadi sendet selbst / B Skadi gibt nur aus, Voigt sendet / C On-prem-LLM. Fertig wenn: Ist-Stand bekannt. `[Compliance]` (29.05.)
+- [ ] Versand-Frage bewusst entscheiden (Empfehlung B) + dokumentieren in `knowledge/skadi-compliance.md`. Nicht als technisches Detail behandeln. `[Compliance]` (29.05.)
+- [ ] Versand-/Haftungs-Block (inkl. Produkthaftung) mit Henrik ansetzen -- getrennt vom A-Gespräch. Fertig wenn: Termin/Block geplant. `[Compliance]` (29.05.)
 
-## Aus Compliance-Sichtung (2026-05-29)
+## In Arbeit / teilweise
 
-- [ ] **Über Henrik klären, welches Versand-Szenario Feature A baut** (A: Skadi sendet selbst / B: Skadi gibt nur aus, Voigt sendet; C: eigenes On-prem-LLM, kein externer Versand). Florian baut Feature A -- Andi hat keinen direkten Team-Draht, läuft über Henrik. Bevor die Haftungs-Weiche implizit durch die Implementierung fällt. Fertig wenn: Ist-Stand bekannt.
-- [ ] Versand-Frage bewusst entscheiden (Empfehlung B) und dokumentieren -- nicht als technisches Detail behandeln. Fertig wenn: Entscheidung in `knowledge/skadi-compliance.md` festgehalten.
-- [ ] Versand-/Haftungs-Thema (inkl. Produkthaftung) als eigenen Block mit Henrik ansetzen -- getrennt vom A-Gespräch (Use-Case-Findung). Fertig wenn: Termin/Block geplant.
+- [~] **NL-Infos sammeln** (Anzahl MA je NL). Endpunkt aufgemacht. Offen: zentrale NL (Dortmund) hat 40-50 Einträge -- brauchen wir alle, hat jeder einen Account, alle relevant? Fertig wenn: relevante Zahlen abgegrenzt. `[Delegation]` (29.05.)
+- [~] Feedback-Ursprung klären (woher kam das Feedback-Thema?). Teilweise: 04.06. hat Henrik die Verbindung zum KI-Strang selbst hergestellt; Quell-Anlass nicht eigens benannt. `[KI-Welt]` (02.06.)
+- [~] Zeiterfassung starten -- zurückgestellt. Tag zu zerstückelt fürs laufende Tracking; Abend-Rekonstruktion möglich, keine Priorität. `[Prozess]` (17.03.)
 
-## Aus Henrik-Gespräch (2026-05-29)
+## Ruhend / überholt -- vom KI-Voigt-Leitthema abgelöst
 
-**Stehendes Prinzip (kein einmaliger Schritt):**
-- [ ] **Wissenstransfer-Schritt bei jeder Projektübergabe.** Fester erster Punkt jeder Initialisierung/Übergabe: „Was muss die übernehmende Person zusätzlich an Kontext wissen, um den Job umsetzen zu können?" -- verschriftlichen, dann bewusst stoppen. Gilt ab sofort als Standard.
+- [ ] Kanzlei-Kunde beiläufig fragen: „Kennt ihr andere Kanzleien mit ähnlichen Herausforderungen?" `[Netzwerk]` (20.03.) -- nie angegangen, durch Voigt-Co-Explorer-Richtung teils ersetzt.
+- [ ] Nachdenken: übersehene Ressource/Verbindung/Möglichkeit in Henriks Situation? `[Netzwerk]` (20.03.)
 
-**Konkrete Wochenschritte:**
-- [~] NL-Infos sammeln: Anzahl Mitarbeitende je Niederlassung (Henrik). Endpunkt aufgemacht. Offene Klärung (02.06.): zentrale NL (Dortmund = Hauptsitz) hat 40-50 Einträge -- brauchen wir alle, hat jeder einen Account, sind alle relevant? Fertig wenn: relevante Zahlen abgegrenzt.
-- [ ] Speicherform für die NL-Infos: Paula übernächste Woche ansprechen. Fertig wenn: Format mit Paula geklärt.
-- [x] Mail an den zuletzt gut mitarbeitenden Mitarbeiter: warum hat er so gern mitgearbeitet? (Motivations-Recherche). Erledigt 02.06.: E-Mail nachgeschaut, nichts Inhaltliches zu holen (Stadtverwaltung Bielefeld). Kein Ertrag.
+## Erledigt
 
-## Aus Henrik-Gespräch (2026-06-02)
-
-- [ ] **Wissenstransfer-Probelauf (erster echter Fall):** Henrik delegiert die Leerlauf-Bindungsfrage an Paula. Vorgehen: Gespräch mit Paula → Todo-Liste → Checkup nach 1-2 Wochen, ob es gut geklappt hat. Fertig wenn: delegiert + Checkup terminiert.
-- [~] Feedback-Ursprung klären: woher kam das Feedback-Thema (Paula? strategisches Meeting)? Teilweise: im Workshop 04.06. hat Henrik die Verbindung zum KI-/Use-Case-Strang selbst hergestellt; der konkrete Quell-Anlass wurde nicht eigens benannt.
-- [x] **Andi:** Top-Level-Sicht erstellen -- erledigt als Workshop 04.06.: leeres Gerüst + Leitfragen statt fertiger Visualisierung, Henrik füllte überwiegend selbst.
-
-## Aus Workshop (2026-06-04)
-
-- [ ] **Nächste Session -- Ziel-Ebene + Brücke ins Handeln:** (a) die offene Ziel-Ebene erarbeiten („wo wollen wir hin?", Ausgangspunkt Henriks Gedanke „guten Gewissens höhere Rechnungen stellen"). (b) Pro Strang (4 „blaue Bereiche") einen kleinsten realen nächsten Schritt -- Henrik baut die Brücke selbst, nicht Andi. Fertig wenn: Ziel-Ebene steht + je Strang ein nächster Schritt benannt.
-- [ ] Miro-Map-Inhalte sichern: die 4 Stränge + Zuordnung der Einzelthemen als Substanz festhalten. Fertig wenn: nachgetragen (Henrik-sichtbar).
-
-## Aus Session (2026-06-09)
-
-- [x] Workshop-Rekapitulation durchgeführt (09.06.).
-- [ ] **Henriks Commitment-Rückmeldung** zur zielgerichteten GF-Kommunikation abwarten (Folgetag, schriftlich) und nachhalten. Fertig wenn: Rückmeldung da.
-- [ ] **GF-Kanal beschreiben lassen:** Henrik beschreibt, wie die Kommunikation mit dem GF konkret läuft (Frequenz, Formate, was geht/was nicht). Fertig wenn: beschrieben.
-- [ ] **Falls Commitment kommt -- GF-Vorstoß vorbereiten:** Rollenspiele (Henrik beschreibt den GF, Andi spielt ihn), gemeinsam ein Meeting/eine Termin-Anfrage planen. Erster Schritt bewusst klein. Fertig wenn: erster kleiner Schritt definiert.
-- [ ] **Paula-Delegation (Leerlauf-Frage) klären:** Wer setzt es mit Paula um -- Henrik oder Andi? Und Evaluation terminieren. Fertig wenn: geklärt + Termin steht.
-- [ ] Fürs nächste Mal: Wie übertragen wir das WAS/WIE-Denken auf andere Themen / auf Algron als Ganzes?
+- [x] Workshop-Rekapitulation durchgeführt. `[Prozess]` (09.06.)
+- [x] **Andi:** Top-Level-Sicht erstellen -- als Workshop 04.06. (leeres Gerüst + Leitfragen, Henrik füllte überwiegend selbst). `[Prozess]` (02.06.)
+- [x] Mail an den zuletzt gut mitarbeitenden MA: warum gern mitgearbeitet? Nachgeschaut -- nichts Inhaltliches (Stadtverwaltung Bielefeld), kein Ertrag. `[Netzwerk]` (29.05./02.06.)
+- [x] Skadi-Wissen als Engpass identifizieren -- Ergebnis: ist NICHT der Engpass (Henrik nur 2-3x/Woche gefragt; das Problem ist das Vier-Augen-Prinzip). `[Delegation]` (17.03.)

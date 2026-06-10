@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
-<head>
+<html lang="de"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Strategische Landkarte — Skadi + KI</title>
@@ -32,8 +31,9 @@
   }
   .btn.ghost { background: #fff; color: var(--blue); }
   .btn:active { transform: translateY(1px); }
-  .saved { font-size: 12.5px; color: var(--gr); font-weight: 600; opacity: 0; transition: opacity .2s; }
-  .saved.show { opacity: 1; }
+  .status { font-size: 12.5px; font-weight: 600; transition: color .2s; }
+  .status.clean { color: var(--gr); }
+  .status.dirty { color: var(--gold); }
 
   .band { margin-top: 14px; }
   .band-head { display: flex; align-items: baseline; gap: 14px; margin-bottom: 6px; flex-wrap: wrap; }
@@ -48,7 +48,7 @@
 
   .card {
     position: absolute; border-radius: 9px; padding: 11px 26px 11px 13px;
-    font-size: 13.5px; line-height: 1.34; cursor: grab;
+    font-size: 13.5px; line-height: 1.34; cursor: grab; overflow: hidden;
     box-shadow: 0 1px 3px rgba(0,0,0,.07); user-select: none; touch-action: none;
   }
   .card.dragging { cursor: grabbing; box-shadow: 0 6px 16px rgba(0,0,0,.16); z-index: 50; }
@@ -61,14 +61,32 @@
   .card.note { font-size: 12.5px; }
   .card.parked { border-style: dashed; border-width: 2px; }
   .card.parked .ptag { display:block; font-size: 11px; color: var(--gold); font-weight:700; margin-top:6px; text-transform: uppercase; letter-spacing:.03em; }
+  .card.key { background: #cfe6f2; border: 2px solid var(--bl); box-shadow: 0 2px 7px rgba(47,93,119,.2); }
+  .card.key .ptag { display:block; font-size: 11px; color: var(--bl); font-weight:700; margin-top:6px; letter-spacing:.02em; }
 
-  .card .txt { outline: none; min-height: 1em; }
+  .world-split { position: absolute; top: 8px; bottom: 8px; left: 0; border-left: 2px dashed var(--bl-line); pointer-events: none; }
+  .world-hd { position: absolute; top: 10px; pointer-events: none; font-size: 12px; color: var(--ink-soft); max-width: 47%; }
+  .world-hd .wname { font-weight: 800; color: var(--bl); text-transform: uppercase; letter-spacing: .04em; font-size: 11.5px; }
+  .world-hd .wtag { display: inline-block; margin-left: 7px; background: var(--bl); color: #fff; border-radius: 5px; padding: 1px 8px; font-size: 10.5px; font-weight: 700; letter-spacing: .03em; vertical-align: middle; }
+  .world-hd .wsub { display: block; font-size: 11px; font-style: italic; margin-top: 3px; }
+
+  .card .txt { outline: none; min-height: 1em; overflow-wrap: break-word; }
   .card .txt:empty::before { content: attr(data-ph); color: var(--ink-soft); font-style: italic; font-weight: 400; }
   .card .del {
     position: absolute; top: 4px; right: 5px; width: 17px; height: 17px; border: none; background: transparent;
     color: var(--ink-soft); font-size: 15px; line-height: 1; cursor: pointer; border-radius: 4px; opacity: .5;
   }
   .card .del:hover { opacity: 1; background: rgba(0,0,0,.07); }
+  .card .rz {
+    position: absolute; right: 2px; bottom: 2px; width: 14px; height: 14px;
+    cursor: nwse-resize; opacity: .4; touch-action: none;
+  }
+  .card .rz:hover { opacity: .85; }
+  .card .rz::after {
+    content: ''; position: absolute; right: 2px; bottom: 2px; width: 8px; height: 8px;
+    border-right: 2px solid var(--ink-soft); border-bottom: 2px solid var(--ink-soft);
+  }
+  .card.editing .rz { display: none; }
 
   .bridge { display: flex; flex-direction: column; align-items: center; padding: 12px 0 4px; color: var(--ink-soft); }
   .bridge .arrows { font-size: 15px; letter-spacing: 6px; color: #b9b1a3; }
@@ -88,13 +106,15 @@
       <h1>Wo wollen wir hin — und was hängt daran?</h1>
       <p class="meta">
         Gemeinsam erarbeitet im Workshop 04.06.2026 (Henrik &amp; Andi), bottom-up von Einzelthemen zu Strängen.
+        Ebene 2 am 09.06. von Henrik in zwei Welten geteilt (Klassische SE / KI-Entwicklung).
         <strong>Ground Truth</strong> — gilt über Monate, wird laufend weiterentwickelt.<br>
-        <span class="hint">Karten ziehen zum Verschieben · Doppelklick zum Bearbeiten · „+ Karte" pro Ebene · „×" zum Löschen · <strong>Export</strong> sichert den Stand als Datei.</span>
+        <span class="hint">Karten ziehen zum Verschieben · Ecke unten rechts zieht die Größe (Breite &amp; Höhe, bis der Text gerade noch passt) · Doppelklick zum Bearbeiten · „+ Karte" pro Ebene · „×" zum Löschen · <strong>Speichern</strong> schreibt direkt in diese Datei (Chrome/Edge: beim ersten Mal Datei auswählen) · Export legt eine Kopie im Download-Ordner ab.</span>
       </p>
     </div>
     <div class="actions">
-      <span class="saved" id="saved">exportiert ✓</span>
-      <button class="btn" id="export">⬇ Export</button>
+      <span class="status clean" id="status">gespeichert ✓</span>
+      <button class="btn" id="save">💾 Speichern</button>
+      <button class="btn ghost" id="export" title="Als neue Datei in den Download-Ordner exportieren">⬇ Export</button>
     </div>
   </div>
 
@@ -102,7 +122,7 @@
 
   <footer class="doc">
     <p>Nummerierung von oben: <strong>1 = Ziel (Spitze)</strong>, 2 = Stränge, 3 = Einzelthemen (Basis). Pfeile zeigen die Erarbeitungs-Richtung (von unten aggregiert).</p>
-    <p>Offene Punkte: Ziel-Ebene formulieren (Feld noch leer) · Position von Strang 4 klären.</p>
+    <p>Offene Punkte: Ziel-Ebene formulieren (Feld noch leer). · Strang 4 (hinterliegende GF-Wünsche) ist geklärt — kein „Position offen" mehr, sondern der Schlüssel der KI-Welt (09.06.).</p>
   </footer>
 </div>
 
@@ -111,48 +131,211 @@
 {
   "levels": [
     {
-      "id": "ziel", "color": "gold",
+      "id": "ziel",
+      "color": "gold",
       "title": "Ebene 1 — Ziel · Wohin?",
       "lead": "",
       "height": 190,
       "bridgeBelow": "Wenn das alles klappt — wo steht ihr dann? Was ist das Ziel über allem?",
       "cards": [
-        { "id": "z-empty", "kind": "empty", "text": "", "ph": "Ziel — noch offen", "x": 380, "y": 40, "w": 250 },
-        { "id": "z-note", "kind": "note", "text": "Guten Gewissens höhere Rechnungen stellen", "x": 720, "y": 28, "w": 165 }
+        {
+          "id": "z-empty",
+          "kind": "empty",
+          "text": "",
+          "ph": "Ziel — noch offen",
+          "x": 380,
+          "y": 40,
+          "w": 250
+        },
+        {
+          "id": "z-note",
+          "kind": "note",
+          "text": "Guten Gewissens höhere Rechnungen stellen",
+          "x": 701.0299072265625,
+          "y": 33.853668212890625,
+          "w": 165
+        }
       ]
     },
     {
-      "id": "straenge", "color": "blue",
+      "id": "straenge",
+      "color": "blue",
       "title": "Ebene 2 — Bereiche / Stränge",
-      "lead": "Die großen Bereiche, auf die die Themen einzahlen.",
-      "height": 260,
+      "lead": "Zwei Welten (Henrik, 09.06.): links Klassische SE — das WAS ist klar, es geht ums WIE. Rechts KI-Entwicklung — hier ist schon das WAS offen. Geteilt nach GF-Beteiligung.",
+      "height": 330,
       "bridgeBelow": "Für jedes Ding: warum machen wir das? Worauf zahlt es ein?",
+      "worlds": {
+        "split": 500,
+        "left": {
+          "title": "Klassische SE",
+          "tag": "WIE?",
+          "sub": "GF wenig involviert · MA kümmert sich"
+        },
+        "right": {
+          "title": "KI-Entwicklung",
+          "tag": "WAS? + WIE?",
+          "sub": "GF stark involviert"
+        }
+      },
       "cards": [
-        { "id": "s1", "kind": "normal", "text": "Zielgerichteter und fokussierter Ressourcen-Einsatz", "x": 250, "y": 30, "w": 190 },
-        { "id": "s2", "kind": "normal", "text": "Aufklärungsarbeit in der Kanzlei bzgl. KI", "x": 470, "y": 30, "w": 190 },
-        { "id": "s3", "kind": "normal", "text": "KI muss echten Mehrwert für die Mitarbeitenden haben", "x": 690, "y": 30, "w": 190 },
-        { "id": "s4", "kind": "parked", "text": "Herausfinden der realen, hinterliegenden Kundenwünsche (um was geht's wirklich?)", "ptag": "Position offen — gleichwichtig, unter- oder übergeordnet?", "x": 470, "y": 150, "w": 210 }
+        {
+          "id": "s1",
+          "kind": "normal",
+          "text": "Zielgerichteter und fokussierter Ressourcen-Einsatz",
+          "x": 30,
+          "y": 80,
+          "w": 205
+        },
+        {
+          "id": "s5",
+          "kind": "normal",
+          "text": "Alltägliche Feature-Entwicklung",
+          "x": 258,
+          "y": 80,
+          "w": 205
+        },
+        {
+          "id": "s4",
+          "kind": "key",
+          "text": "Herausfinden der realen, hinterliegenden Wünsche des GF",
+          "ptag": "🔑 Schlüssel der KI-Welt — nur der GF kann das WAS klären",
+          "x": 562.0732421875,
+          "y": 75.12191772460938,
+          "w": 414.9998779296875,
+          "h": 79.90243530273438
+        },
+        {
+          "id": "s2",
+          "kind": "normal",
+          "text": "Aufklärungsarbeit in der Kanzlei bzgl. KI",
+          "x": 800.9755859375,
+          "y": 202.92681884765625,
+          "w": 200
+        },
+        {
+          "id": "s3",
+          "kind": "normal",
+          "text": "KI muss echten Mehrwert für die Mitarbeitenden haben",
+          "x": 551.3414916992188,
+          "y": 200.17074584960938,
+          "w": 215
+        }
       ]
     },
     {
-      "id": "themen", "color": "green",
+      "id": "themen",
+      "color": "green",
       "title": "Ebene 3 — Konkrete Themen",
       "lead": "Was beschäftigt uns konkret rund um Skadi + KI? Alles raus, ungeordnet — eine Karte pro Ding. Welche gehören zusammen?",
       "height": 430,
       "cards": [
-        { "id": "t1", "kind": "normal", "text": "Wir kennen den Workflow der Mitarbeitenden kaum", "x": 230, "y": 25, "w": 175 },
-        { "id": "t2", "kind": "normal", "text": "Workflow der MA in der Software abbilden", "x": 230, "y": 120, "w": 175 },
-        { "id": "t3", "kind": "normal", "text": "Entwicklung weg von isolierten Features", "x": 230, "y": 210, "w": 175 },
-        { "id": "t4", "kind": "normal", "text": "„In 5 Jahren deutlich weniger MA\" (Voigt)", "x": 650, "y": 25, "w": 165 },
-        { "id": "t5", "kind": "normal", "text": "KI — aber wie?", "x": 650, "y": 115, "w": 135 },
-        { "id": "t6", "kind": "normal", "text": "Keine KI à la ClickUp", "x": 805, "y": 115, "w": 150 },
-        { "id": "t7", "kind": "normal", "text": "Was kann man sinnvoll mit KI machen?", "x": 650, "y": 195, "w": 165 },
-        { "id": "t8", "kind": "normal", "text": "Es fehlt eine Übersichtskarte: was gehört alles zu „KI\"?", "x": 830, "y": 195, "w": 175 },
-        { "id": "t9", "kind": "normal", "text": "Zielgerichtete, umsichtige Kommunikation mit dem GF (um was geht's wirklich?)", "x": 250, "y": 320, "w": 195 },
-        { "id": "t10", "kind": "normal", "text": "Wunsch nach Feedback", "x": 480, "y": 340, "w": 150 },
-        { "id": "t11", "kind": "normal", "text": "Wir brauchen Einsicht in die Arbeitsweisen, nicht nur klassisches Feedback", "x": 480, "y": 250, "w": 185 },
-        { "id": "t12", "kind": "normal", "text": "Wie rechtfertigen wir strategische, kommunikative Arbeit?", "x": 680, "y": 320, "w": 185 },
-        { "id": "t13", "kind": "normal", "text": "Kontakte (für Paula)", "x": 250, "y": 250, "w": 150 }
+        {
+          "id": "t1",
+          "kind": "normal",
+          "text": "Wir kennen den Workflow der Mitarbeitenden kaum",
+          "x": 43.65850830078125,
+          "y": 46.463409423828125,
+          "w": 175
+        },
+        {
+          "id": "t2",
+          "kind": "normal",
+          "text": "Workflow der MA in der Software abbilden",
+          "x": 237.80487060546875,
+          "y": 52.6829833984375,
+          "w": 175
+        },
+        {
+          "id": "t3",
+          "kind": "normal",
+          "text": "Entwicklung weg von isolierten Features",
+          "x": 60.243927001953125,
+          "y": 138.780517578125,
+          "w": 175
+        },
+        {
+          "id": "t4",
+          "kind": "normal",
+          "text": "„In 5 Jahren deutlich weniger MA\" (Voigt)",
+          "x": 650,
+          "y": 25,
+          "w": 165
+        },
+        {
+          "id": "t5",
+          "kind": "normal",
+          "text": "KI — aber wie?",
+          "x": 601.219482421875,
+          "y": 98.41464233398438,
+          "w": 135
+        },
+        {
+          "id": "t6",
+          "kind": "normal",
+          "text": "Keine KI à la ClickUp",
+          "x": 828.41455078125,
+          "y": 35.97564697265625,
+          "w": 150
+        },
+        {
+          "id": "t7",
+          "kind": "normal",
+          "text": "Was kann man sinnvoll mit KI machen?",
+          "x": 681.219482421875,
+          "y": 145.243896484375,
+          "w": 165
+        },
+        {
+          "id": "t8",
+          "kind": "normal",
+          "text": "Es fehlt eine Übersichtskarte: was gehört alles zu „KI\"?",
+          "x": 856.341552734375,
+          "y": 106.21945190429688,
+          "w": 175
+        },
+        {
+          "id": "t9",
+          "kind": "normal",
+          "text": "Zielgerichtete, umsichtige Kommunikation mit dem GF (um was geht's wirklich?)",
+          "x": 98.780517578125,
+          "y": 304.39019775390625,
+          "w": 315,
+          "h": 58
+        },
+        {
+          "id": "t10",
+          "kind": "normal",
+          "text": "Wunsch nach Feedback",
+          "x": 371.7073974609375,
+          "y": 174.1463623046875,
+          "w": 150
+        },
+        {
+          "id": "t11",
+          "kind": "normal",
+          "text": "Wir brauchen Einsicht in die Arbeitsweisen, nicht nur klassisches Feedback",
+          "x": 275.12188720703125,
+          "y": 107.56088256835938,
+          "w": 211.3414306640625,
+          "h": 76
+        },
+        {
+          "id": "t12",
+          "kind": "normal",
+          "text": "Wie rechtfertigen wir strategische, kommunikative Arbeit?",
+          "x": 651.707275390625,
+          "y": 298.53662109375,
+          "w": 283.5364990234375,
+          "h": 60.43896484375
+        },
+        {
+          "id": "t13",
+          "kind": "normal",
+          "text": "Kontakte (für Paula)",
+          "x": 211.95123291015625,
+          "y": 177.80471801757812,
+          "w": 150
+        }
       ]
     }
   ]
@@ -193,6 +376,7 @@
       lvl.cards.push(c);
       var el = makeCard(c, lvl);
       cards.appendChild(el);
+      markDirty();
       startEdit(el, c);
     });
     head.appendChild(add);
@@ -201,9 +385,27 @@
     var cards = document.createElement('div');
     cards.className = 'cards';
     cards.style.minHeight = lvl.height + 'px';
+    if (lvl.worlds){
+      var w = lvl.worlds;
+      var sp = document.createElement('div');
+      sp.className = 'world-split'; sp.style.left = w.split + 'px';
+      cards.appendChild(sp);
+      if (w.left)  cards.appendChild(makeWorldHd(w.left, 14));
+      if (w.right) cards.appendChild(makeWorldHd(w.right, w.split + 16));
+    }
     lvl.cards.forEach(function(c){ cards.appendChild(makeCard(c, lvl)); });
     sec.appendChild(cards);
     return sec;
+  }
+
+  function makeWorldHd(wd, leftPx){
+    var h = document.createElement('div');
+    h.className = 'world-hd'; h.style.left = leftPx + 'px';
+    var name = '<span class="wname">' + escapeHTML(wd.title) + '</span>';
+    var tag = wd.tag ? '<span class="wtag">' + escapeHTML(wd.tag) + '</span>' : '';
+    var sub = wd.sub ? '<span class="wsub">' + escapeHTML(wd.sub) + '</span>' : '';
+    h.innerHTML = name + tag + sub;
+    return h;
   }
 
   function makeBridge(q){
@@ -218,6 +420,7 @@
     el.className = 'card ' + (c.kind || 'normal');
     el.style.left = c.x + 'px'; el.style.top = c.y + 'px';
     if (c.w) el.style.width = c.w + 'px';
+    if (c.h) el.style.height = c.h + 'px';
 
     var del = document.createElement('button');
     del.className = 'del'; del.textContent = '×'; del.title = 'Karte löschen';
@@ -226,6 +429,7 @@
       var i = lvl.cards.indexOf(c);
       if (i > -1) lvl.cards.splice(i, 1);
       el.remove();
+      markDirty();
     });
     el.appendChild(del);
 
@@ -235,19 +439,60 @@
     if (c.ph) txt.setAttribute('data-ph', c.ph);
     el.appendChild(txt);
 
-    if (c.kind === 'parked' && c.ptag){
+    if ((c.kind === 'parked' || c.kind === 'key') && c.ptag){
       var pt = document.createElement('span');
       pt.className = 'ptag'; pt.textContent = c.ptag;
       el.appendChild(pt);
     }
 
+    var rz = document.createElement('div');
+    rz.className = 'rz'; rz.title = 'Größe ändern';
+    el.appendChild(rz);
+
     txt.addEventListener('dblclick', function(){ startEdit(el, c); });
     makeDraggable(el, c);
+    makeResizable(el, c, rz);
     return el;
+  }
+
+  function makeResizable(el, c, handle){
+    var pid = null, sx, sy, sw, sh, minW;
+    handle.addEventListener('pointerdown', function(e){
+      if (el.classList.contains('editing')) return;
+      e.stopPropagation();
+      pid = e.pointerId; sx = e.clientX; sy = e.clientY;
+      sw = el.offsetWidth; sh = el.offsetHeight;
+      // schmalste Breite, bei der noch jedes Wort ganz reinpasst
+      var prevW = el.style.width;
+      el.style.width = 'min-content'; minW = el.offsetWidth; el.style.width = prevW || (sw + 'px');
+      try { handle.setPointerCapture(pid); } catch(_){}
+      el.classList.add('dragging');
+    });
+    handle.addEventListener('pointermove', function(e){
+      if (pid === null) return;
+      var box = el.parentElement;
+      var nw = sw + (e.clientX - sx);
+      nw = Math.max(minW, Math.min(nw, box.clientWidth - c.x));
+      el.style.width = nw + 'px'; c.w = nw;
+      // niedrigste Höhe, bei der der (jetzt umbrochene) Text noch ganz reinpasst
+      el.style.height = 'auto';
+      var minH = el.scrollHeight;
+      var nh = Math.max(minH, sh + (e.clientY - sy));
+      el.style.height = nh + 'px'; c.h = nh;
+    });
+    function end(e){
+      if (pid === null) return; pid = null;
+      el.classList.remove('dragging');
+      try { handle.releasePointerCapture(e.pointerId); } catch(_){}
+      markDirty();
+    }
+    handle.addEventListener('pointerup', end);
+    handle.addEventListener('pointercancel', end);
   }
 
   function startEdit(el, c){
     el.classList.add('editing');
+    if (c.h) el.style.height = 'auto'; // beim Tippen immer alles sichtbar
     var txt = el.querySelector('.txt');
     txt.contentEditable = 'true';
     txt.focus();
@@ -257,6 +502,8 @@
       el.classList.remove('editing');
       txt.contentEditable = 'false';
       c.text = txt.textContent.trim();
+      if (c.h) { el.style.height = 'auto'; c.h = Math.max(c.h, el.scrollHeight); el.style.height = c.h + 'px'; }
+      markDirty();
       txt.removeEventListener('blur', done);
     }
     txt.addEventListener('blur', done);
@@ -267,6 +514,7 @@
     el.addEventListener('pointerdown', function(e){
       if (el.classList.contains('editing')) return;
       if (e.target.classList.contains('del')) return;
+      if (e.target.classList.contains('rz')) return;
       pid = e.pointerId; dragging = false;
       sx = e.clientX; sy = e.clientY; ox = c.x; oy = c.y;
     });
@@ -289,7 +537,7 @@
     function end(e){
       if (pid === null) return;
       pid = null;
-      if (dragging) { dragging = false; el.classList.remove('dragging'); try { el.releasePointerCapture(e.pointerId); } catch(_){} }
+      if (dragging) { dragging = false; el.classList.remove('dragging'); try { el.releasePointerCapture(e.pointerId); } catch(_){} markDirty(); }
     }
     el.addEventListener('pointerup', end);
     el.addEventListener('pointercancel', end);
@@ -297,24 +545,70 @@
 
   function escapeHTML(s){ var d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
 
-  document.getElementById('export').addEventListener('click', function(){
+  // --- Speichern & Export ---
+  var dirty = false;
+  var fileHandle = null;
+
+  function updateStatus(){
+    var st = document.getElementById('status');
+    if (!st) return;
+    if (dirty) { st.textContent = '● nicht gespeichert'; st.className = 'status dirty'; }
+    else { st.textContent = 'gespeichert ✓'; st.className = 'status clean'; }
+  }
+  function markDirty(){ if (!dirty) { dirty = true; updateStatus(); } }
+  function markSaved(){ dirty = false; updateStatus(); }
+
+  function buildHTML(){
     document.getElementById('state').textContent = '\n' + JSON.stringify(state, null, 2) + '\n';
     var clone = document.documentElement.cloneNode(true);
     var b = clone.querySelector('#board'); if (b) b.innerHTML = '';
-    var s = clone.querySelector('#saved'); if (s) s.className = 'saved';
-    var html = '<!DOCTYPE html>\n' + clone.outerHTML;
+    var s = clone.querySelector('#status'); if (s) { s.textContent = 'gespeichert ✓'; s.className = 'status clean'; }
+    return '<!DOCTYPE html>\n' + clone.outerHTML;
+  }
+
+  function exportDownload(){
+    var html = buildHTML();
     var blob = new Blob([html], { type: 'text/html' });
     var url = URL.createObjectURL(blob);
     var a = document.createElement('a');
     a.href = url; a.download = 'strategie-landkarte.html';
     document.body.appendChild(a); a.click(); a.remove();
     URL.revokeObjectURL(url);
-    var saved = document.getElementById('saved');
-    saved.classList.add('show'); setTimeout(function(){ saved.classList.remove('show'); }, 1800);
+    markSaved();
+  }
+
+  async function saveToDisk(){
+    if (!window.showSaveFilePicker){ exportDownload(); return; } // Fallback: Firefox/Safari
+    try {
+      if (!fileHandle){
+        fileHandle = await window.showSaveFilePicker({
+          suggestedName: 'strategie-landkarte.html',
+          types: [{ description: 'HTML', accept: { 'text/html': ['.html'] } }]
+        });
+      }
+      var writable = await fileHandle.createWritable();
+      await writable.write(buildHTML());
+      await writable.close();
+      markSaved();
+    } catch (err){
+      if (err && err.name === 'AbortError') return; // Nutzer hat den Dialog abgebrochen
+      console.error(err);
+      fileHandle = null;
+      alert('Speichern fehlgeschlagen: ' + (err && err.message ? err.message : err) + '\nNutze ersatzweise „Export".');
+    }
+  }
+
+  document.getElementById('save').addEventListener('click', saveToDisk);
+  document.getElementById('export').addEventListener('click', exportDownload);
+
+  window.addEventListener('beforeunload', function(e){
+    if (dirty){ e.preventDefault(); e.returnValue = ''; }
   });
 
   render();
+  updateStatus();
 })();
 </script>
-</body>
-</html>
+
+
+</body></html>
