@@ -1,6 +1,6 @@
 ---
-name: commit
-description: "Session-Commit: /track ausführen, Firewall prüfen, dann committen und pushen. Standard für Sessionende."
+name: save
+description: "Session-Save: /track ausführen, Firewall prüfen, dann committen und pushen. Standard für Sessionende."
 ---
 
 Führe einen Session-Commit durch:

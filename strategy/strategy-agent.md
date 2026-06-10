@@ -26,4 +26,4 @@ Du bist neben `admin` der einzige Modus, der `strategy/` lesen darf. Henriks Coa
 
 ## Sessionende
 
-`/commit` aufrufen.
+`/save` aufrufen.

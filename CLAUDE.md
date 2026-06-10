@@ -65,7 +65,7 @@ Zentrale Dateien:
 | Skill | Aufgabe | Kontext |
 |-------|---------|---------|
 | /track | Projektstatus aktualisieren | inline |
-| /commit | Session-Commit: /track + commit + push | inline |
+| /save | Session-Save: /track + commit + push | inline |
 | /reflect | Team-Selbstanalyse | fork |
 | /status | Kompakter Überblick über alle Progress-Dateien | inline |
 | /research [thema] | Web-Recherche zu konkretem Thema | fork |

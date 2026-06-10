@@ -45,7 +45,7 @@ Skills vor Agents. Delegation vor Eigenarbeit. Zwischenergebnisse in Dateien, ni
 | Skill | Wann nutzen |
 |-------|-------------|
 | /track | Projektstatus aktualisieren |
-| /commit | Sessionende -- immer aufrufen |
+| /save | Sessionende -- immer aufrufen |
 | /reflect | Team-Selbstanalyse |
 | /status | Schneller Überblick über alle Progress-Dateien |
 | /research [thema] | Konkretes Thema recherchieren |
@@ -65,4 +65,4 @@ Fehlt ein Skill oder Agent? Frag Henrik: "Dafür gibt es noch keinen Skill. Soll
 ## Sessionende
 
 1. Erkenntnisse in progress/-Dateien schreiben
-2. `/commit` aufrufen
+2. `/save` aufrufen

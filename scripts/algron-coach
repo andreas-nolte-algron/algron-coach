@@ -40,9 +40,9 @@ while [ $# -gt 0 ]; do
 done
 
 PROMPT_FILE="$PROJECT_ROOT/main-agent.md"
-TALK_PROMPT="Sessionstart: Lies project-status.md und die progress/-Dateien (session-log.md, bestandsaufnahme.md, vision.md, action-plan.md), dann brief mich wo wir stehen. Falls alle leer: Starte die Bestandsaufnahme. Reminder: Sessionende → /commit aufrufen."
-STRATEGY_PROMPT="Strategie-Modus: Du bist Andis strategischer Sparringspartner fuer die Algron/Henrik-Lage. Lies strategy/ (alle Dateien) plus project-status.md und die progress/-Dateien. Pruefe context/handovers/ auf aktive Handovers (status: active) -- laufende Arbeitsstraenge, nimm sie als Ausgangspunkt. Dann brief Andi wo die Strategie steht. Reminder: Sessionende → /commit aufrufen."
-ADMIN_PROMPT="Admin-Modus: Du bist im Wartungsmodus mit Andy (Team-Betreuer). Lies project-status.md und CLAUDE.md, pruefe context/handovers/ auf aktive Handovers (status: active), dann frag was ansteht. Kein Coach-Verhalten noetig. Reminder: Sessionende → /commit aufrufen."
+TALK_PROMPT="Sessionstart: Lies project-status.md und die progress/-Dateien (session-log.md, bestandsaufnahme.md, vision.md, action-plan.md), dann brief mich wo wir stehen. Falls alle leer: Starte die Bestandsaufnahme. Reminder: Sessionende → /save aufrufen."
+STRATEGY_PROMPT="Strategie-Modus: Du bist Andis strategischer Sparringspartner fuer die Algron/Henrik-Lage. Lies strategy/ (alle Dateien) plus project-status.md und die progress/-Dateien. Pruefe context/handovers/ auf aktive Handovers (status: active) -- laufende Arbeitsstraenge, nimm sie als Ausgangspunkt. Dann brief Andi wo die Strategie steht. Reminder: Sessionende → /save aufrufen."
+ADMIN_PROMPT="Admin-Modus: Du bist im Wartungsmodus mit Andy (Team-Betreuer). Lies project-status.md und CLAUDE.md, pruefe context/handovers/ auf aktive Handovers (status: active), dann frag was ansteht. Kein Coach-Verhalten noetig. Reminder: Sessionende → /save aufrufen."
 
 # Cockpit-Hülle für --mobile / --handoff.
 COCKPIT="$HOME/workspace/products/mobile-cockpit/scripts/clauderc"
