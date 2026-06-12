@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nächste Session — leicht fahren</title>
+<title>Session 12.06. — GF-Thema eröffnen: Henrik aufs Heimspielfeld</title>
 <style>
   :root {
     --bg: #f7f5f1; --card: #ffffff; --ink: #23211d; --ink-soft: #5c574e; --line: #e3ded5;
@@ -34,23 +34,25 @@
   .card p { margin: 0 0 10px; } .card p:last-child { margin-bottom: 0; }
   .card.henrik { background: var(--green-bg); border-color: var(--green-line); }
   .card.andi { background: var(--amber-bg); border-color: var(--amber-line); }
+  .card.blue { background: var(--blue-bg); border-color: var(--blue-line); }
 
   .lead { font-size: 16px; }
   em.q { font-style: italic; color: var(--accent); font-weight: 600; }
 
+  .say { background: var(--blue-bg); border-left: 4px solid var(--accent); border-radius: 0 8px 8px 0; padding: 10px 14px; margin: 10px 0; font-size: 15.5px; }
+  .say .lbl { display: block; font-size: 11px; letter-spacing: .05em; text-transform: uppercase; font-weight: 700; color: var(--accent); margin-bottom: 2px; }
+
   ol.steps { margin: 0; padding-left: 0; list-style: none; counter-reset: step; }
-  ol.steps li { position: relative; padding: 0 0 14px 40px; counter-increment: step; }
+  ol.steps li { position: relative; padding: 0 0 18px 40px; counter-increment: step; }
   ol.steps li:last-child { padding-bottom: 0; }
   ol.steps li::before { content: counter(step); position: absolute; left: 0; top: 0; width: 26px; height: 26px; border-radius: 50%; background: var(--green); color: #fff; font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+  ol.steps .sub { font-size: 14.5px; color: var(--ink-soft); margin: 4px 0 0; }
+  ol.steps .sub b { color: var(--ink); font-weight: 600; }
 
-  .opt { border-left: 4px solid var(--accent); padding: 4px 0 4px 16px; margin: 0 0 16px; }
-  .opt:last-child { margin-bottom: 0; }
-  .opt .name { font-weight: 700; font-size: 16.5px; }
-  .opt .fr { font-size: 14.5px; color: var(--ink-soft); margin: 4px 0 0; }
-  .opt .fr b { color: var(--ink); font-weight: 600; }
-
-  .anchor { margin-top: 16px; background: var(--gold-bg); border: 1px solid var(--gold-line); border-radius: 10px; padding: 16px 18px; font-size: 15.5px; }
-  .anchor .tag { font-weight: 700; color: var(--gold); display: block; margin-bottom: 4px; font-size: 13px; letter-spacing:.03em; text-transform: uppercase; }
+  ul.model { list-style: none; margin: 0; padding: 0; }
+  ul.model li { position: relative; padding: 0 0 12px 24px; }
+  ul.model li:last-child { padding-bottom: 0; }
+  ul.model li::before { content: "▸"; position: absolute; left: 0; top: 0; color: var(--accent); font-weight: 800; }
 
   ul.watch { list-style: none; margin: 0; padding: 0; }
   ul.watch li { position: relative; padding: 0 0 14px 24px; }
@@ -64,114 +66,156 @@
   ul.crit li::before { content: "✓"; position: absolute; left: 0; top: 0; color: var(--green); font-weight: 800; font-size: 16px; }
   ul.crit li.no::before { content: "✕"; color: #b3503f; }
 
+  .rej { border-left: 4px solid #b3503f; padding: 4px 0 4px 16px; margin: 0 0 14px; }
+  .rej:last-child { margin-bottom: 0; }
+  .rej .name { font-weight: 700; font-size: 15px; }
+  .rej p { font-size: 14px; color: var(--ink-soft); margin: 3px 0 0; }
+
   ol.flow { margin: 0; padding-left: 22px; color: var(--ink-soft); font-size: 15px; }
   ol.flow li { padding: 2px 0; }
 
-  @media print { body { background: #fff; font-size: 12pt; } .card, .anchor { break-inside: avoid; } }
+  @media print { body { background: #fff; font-size: 12pt; } .card, .say { break-inside: avoid; } }
 </style>
 </head>
 <body>
 <div class="wrap">
 
   <header>
-    <div class="kicker">Nächste Session · Vorbereitung</div>
-    <h1>Leicht fahren — Angebot &amp; Orientierung, kein Programm</h1>
+    <div class="kicker">Session-Vorbereitung · 12.06.2026</div>
+    <h1>GF-Thema eröffnen — Henrik aufs Heimspielfeld holen</h1>
     <p class="meta">
-      <strong>Andi-only</strong> (strategy/). Vorbereitungs-Leitfaden mit taktischer Schicht.<br>
-      Nur der grüne Block <strong>Einstieg</strong> geht zu Henrik (→ Notion). Alles andere bleibt hier.<br>
+      <strong>Andi-only</strong> (strategy/). Meine Notizen für die heutige Session — selbsttragend, kalt lesbar.<br>
+      Notion-Übertrag mache ich selbst (Notion ist mein privater Bereich, Henrik hat dort keinen Zugriff).<br>
       Bezugsdokument: <a href="../progress/strategie-landkarte.html">progress/strategie-landkarte.html</a> (für die 2-Min-Verortung offen haben).<br>
-      Geplant: 2026-06-09 · <strong>Format: normale Coaching-Stunde, kein Workshop.</strong>
+      Format: <strong>normale Coaching-Stunde, kein Workshop.</strong>
     </p>
   </header>
 
   <section>
     <h2><span class="num">1</span> Ausgangslage</h2>
     <div class="card">
-      <p class="lead">Heute ist <strong>kein Workshop-Framing</strong> — eine normale, lockere Coaching-Stunde. Das ist Entlastung, kein Schlamassel.</p>
-      <p>Die <strong>Spitze der Pyramide (Ziel) erarbeiten wir heute NICHT.</strong> Das ist Workshop-Arbeit, hohe Intensität — Henrik hat selbst gesagt, dafür lohnt es sich, „sich zwei Stunden zu nehmen". In eine leichte Stunde gepresst, triggert es seinen „kommt zum Punkt, keine Zeit"-Reflex und gefährdet die schöne Bewegung vom Workshop. Spitze kommt im nächsten echten Workshop.</p>
+      <p class="lead"><strong>Henriks Commitment ist da:</strong> Er hat sich gemeldet — er ist bei der zielgerichteten GF-Kommunikation weiterhin dabei. Das ist der Messpunkt aus der Session vom 09.06., positiv gefallen.</p>
+      <p><strong>Aber:</strong> „Dabei sein" ist ein Wort, kein Vollzug. Und dahinter liegt ein großer Sprung — Henrik hat in 8–10 Jahren <em>nie</em> ein strategisches, selbst angestoßenes Gespräch mit dem GF geführt. Der Kanal war immer reaktiv (GF ruft alle paar Wochen an, ~30 Min, ein konkreter Punkt).</p>
+      <p><strong>Heute ist die Eröffnung, nicht der Vorstoß.</strong> Ziel der Stunde: Henrik produziert das Material (GF-Beschreibung, Kanal, Framing-Ideen), aus dem der Vorstoß später gebaut wird. Der Vorstoß selbst (Rollenspiel, Gesprächsplan) ist Workshop-Stoff für einen eigenen Termin.</p>
     </div>
   </section>
 
   <section>
-    <h2><span class="num">2</span> Was Henrik mitbringt</h2>
-    <div class="card">
-      <p>Möglicherweise seine Workshop-Frage (ins Handeln), möglicherweise etwas ganz Aktuelles. <strong>Offen lassen.</strong> Bei einer lockeren Stunde ist der Modus <em class="q">„was ist gerade bei dir dran?"</em> — nicht „wir arbeiten Punkt X ab".</p>
+    <h2><span class="num">2</span> Henrik-Modell <span class="badge andi">woran heute alles getestet ist</span></h2>
+    <div class="card andi">
+      <ul class="model">
+        <li><strong>Er kennt den GF wie kein anderer</strong> (8–10 Jahre) — aber strategische, eigen-initiierte GF-Kommunikation kennt er <strong>gar nicht</strong>. Null Vorstellung, wie das geht.</li>
+        <li><strong>Auf offene Methoden-Fragen</strong> („wie willst du rangehen?") antwortet er: <em class="q">„Weiß ich nicht — das musst du doch wissen."</em> Die Frage exponiert seinen blinden Fleck und fühlt sich wie eine Prüfung an.</li>
+        <li><strong>Blockiert bei Ungewohntem</strong> ohne greifbaren Pfad; „kommt zum Punkt, keine Zeit"-Reflex bei Abstraktem. Allergisch gegen alles, was nach „beim GF absegnen" klingt.</li>
+        <li><strong>Seine Stärke: die konkrete Ebene.</strong> Beschreiben, was er kennt, sprudelt aus ihm (im Workshop 04.06. belegt). Erlaubnis-Räume („es gibt kein Falsch") lösen seine Blockaden (09.06. belegt).</li>
+        <li><strong>Konsequenz — die Arbeitsteilung:</strong> Methode/Handwerk = mein Part. GF-Wissen + Framing in seiner Sprache + das echte Gespräch = Henriks Part. Das explizit aussprechen, nicht implizit lassen.</li>
+      </ul>
     </div>
   </section>
 
   <section>
-    <h2><span class="num">3</span> Was heute dran sein könnte <span class="badge plain">Angebot, nichts erzwingen</span></h2>
-    <div class="card">
-      <p style="margin-top:0">Leichte, laufende Fäden, die trotzdem auf die Stränge einzahlen — als Auswahl, die <em>Henrik</em> trifft:</p>
-
-      <div class="opt">
-        <div class="name">Workshop gemeinsam rekapitulieren</div>
-        <p class="fr"><b>Henrik zuerst aus dem Gedächtnis:</b> „Was ist bei dir vom Workshop hängengeblieben? Was waren die Stränge?" — DANN die Landkarte daneben legen und abgleichen. <b>Die Lücke zwischen Erinnerung und Notiz ist der Lernmoment</b> — er erlebt selbst den Wert des Festhaltens (genau sein wunder Punkt: schaut nie in Aufzeichnungen). Nicht weiterbauen, nur wieder ins Bewusstsein holen.</p>
-      </div>
-      <div class="opt">
-        <div class="name">Paula-Probelauf (erster Delegations-Fall)</div>
-        <p class="fr">Hat er die Leerlauf-Frage an Paula delegiert? Wie lief der Checkup? <b>Konkret, leicht — und der erste echte Delegations-Fall (Typ 2).</b></p>
-      </div>
-      <div class="opt">
-        <div class="name">NL-Infos klären</div>
-        <p class="fr">Dortmund (Hauptsitz), 40–50 Einträge — welche sind relevant, hat jeder einen Account? Operativ, niedrigschwellig.</p>
-      </div>
-      <div class="opt">
-        <div class="name">Was ihn gerade umtreibt</div>
-        <p class="fr">Offen für alles Aktuelle. Kommt er von selbst auf die großen Themen → <b>wertvoll, folgen</b>. Kommt er mit was anderem → dann ist das gerade wichtiger.</p>
-      </div>
-
-      <div class="anchor">
-        <span class="tag">Der eine Anker, den du NICHT weglässt</span>
-        Eine kurze <strong>2-Min-Verortung an der Landkarte</strong> — „hier stehen wir, das hängt damit zusammen". Das ist nicht Höflichkeit gegenüber der Workshop-Arbeit, sondern der <strong>Anti-Tunnel-Anker</strong>: Paula und NL sind beide operativ/Typ-2 — eine ganze Stunde nur darin zieht Henrik zurück in den Alltags-Tunnel (seine Schwäche: Zusammenhänge verlieren). Die Verortung ist die Mini-Dosis Haltungsarbeit, die auch leicht reinpasst. Nur zeigen, nicht bearbeiten.
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2><span class="num">4</span> Einstieg <span class="badge henrik">→ Notion · Henrik sieht das</span></h2>
+    <h2><span class="num">3</span> Ablauf der Stunde</h2>
     <div class="card henrik">
       <ol class="steps">
-        <li><strong>Offen aufmachen:</strong> „Was ist gerade bei dir dran?" — kein Agenda-Aufschlag.</li>
-        <li><strong>Rekapitulieren anbieten:</strong> „Wollen wir kurz nochmal auf den Workshop schauen — was ist hängengeblieben, gab es noch Fragen?" Erst Henrik aus dem Gedächtnis, dann die Landkarte daneben legen und abgleichen. Die Spitze (Ziel) lassen wir bewusst offen — Stoff für einen nächsten Workshop. Faden halten, nicht weiterbauen.</li>
-        <li><strong>Offen anbieten:</strong> „Was davon — oder was ganz anderes — ist heute dran? Wie lief der Paula-Probelauf? Die NL-Sache?"</li>
-        <li><strong>Nichts erzwingen:</strong> Geht Henrik zu den großen Themen → folgen. Kommt er mit was Aktuellem → auch gut.</li>
+        <li><strong>Commitment würdigen + 2-Min-Verortung.</strong> An der Landkarte kurz zeigen: GF-Kommunikation ist der Schlüssel der KI-Welt — <em>seine</em> Struktur vom 09.06. (bei KI ist das WAS unklar, nur der GF kann es klären). Nur zeigen, nicht bearbeiten.</li>
+        <li><strong>Arbeitsteilung aussprechen — bevor er „das musst du doch wissen" sagen muss.</strong>
+          <div class="say"><span class="lbl">Formulierungs-Baustein</span>„Du musst nicht wissen, wie man ein strategisches GF-Gespräch aufzieht — das ist mein Handwerk, dafür bin ich da. Was ich nicht habe und nur du hast: Du kennst den GF seit Jahren. Beschreib ihn mir."</div>
+          <p class="sub">Das ist der Erlaubnis-Raum: Sein Nicht-Wissen ist legitim und eingeplant — er hat recht damit, und ich sage es zuerst.</p>
+        </li>
+        <li><strong>Henrik beschreibt GF + Kanal</strong> (sein Heimspiel — laufen lassen). Leitfragen:
+          <p class="sub"><b>Wie laufen eure Gespräche konkret?</b> (Frequenz, Anlass, Dauer, Telefon/Mail) · <b>Wie tickt der GF?</b> (womit kommt er, was verfängt bei ihm, was geht gar nicht) · <b>Was war das beste Gespräch, das ihr je hattet — warum?</b></p>
+          <p class="sub">Nebeneffekt: bestätigt/korrigiert mein bisheriges Bild vom Kanal (offener Punkt aus dem action-plan — „GF-Kanal beschreiben lassen" fällt hier mit ab).</p>
+        </li>
+        <li><strong>Brücke aus seinem Material:</strong>
+          <div class="say"><span class="lbl">Formulierungs-Baustein</span>„Wenn der GF so tickt, wie du ihn gerade beschrieben hast — wie müsste man ihm so ein Gespräch servieren, damit er anbeißt?"</div>
+          <p class="sub">Jetzt ist die Frage beantwortbar, weil sie auf seinem gerade erzeugten Konkreten steht. <b>Henrik macht das Framing</b> (sein Part). Wenn er hängt: Methoden-<i>Optionen</i> anbieten („man könnte X oder Y — was passt zu ihm?"), <b>nicht selbst formulieren</b>.</p>
+        </li>
+        <li><strong>Kleinster erster Schritt — oder bewusste Workshop-Dimensionierung.</strong> Entweder Henrik benennt einen winzigen ersten Schritt (z.B. nur die Termin-Anfrage in leicht neuem Rahmen) — oder er sagt selbst „das ist größer, dafür nehmen wir uns Zeit". <b>Beides ist ein Gewinn:</b> Im zweiten Fall hat er das Thema selbst dimensioniert statt es abzufrühstücken.</li>
       </ol>
     </div>
   </section>
 
   <section>
-    <h2><span class="num">5</span> Wachsamkeiten <span class="badge andi">Andi-only</span></h2>
+    <h2><span class="num">4</span> Wachsamkeiten <span class="badge andi">Andi-only</span></h2>
     <div class="card andi">
       <ul class="watch">
-        <li><b>Leicht fahren — heute nichts erzwingen.</b> Kein Output-Druck. Die Spitze ist nicht heute dran.</li>
-        <li><b>Die Verortung nicht weglassen</b> (siehe Anker oben) — sonst zerfällt die leichte Stunde in reinen Alltag.</li>
-        <li><b>Beim Rekapitulieren: Henrik abrufen lassen, nicht du erzählen.</b> Sonst ist er wieder Empfänger und die Lektion (Wert des Festhaltens) ist weg.</li>
-        <li><b>Dein Vermeidungsmuster:</b> auch „leicht" verführt zum Liefern/Lösen operativer Fäden. Henrik bleibt am Stift, du fragst.</li>
-        <li><b>Typ-1-Delegation nicht forcieren.</b> Falls von selbst aufkommt (Zeit fehlt → Code) — „woran liegt's?" und ihn selbst draufstoßen lassen.</li>
+        <li><b>Schritt 4 ist meine Versuchungsstelle.</b> Wenn Henrik beim Framing zögert, will ich liefern — Gesprächsführung ist mein Können UND mein Vermeidungsmuster. Optionen anbieten ja, formulieren nein. <b>Falltest: Wessen Framing steht am Ende vor dem GF? Henriks.</b></li>
+        <li><b>Nicht in den Vorstoß rutschen.</b> Kein Rollenspiel, kein Gesprächsplan heute — das ist Workshop-Intensität und triggert in einer normalen Stunde seinen „keine Zeit"-Reflex.</li>
+        <li><b>Nie als „beim GF absegnen" framen.</b> Es geht um ein Gespräch, das Henrik führt, weil ER es braucht (die echten Wünsche herausfinden) — nicht um Erlaubnis.</li>
+        <li><b>Biegt Henrik woanders ab</b> (Aktuelles, Operatives): folgen — dann nur das Commitment würdigen und einen eigenen Termin für das GF-Thema festmachen. Faden halten reicht.</li>
+        <li><b>Paula-Delegation bei Gelegenheit klären</b> (nur wenn es sich anbietet): Hat Henrik die Leerlauf-Frage an Paula delegiert oder an mich? Falls an mich: kein Nadelöhr-Test, sondern Abhängigkeits-Risiko.</li>
       </ul>
     </div>
   </section>
 
   <section>
-    <h2><span class="num">6</span> Woran ich erkenne, dass es lief <span class="badge plain">heute: Beobachtung, kein Output</span></h2>
+    <h2><span class="num">5</span> Woran ich erkenne, dass es lief</h2>
     <div class="card">
       <ul class="crit">
-        <li><strong>Datenpunkt:</strong> Wohin läuft Henriks Energie von selbst, wenn nichts erzwungen wird? Große Themen oder Aktuelles — beides ist wertvoll zu wissen.</li>
-        <li>Die <strong>Verortung</strong> hat den Faden gehalten — Henrik hat den Zusammenhang zur Landkarte kurz gesehen.</li>
-        <li class="no"><strong>Kein</strong> Kriterium heute: „Ziel formuliert" / „Plan abgearbeitet". Das ist Workshop-Stoff.</li>
+        <li><strong>Der GF-Kanal ist von Henrik beschrieben</strong> (Frequenz, Formate, wie der GF tickt) — mein vorläufiges Bild bestätigt oder korrigiert.</li>
+        <li><strong>Mindestens ein Framing-Ansatz kam von Henrik</strong> — in seinen Worten, zu seinem GF.</li>
+        <li><strong>Ein kleinster erster Schritt ist benannt</strong> ODER Henrik hat das Thema selbst als Workshop-Stoff dimensioniert.</li>
+        <li class="no"><strong>Kein</strong> Kriterium heute: fertiger Gesprächsplan, Termin beim GF, Rollenspiel gemacht.</li>
       </ul>
     </div>
   </section>
 
   <section>
-    <h2><span class="num">7</span> Nach der Session <span class="badge andi">Einpflege-Schritt</span></h2>
+    <h2><span class="num">6</span> Anhang: Geprüft &amp; verworfen <span class="badge plain">warum so und nicht anders</span></h2>
+    <div class="card">
+      <div class="rej">
+        <div class="name">Offene Frage zurückgeben („Wie willst du rangehen?")</div>
+        <p>Henrik antwortet „das musst du doch wissen" — die Frage exponiert seinen blinden Fleck, fühlt sich wie eine Prüfung an. Risiko: Blockade + Frust („wieder Theorie").</p>
+      </div>
+      <div class="rej">
+        <div class="name">Heute voll ins Vorstoß-Design (Rollenspiel, Gesprächsplan)</div>
+        <p>Workshop-Intensität in normaler Stunde → „keine Zeit"-Reflex; der große Sprung auf einmal triggert die Blockade. Bleibt richtig — als eigener Workshop, wenn Henriks Material da ist.</p>
+      </div>
+      <div class="rej">
+        <div class="name">Fertigen Plan mitbringen („so machen wir's: 1, 2, 3")</div>
+        <p>Würde sogar andocken (Henrik mag Konkretes) — kauft aber das Falsche: mein Framing statt seins, kippt beim ersten GF-Widerstand, baut Abhängigkeit auf (ich gehe Jahresende). Als Erfolg getarntes Scheitern.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">7</span> Miro-Karte vorbefüllt <span class="badge henrik">→ Miro · Henrik kann das sehen</span></h2>
+    <div class="card henrik">
+      <p style="margin-top:0; font-size:14.5px; color:var(--ink-soft);"><strong>Kopierfertig für die Session-Kachel.</strong> Nur Firewall-Sauberes — alles hier könnte auch im action-plan stehen. „Wie geht's uns?" und „Wir gehen heute raus mit" bleiben leer (live füllen).</p>
+      <pre style="white-space:pre-wrap; font-family:inherit; font-size:15px; background:#fff; border:1px solid var(--green-line); border-radius:8px; padding:14px 16px; margin:0;">12.06.2026
+
+WIE GEHT'S UNS?
+
+
+AKTUELLE OFFTOPICS DER WOCHE:
+- Henriks Rückmeldung ist da: bei der zielgerichteten GF-Kommunikation weiterhin dabei
+- Speicherform für die Standort-/Personen-Infos: mit Paula gelöst (Liste + Filter, zwei Ebenen Standort/Person + Feedback-Typ). Offen nur noch: Arbeitsteilung + laufende Pflege.
+
+WAS LIEGT SCHON AN AUS VORHERIGEN SESSIONS?
+- Paula-Delegation (Leerlauf-Frage): Wer setzt um? + Evaluation terminieren
+
+FÜR HEUTE STEHT AN:
+- Kurze Verortung an der Strategie-Landkarte: wo das GF-Thema hängt
+- GF-Kommunikation konkret: Wie läuft der Draht zum GF heute?
+
+FÜRS NÄCHSTE MAL:
+- Offene Frage vom 09.06.: das WAS/WIE-Denken auf andere Themen / auf Algron als Ganzes übertragen
+
+
+WIR GEHEN HEUTE RAUS MIT:
+
+</pre>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">8</span> Nach der Session <span class="badge andi">Einpflege-Schritt</span></h2>
     <div class="card">
       <ol class="flow">
-        <li>Dieses Dokument → Eintrag oben in <strong>session-log</strong> (mit Feedback: wie lief's, wohin lief Henriks Energie).</li>
+        <li>Dieses Dokument → Eintrag oben in <strong>session-log</strong> (mit Feedback: Wie reagierte Henrik auf die Arbeitsteilung? Kam das Framing von ihm?).</li>
         <li><strong>strategie-landkarte.html</strong> updaten, falls sich was bewegt hat.</li>
-        <li><strong>action-plan</strong> updaten (neu offen / abgehakt).</li>
-        <li>Taktischer Read → <strong>strategy/henrik-strategie.md</strong>. Neues <strong>next-session</strong> anlegen.</li>
+        <li><strong>action-plan</strong> updaten (Commitment-Task schließen; GF-Kanal-Task je nach Ergebnis; ggf. neuer Workshop-Termin als Task).</li>
+        <li>Taktischer Read → <strong>strategy/henrik-strategie.md</strong> (insb. der bestätigte GF-Kanal-Stand → später in bestandsaufnahme.md). Neues <strong>next-session</strong> anlegen.</li>
       </ol>
     </div>
   </section>

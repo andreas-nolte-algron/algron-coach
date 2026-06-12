@@ -12,6 +12,8 @@ Leitthema: **KI nutzbar machen für die Kanzlei Voigt** (Hauptkunde). Der GF wei
 
 10.06. (kein Coaching): Vormittags Werkzeug-/Doku-Pflege -- Landkarte Ebene 2 auf die Zwei-Welten-Struktur + direkte Bearbeitung; `action-plan` auf Status-Achse, `session-log` neueste-oben. Nachmittags operativ: **Speicherform für die Standort-/Personen-Infos mit Paula gelöst** -- Paula baute die Liste, Andi ergänzte eine Filter-Lösung; zwei Ebenen (Standort ⊃ Person) + Feedback-Typ-Feld. Details in `context/handovers/`.
 
+12.06. **Henriks Commitment ist da:** Er hat sich gemeldet -- bei der zielgerichteten GF-Kommunikation weiterhin dabei. Damit ist der Messpunkt vom 09.06. positiv gefallen. Heutige Session (geplant): GF-Thema eröffnen -- Henrik beschreibt GF + Kanal aus erster Hand. Vormittags zudem Werkzeug-Pflege: Session-Vorbereitungs-Ablauf systematisiert (Andi-Bereich).
+
 Vorlauf: 04.06. Workshop -- Top-Level-Sicht bottom-up zu 4 Strängen, Ziel-Ebene noch offen (nur „guten Gewissens höhere Rechnungen"). 29.05./02.06. Wissenstransfer-Übereinkunft + erster Delegations-Fall (Leerlauf → Paula) + Themen-Tunnel-Muster gespiegelt. Sessions 1–3: Schleife erkannt (Henrik im Code), Vision da, Brücke zum Heute fehlt.
 
 ## Die vier Fragen (aktueller Arbeitsrahmen)
@@ -21,8 +23,7 @@ Vorlauf: 04.06. Workshop -- Top-Level-Sicht bottom-up zu 4 Strängen, Ziel-Ebene
 - **C -- Skadi: Was muss Skadi können, damit die Use-Cases gehen?** = Skadi-Roadmap, hängt an A. (Skadi ist der Kanal, über den KI bei Voigt ankommt -- damit die Antwort aufs Klumpenrisiko.)
 - **D -- Algron: Wie gehen wir strategisch ran?** Ergibt sich aus A–C, muss Henrik NICHT vorab erfinden.
 - **Geparkt:** Tooling / EU-fähiger Anbieter -- laut Henrik nicht die Herausforderung.
-
-**Filter „sinnvoll":** Ein Use-Case taugt, wenn beides stimmt -- er trifft einen echten Alltagsschmerz UND ist mit heutiger KI realistisch machbar.
+- **Filter „sinnvoll":** Ein Use-Case taugt, wenn beides stimmt -- echter Alltagsschmerz UND mit heutiger KI realistisch machbar.
 
 ## Der Engpass (präzisiert)
 
@@ -32,22 +33,19 @@ Henrik ist das **Nadelöhr**: einziger Kanal zum GF Voigt *und* alleiniger Wisse
 
 - Algron hat kein Geschäftsmodell, sondern Projekte mit Umsatz-Decke (Skadi + Quality Connect)
 - Henrik will raus aus Entwicklung -- hin zu Problemlöser/strategischer Partner
-- Skadi Feature A: Schwärzungs-*Mechanik* an Florian delegiert -- ABER die Versand-Frage (sendet Skadi selbst?) ist eine strategische Haftungs-Weiche, kein technisches Detail
+- Skadi Feature A: Schwärzungs-*Mechanik* an Florian delegiert -- ABER die Versand-Frage (sendet Skadi selbst?) ist eine strategische Haftungs-Weiche, kein technisches Detail. Entscheidungsgrundlage liegt vor (Compliance-Sichtung): Empfehlung Szenario B (Skadi sendet nicht selbst), echt offen, heutiger Flow tendiert ohnehin B
 - Skadi als Kanal für KI bei Voigt = strategische Antwort aufs Klumpenrisiko
-- Versand-Frage hat jetzt Entscheidungsgrundlage (Compliance-Sichtung): Empfehlung Szenario B (Skadi sendet nicht selbst), echt offen, heutiger Flow tendiert ohnehin B
-- Übersehener Risikovektor: Produkthaftung (Algron = Hersteller, verschuldensunabhängig) -- größer als die AI-Act-Klasse
-- Voigt hat eigene Rechtsabteilung -- Compliance nicht allein stemmen, an der Schnittstelle souverän sein
+- Übersehener Risikovektor: Produkthaftung (Algron = Hersteller, verschuldensunabhängig) -- größer als die AI-Act-Klasse. Voigt hat eigene Rechtsabteilung -- Compliance nicht allein stemmen, an der Schnittstelle souverän sein
 - **Wissenstransfer ist der Hebel gegen das Nadelöhr:** Delegieren ohne Wissensübergabe frustriert Henrik (andere fabrizieren auf dünner Lage). Lösung als Standardschritt jeder Übergabe verankert: erst Wissen übertragen + verschriftlichen, dann sinkt Henriks Aufwand auf Feinjustierung
 - **Geld-Realität:** Bei stundenbasierter Abrechnung bringt Effizienz keine Mehreinnahmen -- der Kommunikations-/Experimentier-Strang zahlt auf Haltung und Struktur ein, aber nicht direkt auf den Geld-Schmerz. Offene Brücke: Henriks freigewordene Zeit muss in geld-bringende Arbeit fließen, sonst Effizienz ohne Ertrag
 
 ## Offene Punkte
 
 - Quality Connect: strategische Neubewertung steht weiter aus (Nebenstrang, in den aktuellen Briefings nicht berührt)
-- Berater-Aversion vs. eigenes Modell -- noch nicht aufgelöst
-- Netzwerk-Frage: durch die Voigt-Co-Explorer-Richtung teilweise adressiert, aber kein zweiter Kunde in Sicht
+- Berater-Aversion vs. eigenes Modell noch nicht aufgelöst; Netzwerk-Frage durch Voigt-Co-Explorer-Richtung teils adressiert, aber kein zweiter Kunde in Sicht
 
 ## Nächste Steps
 
-1. **Henriks Commitment-Rückmeldung** (zielgerichtete GF-Kommunikation, schriftlich, Folgetag) abwarten + nachhalten.
-2. **GF-Kanal von Henrik beschreiben lassen** (Frequenz, Formate, was geht). Falls Commitment: GF-Vorstoß vorbereiten -- Rollenspiele, Termin-Anfrage, erster Schritt bewusst klein.
-3. Ebene 2 weiter sortieren (nicht vorschnell zu konkreten Ableitungen). Paula-Delegation (Leerlauf) klären + Evaluation terminieren.
+1. **Heutige Session (12.06.):** GF + Kanal von Henrik beschreiben lassen (Frequenz, Formate, wie der GF tickt). Je nach Ausgang: GF-Vorstoß vorbereiten (erster Schritt bewusst klein) oder eigener Workshop-Termin dafür.
+2. Paula-Delegation (Leerlauf) klären + Evaluation terminieren; Arbeitsteilung/laufende Pflege der Standort-Infos final machen.
+3. Ebene 2 weiter sortieren (nicht vorschnell zu konkreten Ableitungen).
