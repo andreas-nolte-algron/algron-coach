@@ -50,6 +50,8 @@ FÜRS NÄCHSTE MAL:          ← vorbefüllen falls absehbar, sonst leer
 WIR GEHEN HEUTE RAUS MIT:  ← leer lassen (am Ende füllen)
 ```
 
+**Form-Vorgabe (getestet 12.06., funktioniert):** Der Block ist im HTML eine **echte formatierte Liste** (`<p><strong>`-Überschriften + `<ul><li>`-Punkte), NICHT ein `<pre>`-Textblock. Grund: Beim Kopieren aus dem Browser wandert so die Struktur als Rich-Text mit, und Miro erzeugt beim Einfügen native Aufzählungspunkte. Aus einem `<pre>` kommt nur Plain-Text -- die `- `-Striche bleiben Textzeichen und Miro stopft alles in einen einzigen Listenpunkt. (Andi-Handgriff: in ein leeres Miro-Textfeld einfügen, nicht in eine aktive Aufzählung.)
+
 **Granularitäts-Test für die Karte (Henrik als Kalt-Leser).** Leitsatz vorweg -- warum die Karte minimal sein muss: Andis privater Ablauf (next-session) ist eine *Orientierung* -- er kann ihn jederzeit lautlos verlassen, wenn Henrik etwas anderes reinbringt. Die Miro-Karte ist eine *öffentliche Festlegung* -- abweichen ist sichtbar (Zeilen müssten gestrichen werden) und kostet. Jede Karten-Zeile ist ein Versprechen, keine Notiz. Deshalb: **Karte nennt Themen + Einstieg, nie den Pfad.** Prüfung mit dem Henrik-Modell auf den Moment des LESENS (vorab/kalt), nicht den Moment der Session:
 - **(a) Dramaturgie raus:** alles, was erst durch einen vorherigen Live-Schritt beantwortbar wird (z.B. Framing-Fragen, die auf Henriks frisch erzeugtem Material stehen müssen). Kalt gelesen exponieren sie den blinden Fleck ohne Erlaubnis-Raum → Prüfungsgefühl.
 - **(b) Output-Ankündigungen raus:** angekündigte Ergebnisse („erster Schritt definiert") = Output-Druck und nehmen Henrik Entscheidungen vorweg, die live seine sein sollen.
