@@ -16,6 +16,8 @@ Leitthema: **KI nutzbar machen für die Kanzlei Voigt** (Hauptkunde). Der GF wei
 
 13.06. **Durchbruch -- der fehlende vierte Kanal.** Henrik beschrieb den GF-Draht über 10 Jahre: heute drei Email-Typen (weitergeleitet / Informationsanfrage / eigens ausgearbeitet), **alle feature-/auftragsgetrieben** = fertige WAS → WIE. Roter Faden: der GF macht die WAS-Arbeit vorgelagert und allein, in 10 Jahren nie ein gemeinsames Gespräch übers WAS -- genau deshalb scheiterte KI (kein fertiges WAS). Erkenntnis: es braucht einen **vierten, strategischen Kanal**, der nicht rein über Email laufen kann (Henriks Einwand, zugleich die nächste Spannung -- er ist nicht gern in Meetings). Abschluss zeit-/telefonbedingt abrupt, per Slack repariert. **Werkzeug:** neuer `/nachbereitung`-Skill gebaut + am ersten echten Fall getestet (Miro→Session-Datei→Spine→Archiv); `miro-import.html` als Transport-Tool (Hierarchie-erhaltend). Session-Datei graduiert nach `strategy/archive/session-2026-06-13.html`.
 
+13.06. (Nachtrag, Prep/Pflege): **next-session für die Vierter-Kanal-Form-Session gebaut** (normale Stunde, Form-Knoten knacken; Schritt 1 spiegelt Henriks eigenen Durchbruch, gegen die „wusste-ich-eh"-Signatur). **Kategorienfehler gestoppt (Andi):** Der vierte Kanal war versuchsweise als Karte in die `strategie-landkarte.html` gesetzt -- Landkarte ist aber WAS-verfolgen-wir (Themen), Kanäle sind WIE-kommunizieren (anderes Modell). Rückgängig. **Job des Kanäle-Modells geklärt:** Befund + einmaliges Gerüst, kein eigenes Artefakt -- Heimat ist Text in `bestandsaufnahme.md`. Dauer-Linse (Mail-Triage) nicht vorab entscheiden; nur wenn Henrik es selbst will.
+
 Vorlauf: 04.06. Workshop -- Top-Level-Sicht bottom-up zu 4 Strängen, Ziel-Ebene noch offen (nur „guten Gewissens höhere Rechnungen"). 29.05./02.06. Wissenstransfer-Übereinkunft + erster Delegations-Fall (Leerlauf → Paula) + Themen-Tunnel-Muster gespiegelt. Sessions 1–3: Schleife erkannt (Henrik im Code), Vision da, Brücke zum Heute fehlt.
 
 ## Die vier Fragen (aktueller Arbeitsrahmen)
@@ -48,7 +50,6 @@ Henrik ist das **Nadelöhr**: einziger Kanal zum GF Voigt *und* alleiniger Wisse
 
 ## Nächste Steps
 
-1. **Ausstehend aus 13.06. (Nachbereitung bewusst abgebrochen, urteilsintensiv -- für den Start der nächsten Vorbereitung):** (a) `strategie-landkarte.html` um den vierten Kanal ergänzen; (b) frische `next-session.html` bauen (Thema: vierten Kanal konzipieren) -- mit Henrik-Modell-Test, Adapter, Miro-Karte.
-2. **Vierten Kanal konzipieren (eigener Workshop):** strategische Kommunikation mit dem GF, die nicht rein über Email läuft. Zentrale Spannung: Henrik meidet Meetings. Erster Schritt klein.
-3. **Frühwarn-Faden:** Henrik erkennen helfen, wann eine Mail die Feature-Grenze überschreitet = Trigger für den vierten Kanal. NICHT als „mach dir die 3 Typen bewusst" framen.
-4. Paula-Delegation: Henrik beauftragt kommende Woche -- Evaluation/Checkup terminieren.
+1. **Nächste Session: Form des vierten Kanals knacken.** Prep liegt fertig in `strategy/next-session.html` (Datum + Offtopics live ergänzen). Normale Stunde: Henrik benennt eine Kandidaten-Form (zwischen „nicht Email" und „kein Meeting") -- oder dimensioniert es selbst als eigenen Workshop. Das eigentliche Vorstoß-Design (Rollenspiel/Gesprächsplan) bleibt ein späterer Termin.
+2. **Frühwarn-Faden** (optionale zweite Hälfte): wann überschreitet eine Mail die Feature-Grenze = Trigger für den vierten Kanal. NICHT als „mach dir die 3 Typen bewusst" framen; nur wenn Henrik den Bedarf selbst zeigt.
+3. Paula-Delegation: Henrik beauftragt kommende Woche -- Evaluation/Checkup terminieren.

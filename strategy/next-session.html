@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Session — Den vierten Kanal formen</title>
+<style>
+  :root {
+    --bg: #f7f5f1; --card: #ffffff; --ink: #23211d; --ink-soft: #5c574e; --line: #e3ded5;
+    --accent: #3a5a6c;
+    --green: #3f7d52; --green-bg: #eef6f0; --green-line: #cfe6d6;
+    --amber: #9a6a16; --amber-bg: #faf3e4; --amber-line: #ecdcb8;
+    --blue-bg: #eef2f6; --blue-line: #d3deea;
+    --gold: #b8893f; --gold-bg: #f7eccf; --gold-line: #e7cf9b;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; font-size: 17px; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 24px 96px; }
+
+  .kicker { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); font-weight: 700; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 6px 0 10px; font-weight: 760; letter-spacing: -.01em; }
+  .meta { font-size: 13.5px; color: var(--ink-soft); border-left: 3px solid var(--line); padding-left: 12px; }
+  .meta a { color: var(--accent); }
+
+  section { margin-top: 34px; }
+  h2 { font-size: 13px; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-soft); font-weight: 700; margin: 0 0 12px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  h2 .num { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50%; background: var(--accent); color: #fff; font-size: 12px; font-weight: 700; }
+  .badge { font-size: 11px; letter-spacing: .04em; text-transform: uppercase; font-weight: 700; padding: 2px 9px; border-radius: 999px; white-space: nowrap; }
+  .badge.henrik { background: var(--green-bg); color: var(--green); border: 1px solid var(--green-line); }
+  .badge.andi { background: var(--amber-bg); color: var(--amber); border: 1px solid var(--amber-line); }
+  .badge.plain { background: #ececec; color: var(--ink-soft); border: 1px solid var(--line); text-transform: none; letter-spacing: 0; }
+
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; }
+  .card p { margin: 0 0 10px; } .card p:last-child { margin-bottom: 0; }
+  .card.henrik { background: var(--green-bg); border-color: var(--green-line); }
+  .card.andi { background: var(--amber-bg); border-color: var(--amber-line); }
+  .card.blue { background: var(--blue-bg); border-color: var(--blue-line); }
+
+  .lead { font-size: 16px; }
+  em.q { font-style: italic; color: var(--accent); font-weight: 600; }
+
+  .say { background: var(--blue-bg); border-left: 4px solid var(--accent); border-radius: 0 8px 8px 0; padding: 10px 14px; margin: 10px 0; font-size: 15.5px; }
+  .say .lbl { display: block; font-size: 11px; letter-spacing: .05em; text-transform: uppercase; font-weight: 700; color: var(--accent); margin-bottom: 2px; }
+
+  ol.steps { margin: 0; padding-left: 0; list-style: none; counter-reset: step; }
+  ol.steps li { position: relative; padding: 0 0 18px 40px; counter-increment: step; }
+  ol.steps li:last-child { padding-bottom: 0; }
+  ol.steps li::before { content: counter(step); position: absolute; left: 0; top: 0; width: 26px; height: 26px; border-radius: 50%; background: var(--green); color: #fff; font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+  ol.steps .sub { font-size: 14.5px; color: var(--ink-soft); margin: 4px 0 0; }
+  ol.steps .sub b { color: var(--ink); font-weight: 600; }
+
+  .opt { border: 1px dashed var(--ink-soft); border-radius: 9px; padding: 12px 16px; margin-top: 14px; background: rgba(255,255,255,.4); }
+  .opt .otag { font-size: 11px; letter-spacing: .05em; text-transform: uppercase; font-weight: 700; color: var(--ink-soft); }
+
+  ul.model { list-style: none; margin: 0; padding: 0; }
+  ul.model li { position: relative; padding: 0 0 12px 24px; }
+  ul.model li:last-child { padding-bottom: 0; }
+  ul.model li::before { content: "▸"; position: absolute; left: 0; top: 0; color: var(--accent); font-weight: 800; }
+
+  ul.watch { list-style: none; margin: 0; padding: 0; }
+  ul.watch li { position: relative; padding: 0 0 14px 24px; }
+  ul.watch li:last-child { padding-bottom: 0; }
+  ul.watch li::before { content: "!"; position: absolute; left: 0; top: 1px; width: 17px; height: 17px; border-radius: 4px; background: var(--amber); color: #fff; font-size: 12px; font-weight: 800; display: flex; align-items: center; justify-content: center; }
+  ul.watch b { color: var(--amber); }
+
+  ul.crit { list-style: none; margin: 0; padding: 0; }
+  ul.crit li { position: relative; padding: 0 0 12px 28px; }
+  ul.crit li:last-child { padding-bottom: 0; }
+  ul.crit li::before { content: "✓"; position: absolute; left: 0; top: 0; color: var(--green); font-weight: 800; font-size: 16px; }
+  ul.crit li.no::before { content: "✕"; color: #b3503f; }
+
+  .rej { border-left: 4px solid #b3503f; padding: 4px 0 4px 16px; margin: 0 0 14px; }
+  .rej:last-child { margin-bottom: 0; }
+  .rej .name { font-weight: 700; font-size: 15px; }
+  .rej p { font-size: 14px; color: var(--ink-soft); margin: 3px 0 0; }
+
+  ol.flow { margin: 0; padding-left: 22px; color: var(--ink-soft); font-size: 15px; }
+  ol.flow li { padding: 2px 0; }
+
+  @media print { body { background: #fff; font-size: 12pt; } .card, .say { break-inside: avoid; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="kicker">Session-Vorbereitung · nächste Session</div>
+    <h1>Den vierten Kanal formen — Henriks Knoten zwischen Email und Meeting</h1>
+    <p class="meta">
+      <strong>Andi-only</strong> (strategy/). Meine Notizen für die Session — selbsttragend, kalt lesbar.<br>
+      Notion-Übertrag mache ich selbst (Notion ist mein privater Bereich, Henrik hat dort keinen Zugriff).<br>
+      Kanal-Fakten: <a href="../progress/bestandsaufnahme.md">progress/bestandsaufnahme.md</a> §„GF-Kommunikationskanal" (die drei Email-Typen + 10-Jahre-Entwicklung). Die Kanäle sind <strong>kein Landkarten-Thema</strong> — die Landkarte trägt nur die Abstraktion darüber (WAS/WIE, Strang s4). Nicht öffnen, nicht verorten.<br>
+      Format: <strong>normale Coaching-Stunde, kein Workshop.</strong> Ziel: die <em>Form</em> des vierten Kanals knacken — das Vorstoß-Design bleibt ein eigener, späterer Termin.
+    </p>
+  </header>
+
+  <section>
+    <h2><span class="num">1</span> Ausgangslage</h2>
+    <div class="card">
+      <p class="lead"><strong>Der Durchbruch vom 13.06. gehört Henrik.</strong> Sein eigenes „rausgehen mit" war wörtlich: <em class="q">„wir brauchen für die strategische Kommunikation einen neuen, vierten Kanal."</em> Roter Faden, den er live übernahm: alle drei bisherigen GF-Kanäle (weitergeleiteter Auftrag / Informationsanfrage / eigens ausgearbeiteter Auftrag) laufen über Email und sind feature-getrieben — fertiges WAS → WIE. In 10 Jahren <em>nie</em> gemeinsam übers WAS geredet. „Ja, das ist es."</p>
+      <p><strong>Henrik hat selbst die Spannung gesetzt, die heute dran ist:</strong> <em class="q">„der vierte Kanal kann nicht rein über Email"</em> + <em class="q">„ich bin nicht gern in Meetings."</em> Die drei Kanäle sind alle Email; ein Meeting will er nicht. Es fehlt eine vierte <strong>Form</strong> dazwischen. Das ist der Knoten — und er ist seiner, nicht meiner.</p>
+      <p><strong>Was am 13.06. schieflief — und heute NICHT wiederholen:</strong> Die Session endete abrupt (Telefon), per Slack repariert. Im Abschluss habe ich — unter selbst erzeugtem Output-Druck — eine fremde These draufgesetzt (die drei Typen brauchen „Bewusstsein/Routine"). Henrik war unüberzeugt, zu Recht. <strong>Heute bauen wir nur auf dem auf, was Henrik besitzt</strong> (vierter Kanal + seine zwei Bedingungen) und lassen die Triage-/Bewusstseins-These weg.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">2</span> Henrik-Modell <span class="badge andi">woran heute alles getestet ist</span></h2>
+    <div class="card andi">
+      <ul class="model">
+        <li><strong>Er kennt den GF wie kein anderer</strong> (8–10 Jahre) — aber eine eigen-initiierte, strategische GF-Kommunikation kennt er <strong>gar nicht</strong>. Die Form, die wir suchen, existiert für ihn noch nicht.</li>
+        <li><strong>Auf offene Methoden-Fragen</strong> („wie willst du das angehen?") antwortet er sinngemäß <em class="q">„weiß ich nicht — das musst du doch wissen."</em> Die Frage exponiert den blinden Fleck, fühlt sich wie eine Prüfung an. Arbeitsteilung deshalb zuerst aussprechen.</li>
+        <li><strong>Blockiert bei Abstraktem ohne greifbaren Pfad</strong> — „komm zum Punkt, keine Zeit"-Reflex. <strong>Konsequenz heute: die Form-Frage muss konkret verankert sein</strong> (an seinen drei Kanälen, am GF-Verhalten) — NIE als „was ist dein ideales Kommunikationsformat?".</li>
+        <li><strong>Seine Stärke: die konkrete Ebene.</strong> Beschreiben, was er kennt, sprudelt (04.06., 13.06. belegt). Erlaubnis-Räume („es gibt kein Falsch") lösen seine Blockaden (09.06. belegt).</li>
+        <li><strong>„Nicht gern in Meetings" ≠ Aversion gegen generatives Arbeiten.</strong> Gemeint ist das durchgetaktete Pflicht-Meeting. Den Workshop-/Explorationsmodus mag er — er hat sich 04.06. „Workshop-Charakter" selbst als Erlaubnis-Kategorie geschaffen. Nicht vorschnell zu „dann eben gar kein gemeinsames Format" springen.</li>
+        <li><strong>Validieren≠Generieren (13.06.-Signatur, heute aktiv lesen):</strong> Wenn er den vierten Kanal als <em class="q">„wusste ich eh / gut dass DU Bescheid weißt"</em> recapt, ist das <strong>angenommen-statt-selbst-erzeugt — nicht Null-Ertrag.</strong> Gegenmittel ist eingebaut (Schritt 1: den Durchbruch früh als SEINE Entdeckung zurückspiegeln). NICHT mit Drängen reparieren.</li>
+        <li><strong>Arbeitsteilung (explizit aussprechen):</strong> Methode/Handwerk = mein Part. GF-Wissen + die Form in seiner Sprache + das echte Gespräch = Henriks Part.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">3</span> Ablauf der Stunde</h2>
+    <div class="card henrik">
+      <ol class="steps">
+        <li><strong>Durchbruch als SEINE Entdeckung würdigen — mit seinem eigenen Satz.</strong> Mit Henriks eigenem Abschluss vom 13.06. einsteigen, den ER gesetzt hat: <em class="q">„wir brauchen für die strategische Kommunikation einen neuen, vierten Kanal."</em> Explizit als seinen Fund zurückspiegeln (er hat ihn gefunden, nicht ich erklärt) — direkt gegen die „wusste ich eh"-Abtun-Signatur.
+          <p class="sub">Anker ist <b>sein eigenes Material</b>: die drei Kanäle, die er beschrieben hat. <b>Keine Landkarte öffnen</b> — die Kanäle sind kein Karten-Thema. Wenn der Faden zum großen Bild gebraucht wird (KI = WAS-Thema, nur der GF kann das WAS klären), verbal andocken, nicht visuell.</p>
+        </li>
+        <li><strong>Arbeitsteilung aussprechen — bevor er „das musst du doch wissen" sagen muss.</strong>
+          <div class="say"><span class="lbl">Formulierungs-Baustein</span>„Wie man so einen strategischen Kanal aufzieht, musst du nicht wissen — das ist mein Handwerk. Was nur du hast: Du kennst den GF seit Jahren und weißt, was bei ihm verfängt. Genau das brauche ich von dir."</div>
+          <p class="sub">Erlaubnis-Raum: Sein Nicht-Wissen ist legitim und eingeplant — und ich sage es zuerst.</p>
+        </li>
+        <li><strong>Den Knoten sichtbar machen — mit seinen eigenen Worten.</strong>
+          <div class="say"><span class="lbl">Formulierungs-Baustein</span>„Du hast zwei Sachen gesagt, die zusammen die spannende Frage sind: der vierte Kanal kann nicht rein über Email — und du bist nicht gern in Meetings. Die drei, die du beschrieben hast, sind alle Email. Ein Meeting willst du nicht. Also suchen wir eine vierte Form. Was liegt dazwischen?"</div>
+          <p class="sub">Konkret verankert in <b>seinem</b> Material vom 13.06. — kein abstraktes „Format finden".</p>
+        </li>
+        <li><strong>Henrik exploriert die Form</strong> (sein Heimspiel, solange konkret gehalten). Leitfragen, alle aus dem, was er kennt:
+          <p class="sub"><b>Was macht ein Gespräch „strategisch" statt feature-getrieben?</b> — er hat's selbst erlebt: die stille „alle Dokumente vorbereiten"-Mail, bei der der GF verstummte, als es um Kanzlei-Kapazität statt um Programmieraufwand ging. · <b>Wann tickt der GF überhaupt strategisch?</b> — beim „eigens ausgearbeiteten" Kanal schreibt er selbst eine volle A4-Seite mit „warum wichtig", vorab mit den NL-Leitungen besprochen. Der GF KANN das WAS artikulieren — bisher nur in seine Richtung. · <b>Wie müsste eine Form aussehen, die für DICH leicht ist (nicht Meeting-anstrengend) UND beim GF anschlussfähig?</b></p>
+          <p class="sub"><b>Henrik formt</b> (sein Part). Wenn er hängt: Methoden-<i>Optionen</i> anbieten („man könnte X oder Y — was passt zu ihm?"), <b>nicht selbst die Form bestimmen</b>.</p>
+        </li>
+        <li><strong>Kandidaten-Form benennen — oder bewusst als Workshop dimensionieren.</strong> Entweder Henrik benennt eine Kandidaten-Form für den vierten Kanal — oder er sagt selbst „das ist größer, dafür nehmen wir uns einen eigenen Termin". <b>Beides ist ein Gewinn:</b> Im zweiten Fall hat er das Thema selbst dimensioniert statt es abzufrühstücken.</li>
+      </ol>
+
+      <div class="opt">
+        <span class="otag">Optionale zweite Hälfte — nur bei Raum &amp; Energie</span>
+        <p style="margin:6px 0 0; font-size:15px;"><strong>Frühwarn-Trigger</strong> (NUR als Trigger framen, NIE als „mach dir die 3 Kanäle bewusst" — das ist die am 13.06. abgelehnte Routine-/Tidiness-These): <em class="q">„Woran würdest du im Posteingang merken, dass eine Mail eigentlich nicht in die drei Auftrags-Kanäle gehört, sondern in den vierten?"</em> — der Moment, den strategischen Kanal zu öffnen (Bsp.: die „alle Dokumente vorbereiten"-Mail). Andockend an das, was Henrik schon besitzt. Wegfallen lassen, wenn die Form-Frage die Stunde füllt.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">4</span> Wachsamkeiten <span class="badge andi">Andi-only</span></h2>
+    <div class="card andi">
+      <ul class="watch">
+        <li><b>Der Abschluss ist meine Hauptversuchungsstelle</b> (13.06.-Lektion — kam damals unmarkiert beim Zumachen). Wenn die Ausbeute dünn wirkt oder Henrik abtut: <b>KEINE neue These reindrücken.</b> Dünn-wirkend ≠ Null-Ertrag. Das Motiv wäre mein Output-Druck, nicht Henriks Bedarf — genau der Ergebnisdruck, gegen den die ganze Experimentierhaltung gebaut ist.</li>
+        <li><b>Validieren≠Generieren lesen, nicht reparieren.</b> „War eh klar" = angenommen-statt-erzeugt. Gegenmittel ist Schritt 1, nicht Drängen am Ende.</li>
+        <li><b>Form-Frage konkret halten.</b> Sobald es Richtung „ideales Format" abstrahiert, kommt der „keine Zeit"-Reflex. Immer an die drei Kanäle / das GF-Verhalten zurückbinden.</li>
+        <li><b>GF-Wachsamkeit / Falltest.</b> Kanal-/Gesprächsdesign ist mein Können UND mein Vermeidungsmuster (Flucht ins erfüllende Tun; ich gehe Jahresende). Optionen anbieten ja, die Form bestimmen nein. <b>Falltest: Wessen Form steht am Ende? Henriks.</b></li>
+        <li><b>Nicht ins Vorstoß-Design rutschen.</b> Kein Rollenspiel, kein Gesprächsplan heute — das ist der spätere, eigene Workshop. Heute nur die Form.</li>
+        <li><b>Nie als „beim GF absegnen" framen.</b> Es geht um ein Gespräch, das Henrik führt, weil ER es braucht (die echten Wünsche finden) — nicht um Erlaubnis.</li>
+        <li><b>Paula-Delegation nachfassen:</b> Henrik wollte die Leerlauf-Frage „kommende Woche in Auftrag geben". Ist es passiert? + Evaluation/Checkup terminieren.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">5</span> Woran ich erkenne, dass es lief</h2>
+    <div class="card">
+      <ul class="crit">
+        <li><strong>Der Durchbruch fühlt sich für Henrik wie SEINE Entdeckung an</strong> — nicht „gut dass Andi jetzt Bescheid weiß".</li>
+        <li><strong>Mindestens eine Kandidaten-Form für den vierten Kanal kam von Henrik</strong> — in seinen Worten, zu seinem GF — ODER er hat das Thema selbst als eigenen Workshop dimensioniert.</li>
+        <li><strong>Der Knoten ist als seiner anerkannt</strong> (zwischen „nicht Email" und „kein Meeting") und nicht abgetan.</li>
+        <li class="no"><strong>Kein</strong> Kriterium heute: fertige Kanal-Definition, Gesprächsplan, Termin beim GF, Rollenspiel.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">6</span> Anhang: Geprüft &amp; verworfen <span class="badge plain">warum so und nicht anders</span></h2>
+    <div class="card">
+      <div class="rej">
+        <div class="name">Format-Menü mitbringen (Jour fixe / Workshop / Async-Video zum Auswählen)</div>
+        <p>Würde andocken (Henrik mag Konkretes) — kauft aber das Falsche: meine Lösungsmenge statt seiner. Kippt den Falltest (meine Form vor dem GF, nicht seine) und ist exakt die GF-Vermeidungsfalle. Optionen nur auf Anfrage, als Optionen, nicht als Aufschlag.</p>
+      </div>
+      <div class="rej">
+        <div class="name">Mit dem Frühwarn-Trigger eröffnen</div>
+        <p>Henrik war beim Nachbar-Thema (Triage/Bewusstsein) am 13.06. widerständig; sein Gold zeigt auf die FORM des vierten Kanals. Deshalb höchstens optionale zweite Hälfte, strikt als Trigger reframt — nie als Headline.</p>
+      </div>
+      <div class="rej">
+        <div class="name">„Mach dir die 3 Kanäle bewusst / führ eine Triage-Routine ein"</div>
+        <p>Die am 13.06. von Henrik abgelehnte Tidiness-These (war mein Output-Druck, nicht sein Bedarf). Nicht recyceln.</p>
+      </div>
+      <div class="rej">
+        <div class="name">Heute schon den dedizierten Vorstoß-Workshop (Rollenspiel, Gesprächsplan)</div>
+        <p>Über-dimensioniert: die Form ist noch nicht entschieden, Workshop-Intensität triggert in einer normalen Stunde den „keine Zeit"-Reflex. Bleibt richtig — als eigener Termin, sobald die Form steht.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">7</span> Miro-Karte vorbefüllt <span class="badge henrik">→ Miro · Henrik kann das sehen</span></h2>
+    <div class="card henrik">
+      <p style="margin-top:0; font-size:14.5px; color:var(--ink-soft);"><strong>Kopierfertig für die Session-Kachel.</strong> Nur Firewall-Sauberes — alles hier könnte auch im action-plan stehen. „Wie geht's uns?", „Offtopics" und „Wir gehen heute raus mit" bleiben leer (live / kurz vorher füllen). <strong>Datum eintragen.</strong> In ein leeres Miro-Textfeld einfügen (nicht in eine aktive Aufzählung).</p>
+      <div style="font-size:15px; background:#fff; border:1px solid var(--green-line); border-radius:8px; padding:14px 16px; margin:0; line-height:1.5;">
+        <p style="margin:0 0 10px;"><strong>[DATUM]</strong></p>
+        <p style="margin:0 0 10px;"><strong>WIE GEHT'S UNS?</strong></p>
+        <p style="margin:0 0 4px;"><strong>AKTUELLE OFFTOPICS DER WOCHE:</strong></p>
+        <ul style="margin:0 0 10px; padding-left:22px;">
+          <li>&nbsp;</li>
+        </ul>
+        <p style="margin:0 0 4px;"><strong>WAS LIEGT SCHON AN AUS VORHERIGEN SESSIONS?</strong></p>
+        <ul style="margin:0 0 10px; padding-left:22px;">
+          <li>Paula-Delegation (Leerlauf-Frage): in Auftrag gegeben? + Evaluation/Checkup terminieren</li>
+        </ul>
+        <p style="margin:0 0 4px;"><strong>FÜR HEUTE STEHT AN:</strong></p>
+        <ul style="margin:0 0 10px; padding-left:22px;">
+          <li>Kurzer Rückblick: dein Durchbruch vom letzten Mal — der vierte, strategische Kanal</li>
+          <li>Der vierte Kanal: welche Form könnte er haben? (nicht rein Email, kein klassisches Meeting — was dazwischen?)</li>
+        </ul>
+        <p style="margin:0 0 4px;"><strong>FÜRS NÄCHSTE MAL:</strong></p>
+        <ul style="margin:0 0 10px; padding-left:22px;">
+          <li>Sobald die Form steht: den ersten konkreten Schritt zum vierten Kanal in einem eigenen Termin vorbereiten</li>
+        </ul>
+        <p style="margin:0;"><strong>WIR GEHEN HEUTE RAUS MIT:</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">8</span> Nach der Session <span class="badge andi">Einpflege-Schritt</span></h2>
+    <div class="card">
+      <ol class="flow">
+        <li><strong>/nachbereitung</strong> aufrufen — Miro-Ergebnis als Ground Truth sichern, geplant-vs-tatsächlich analysieren, in den Spine (session-log / landkarte / action-plan) projizieren, diese Prep ins Archiv graduieren, frische next-session, dann /save.</li>
+        <li>Beim taktischen Read besonders prüfen: Kam die Form von Henrik (Falltest)? Hat der Durchbruch sich für ihn wie SEINE Entdeckung angefühlt? Habe ich den Abschluss diesmal sauber gehalten (keine fremde These reingedrückt)?</li>
+        <li>Offener Wartungs-Punkt (unabhängig): die bestätigten GF-Kanal-Fakten (drei Email-Typen + 10-Jahre-Entwicklung) sind reif für <strong>bestandsaufnahme.md</strong>.</li>
+      </ol>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>
