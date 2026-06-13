@@ -2,6 +2,25 @@
 
 Chronologisches Log aller Sessions -- **neueste oben**.
 
+## 2026-06-13 -- GF-Kommunikation: die drei Mail-Kanäle + der fehlende vierte (strategische) Kanal
+
+Normale Coaching-Stunde, durch einen Termin unterbrochen (Henrik musste raus, kam zurück; der letzte Teil lief per Telefon, Henrik im Zug ohne Board-Sicht). Verortung: das GF-Thema als Schlüssel der KI-Welt (aus 09.06.).
+
+**Henrik beschrieb den GF-Kanal über 10 Jahre.** Anfangs intensiv (viel Email, GF stark involviert, Grundaufbau von Skadi klar vorgegeben über Excel-Ansichten). Seit die Software „läuft" (nach 3-4 Jahren) hauptsächlich Email, in **drei Typen**:
+1. **Auftragserteilung (weitergeleitet):** GF reicht einen NL-Wunsch/eine Frage durch („Können Sie sich das ansehen?"). Henrik macht und meldet sich, wenn's fertig ist.
+2. **Informationsanfrage:** „Ist das ohne größeren Aufwand möglich?" -- noch kein Auftrag, sondern Vorstufe. Henrik antwortet in 1-2h. Auffällig: bei reinem Programmieraufwand kam eine Antwort; als die Aufgabe auch Kanzlei-Kapazität betraf (Pflege etc.), blieb der GF still (erst 1 Woche her).
+3. **Auftragserteilung (eigens ausgearbeitet):** größere Features, ausführliche DIN-A4-Beschreibung mit Begründung, schon mit den NL-Leitungen besprochen. Henrik empfindet sie als sehr vollständig. Umsetzung 2-6 Monate, in Ausnahmen bis zu 1 Jahr.
+
+**Der rote Faden (Durchbruch):** Alle drei Typen sind fertige **WAS → WIE** -- der GF macht die strategische WAS-Arbeit vorgelagert und allein, Henrik bekommt fertige Aufträge zum Umsetzen. In 10 Jahren gab es **nie** ein gemeinsames Gespräch über das WAS. Genau deshalb scheiterte das KI-Thema: bei KI gibt es kein fertiges WAS, das der GF runterschreiben könnte -- es kam trotzdem durch den einzigen vorhandenen, feature-getriebenen Kanal.
+
+**Erkenntnis des Tages:** Es braucht einen **vierten Kanal** -- strategische Kommunikation mit dem GF -- der sich von den drei bisherigen grundlegend unterscheiden muss. Henriks eigener Einwand und zugleich die nächste Spannung: dieser Kanal kann nicht rein über Email laufen, und Henrik ist nicht gern in Meetings.
+
+**Paula-Delegation:** Henrik gibt die Leerlauf-Bindungsfrage kommende Woche in Auftrag.
+
+**Abschluss** war zeit-/telefonbedingt abrupt; per Slack nachgereicht, dass das Meeting hilfreich war (vierter Kanal jetzt klar; deutlich besserer Einblick in die GF-Kommunikation).
+
+**Raus mit:** (Henrik) Wir brauchen einen neuen, vierten Kanal für die strategische Kommunikation. (Andi) Viel besserer Überblick über die bestehende GF-Kommunikation.
+
 ## 2026-06-09 -- Weiterarbeit an Ebene 2: Zwei-Welten-Teilung (WAS vs. WIE)
 
 Normale Coaching-Stunde (kein Workshop). Aufhänger: Rekapitulation des Workshops 04.06. + Weiterarbeit an Ebene 2 (den „blauen Bereichen"/Strängen).

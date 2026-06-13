@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miro-Import → Dash-Tiefe</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 820px; margin: 0 auto; padding: 32px 20px 80px; background: #f7f5f1; color: #23211d; line-height: 1.5; }
+  h1 { font-size: 22px; }
+  p.hint { color: #5c574e; font-size: 14.5px; }
+  .step { font-weight: 700; color: #3a5a6c; margin: 24px 0 6px; }
+  #in { min-height: 180px; border: 2px solid #d3deea; border-radius: 8px; padding: 12px 14px; background: #fff; font-size: 15px; outline: none; }
+  #in:focus { border-color: #3a5a6c; }
+  #in:empty::before { content: "Miro-Karte hier reinpasten (Strg/Cmd+V) …"; color: #9a958c; }
+  button { font-size: 15px; font-weight: 600; padding: 10px 18px; border: none; border-radius: 8px; background: #3a5a6c; color: #fff; cursor: pointer; margin: 12px 8px 0 0; }
+  button.sec { background: #fff; color: #3a5a6c; border: 1.5px solid #3a5a6c; }
+  button:active { transform: translateY(1px); }
+  #out { width: 100%; min-height: 220px; margin-top: 10px; border: 2px solid #cfe6d6; border-radius: 8px; padding: 12px 14px; font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: 13.5px; background: #fff; box-sizing: border-box; white-space: pre; }
+  .ok { color: #3f7d52; font-weight: 700; margin-left: 10px; }
+</style>
+</head>
+<body>
+  <h1>Miro-Import → Dash-Tiefe</h1>
+  <p class="hint">Übersetzt eine reingepastete Miro-Karte (mit verschachtelten Listen) in flatten-festen Dash-Text, der den Chat unbeschadet übersteht. Bullet-Ebene = Anzahl Bindestriche. Fett → <code>**…**</code>, Kursiv → <code>*…*</code>, durchgestrichen → <code>~~…~~</code>, Links → <code>[text](url)</code>. (Farbe/Highlight können in Plain-Text nicht mit -- dafür wäre HTML-Export nötig.)</p>
+
+  <div class="step">1 · Miro-Karte hier reinpasten</div>
+  <div id="in" contenteditable="true"></div>
+
+  <div>
+    <button onclick="convert()">↓ In Dash-Text umwandeln</button>
+    <button class="sec" onclick="clearIn()">Leeren</button>
+  </div>
+
+  <div class="step">2 · Ergebnis kopieren → in den Chat pasten</div>
+  <textarea id="out" readonly placeholder="Hier erscheint der Dash-Text …"></textarea>
+  <div>
+    <button onclick="copyOut()">Kopieren</button>
+    <span id="okmsg" class="ok" style="display:none">kopiert ✓</span>
+  </div>
+
+<script>
+function inlineMd(node) {
+  if (node.nodeType === Node.TEXT_NODE) return node.textContent;
+  if (node.nodeType !== Node.ELEMENT_NODE) return '';
+  const tag = node.tagName;
+  if (tag === 'UL' || tag === 'OL') return '';   // Listen separat
+  if (tag === 'BR') return ' ';
+  // Kinder zuerst (rekursiv -- schachtelt bold/italic korrekt)
+  let inner = '';
+  node.childNodes.forEach(c => inner += inlineMd(c));
+
+  if (tag === 'A' && node.getAttribute('href')) {
+    return inner.trim() ? '[' + inner + '](' + node.getAttribute('href') + ')' : inner;
+  }
+  if (!inner.trim()) return inner;   // leere/whitespace-Wrapper nicht markieren
+
+  const style = ((node.getAttribute && node.getAttribute('style')) || '').toLowerCase();
+  const bold   = tag === 'STRONG' || tag === 'B' || /font-weight\s*:\s*(bold|[6-9]00)/.test(style);
+  const italic = tag === 'EM' || tag === 'I' || /font-style\s*:\s*italic/.test(style);
+  const strike = tag === 'S' || tag === 'DEL' || tag === 'STRIKE' || /line-through/.test(style);
+  const code   = tag === 'CODE';
+
+  let res = inner;
+  if (code)   res = '`' + res + '`';
+  if (strike) res = '~~' + res + '~~';
+  if (italic) res = '*' + res + '*';
+  if (bold)   res = '**' + res + '**';
+  return res;
+}
+
+function lineFromEl(el) {
+  // Klone, verschachtelte Listen raus (die laufen separat), Rest als Inline-Markdown
+  const clone = el.cloneNode(true);
+  clone.querySelectorAll('ul,ol').forEach(n => n.remove());
+  let text = '';
+  clone.childNodes.forEach(c => text += inlineMd(c));
+  return text.replace(/\s+/g, ' ').trim();
+}
+
+function walkList(list, depth, out) {
+  // direkte <li>-Kinder
+  Array.from(list.children).forEach(li => {
+    if (li.tagName !== 'LI') return;
+    const text = lineFromEl(li);
+    if (text) out.push('-'.repeat(depth) + ' ' + text);
+    // verschachtelte Listen tiefer
+    li.querySelectorAll(':scope > ul, :scope > ol').forEach(sub => walkList(sub, depth + 1, out));
+  });
+}
+
+function walkNode(node, out) {
+  Array.from(node.childNodes).forEach(child => {
+    if (child.nodeType === Node.TEXT_NODE) {
+      const t = child.textContent.replace(/\s+/g, ' ').trim();
+      if (t) out.push(t);
+    } else if (child.nodeType === Node.ELEMENT_NODE) {
+      const tag = child.tagName;
+      if (tag === 'UL' || tag === 'OL') {
+        walkList(child, 1, out);
+      } else if (tag === 'LI') {
+        // freistehendes li (selten)
+        const text = lineFromEl(child);
+        if (text) out.push('- ' + text);
+      } else if (tag === 'P' || tag === 'DIV' || tag === 'H1' || tag === 'H2' || tag === 'H3' || tag === 'BR') {
+        const text = lineFromEl(child);
+        if (text) out.push(text);
+        // evtl. Listen innerhalb eines div/p
+        child.querySelectorAll(':scope > ul, :scope > ol').forEach(sub => walkList(sub, 1, out));
+      } else {
+        const text = lineFromEl(child);
+        if (text) out.push(text);
+      }
+    }
+  });
+}
+
+function convert() {
+  const inEl = document.getElementById('in');
+  const out = [];
+  walkNode(inEl, out);
+  // Doppelte Leerzeilen vermeiden, Ergebnis zusammensetzen
+  document.getElementById('out').value = out.join('\n');
+}
+
+function clearIn() {
+  document.getElementById('in').innerHTML = '';
+  document.getElementById('out').value = '';
+}
+
+function copyOut() {
+  const ta = document.getElementById('out');
+  ta.select();
+  navigator.clipboard.writeText(ta.value).then(() => {
+    const m = document.getElementById('okmsg');
+    m.style.display = 'inline';
+    setTimeout(() => m.style.display = 'none', 1500);
+  });
+}
+</script>
+</body>
+</html>

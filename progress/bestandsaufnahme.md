@@ -43,6 +43,14 @@ Rollen-Zuordnung bestätigt (2026-05-29):
 - **GF-Beziehung (8-Jahre-Modus):** GF lässt viel Freiraum, hakt wenig nach. Reaktiv: Henrik klärt mit NL-Leitung → die erwähnt es beim GF → GF wird hellhörig, fragt Henrik → Henrik erklärt → GF ist fein. Vorab um Erlaubnis fragen ist nicht der übliche Weg.
 - **Voigt-Kanal:** Henrik hat direkten Draht zu NL-Leitungen und bekannten Mitarbeitenden -- braucht keine GF-Erlaubnis, um mit ihnen zu arbeiten.
 
+### GF-Kommunikationskanal (Stand 2026-06-13, von Henrik beschrieben)
+- **10-Jahre-Entwicklung:** Anfangs intensiv (viel Email, GF stark involviert, Grundaufbau von Skadi über Excel-Ansichten klar vorgegeben). Seit die Software „läuft" (nach 3-4 Jahren) überwiegend Email.
+- **Drei Email-Typen, alle feature-/auftragsgetrieben:**
+  1. *Auftragserteilung (weitergeleitet):* GF reicht einen NL-Wunsch/eine Frage durch („Können Sie sich das ansehen?"). Henrik macht, meldet sich, wenn fertig.
+  2. *Informationsanfrage:* „Ist das ohne größeren Aufwand möglich?" -- Vorstufe zum Auftrag. Henrik antwortet in 1-2h. Auffällig: bei reinem Programmieraufwand kam Antwort; als auch Kanzlei-Kapazität betroffen war (Pflege etc.), blieb der GF still.
+  3. *Auftragserteilung (eigens ausgearbeitet):* größere Features, ausführliche DIN-A4-Beschreibung mit Begründung, schon mit den NL-Leitungen besprochen. Umsetzung 2-6 Monate, in Ausnahmen bis 1 Jahr.
+- **Strukturkern:** Alle drei sind fertige **WAS → WIE** -- der GF macht die strategische WAS-Arbeit vorgelagert und allein, Henrik bekommt fertige Aufträge. In 10 Jahren **nie** ein gemeinsames Gespräch über das WAS. → Es fehlt ein **vierter, strategischer Kanal** (gemeinsames WAS), der nicht rein über Email laufen kann.
+
 ### Quality Connect (Nebenprojekt)
 - Lange Findungsphase, jetzt konkreter
 - Bestehende QA-Software modernisieren (wenig Weiterentwicklung in letzten 5-10 Jahren)

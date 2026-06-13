@@ -12,7 +12,9 @@ Leitthema: **KI nutzbar machen für die Kanzlei Voigt** (Hauptkunde). Der GF wei
 
 10.06. (kein Coaching): Vormittags Werkzeug-/Doku-Pflege -- Landkarte Ebene 2 auf die Zwei-Welten-Struktur + direkte Bearbeitung; `action-plan` auf Status-Achse, `session-log` neueste-oben. Nachmittags operativ: **Speicherform für die Standort-/Personen-Infos mit Paula gelöst** -- Paula baute die Liste, Andi ergänzte eine Filter-Lösung; zwei Ebenen (Standort ⊃ Person) + Feedback-Typ-Feld. Details in `context/handovers/`.
 
-12.06. **Henriks Commitment ist da:** Er hat sich gemeldet -- bei der zielgerichteten GF-Kommunikation weiterhin dabei. Damit ist der Messpunkt vom 09.06. positiv gefallen. Heutige Session (geplant): GF-Thema eröffnen -- Henrik beschreibt GF + Kanal aus erster Hand. Vormittags zudem Werkzeug-Pflege: Session-Vorbereitungs-Ablauf systematisiert (Andi-Bereich).
+12.06. **Henriks Commitment ist da:** Er hat sich gemeldet -- bei der zielgerichteten GF-Kommunikation weiterhin dabei. Damit ist der Messpunkt vom 09.06. positiv gefallen. Vormittags zudem Werkzeug-Pflege: Session-Vorbereitungs-Ablauf systematisiert (Andi-Bereich).
+
+13.06. **Durchbruch -- der fehlende vierte Kanal.** Henrik beschrieb den GF-Draht über 10 Jahre: heute drei Email-Typen (weitergeleitet / Informationsanfrage / eigens ausgearbeitet), **alle feature-/auftragsgetrieben** = fertige WAS → WIE. Roter Faden: der GF macht die WAS-Arbeit vorgelagert und allein, in 10 Jahren nie ein gemeinsames Gespräch übers WAS -- genau deshalb scheiterte KI (kein fertiges WAS). Erkenntnis: es braucht einen **vierten, strategischen Kanal**, der nicht rein über Email laufen kann (Henriks Einwand, zugleich die nächste Spannung -- er ist nicht gern in Meetings). Abschluss zeit-/telefonbedingt abrupt, per Slack repariert. **Werkzeug:** neuer `/nachbereitung`-Skill gebaut + am ersten echten Fall getestet (Miro→Session-Datei→Spine→Archiv); `miro-import.html` als Transport-Tool (Hierarchie-erhaltend). Session-Datei graduiert nach `strategy/archive/session-2026-06-13.html`.
 
 Vorlauf: 04.06. Workshop -- Top-Level-Sicht bottom-up zu 4 Strängen, Ziel-Ebene noch offen (nur „guten Gewissens höhere Rechnungen"). 29.05./02.06. Wissenstransfer-Übereinkunft + erster Delegations-Fall (Leerlauf → Paula) + Themen-Tunnel-Muster gespiegelt. Sessions 1–3: Schleife erkannt (Henrik im Code), Vision da, Brücke zum Heute fehlt.
 
@@ -46,6 +48,7 @@ Henrik ist das **Nadelöhr**: einziger Kanal zum GF Voigt *und* alleiniger Wisse
 
 ## Nächste Steps
 
-1. **Heutige Session (12.06.):** GF + Kanal von Henrik beschreiben lassen (Frequenz, Formate, wie der GF tickt). Je nach Ausgang: GF-Vorstoß vorbereiten (erster Schritt bewusst klein) oder eigener Workshop-Termin dafür.
-2. Paula-Delegation (Leerlauf) klären + Evaluation terminieren; Arbeitsteilung/laufende Pflege der Standort-Infos final machen.
-3. Ebene 2 weiter sortieren (nicht vorschnell zu konkreten Ableitungen).
+1. **Ausstehend aus 13.06. (Nachbereitung bewusst abgebrochen, urteilsintensiv -- für den Start der nächsten Vorbereitung):** (a) `strategie-landkarte.html` um den vierten Kanal ergänzen; (b) frische `next-session.html` bauen (Thema: vierten Kanal konzipieren) -- mit Henrik-Modell-Test, Adapter, Miro-Karte.
+2. **Vierten Kanal konzipieren (eigener Workshop):** strategische Kommunikation mit dem GF, die nicht rein über Email läuft. Zentrale Spannung: Henrik meidet Meetings. Erster Schritt klein.
+3. **Frühwarn-Faden:** Henrik erkennen helfen, wann eine Mail die Feature-Grenze überschreitet = Trigger für den vierten Kanal. NICHT als „mach dir die 3 Typen bewusst" framen.
+4. Paula-Delegation: Henrik beauftragt kommende Woche -- Evaluation/Checkup terminieren.

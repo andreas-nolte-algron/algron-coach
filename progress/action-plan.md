@@ -11,16 +11,15 @@ Die narrative Spur jeder Session steht im `session-log.md`.
 ## Offen
 
 ### KI-Welt / GF-Kommunikation
-- [ ] **Henriks Commitment-Rückmeldung** zur zielgerichteten GF-Kommunikation abwarten + nachhalten (Folgetag, schriftlich). Fertig wenn: Rückmeldung da. `[KI-Welt]` (09.06.)
-- [ ] **GF-Kanal beschreiben lassen:** wie die Kommunikation mit dem GF konkret läuft (Frequenz, Formate, was geht/was nicht). Fertig wenn: beschrieben. `[KI-Welt]` (09.06.)
-- [ ] **Falls Commitment kommt -- GF-Vorstoß vorbereiten:** Rollenspiele (Henrik beschreibt den GF, Andi spielt ihn), Termin-Anfrage/Meeting planen. Erster Schritt bewusst klein. Fertig wenn: erster kleiner Schritt definiert. `[KI-Welt]` (09.06.)
+- [ ] **Vierten Kanal (strategische Kommunikation) mit dem GF konzipieren -- eigener Workshop.** Die drei bisherigen Kanäle sind alle feature-/auftragsgetrieben (fertiges WAS → WIE); ein strategischer Kanal (gemeinsames WAS) fehlt komplett. Zentrale Spannung (von Henrik gesetzt): kann nicht rein über Email laufen, und Henrik ist nicht gern in Meetings. Erster Schritt bewusst klein. Fertig wenn: Format/erster Schritt für den vierten Kanal benannt. `[KI-Welt]` (13.06.)
+- [ ] **Frühwarn-Faden:** erkennen, wann eine eingehende Mail die Feature-Grenze überschreitet (Bsp.: stille „alle Dokumente vorbereiten"-Mail) = Trigger, den vierten Kanal zu öffnen. NICHT als „mach dir die 3 Typen bewusst" framen. Andocken an den vierten-Kanal-Faden. `[KI-Welt]` (13.06.)
 - [ ] 1–2 mitwillige Voigt-Leute direkt ansprechen (NL-Leitungen oder bekannte MA) für direkte Mitarbeit. Fertig wenn: 1–2 Leute angesprochen. `[KI-Welt]` (29.05.)
 - [ ] Schlankes Use-Case-Findungs-Vorgehen bauen, sobald Frage A greifbar wird (für den GF-Einsatz). `[KI-Welt]` (29.05.)
 - [ ] WAS/WIE-Denken auf andere Themen / auf Algron als Ganzes übertragen. `[KI-Welt]` (09.06.)
 
 ### Delegation / Nadelöhr
 - [ ] **Wissenstransfer-Probelauf (erster echter Fall):** Leerlauf-Bindungsfrage an Paula delegieren. Vorgehen: Gespräch → Todo-Liste → Checkup nach 1–2 Wochen. Fertig wenn: delegiert + Checkup terminiert. `[Delegation]` (02.06.)
-- [ ] **Paula-Delegation klären:** Wer setzt es um -- Henrik oder Andi? + Evaluation terminieren. Fertig wenn: geklärt + Termin steht. `[Delegation]` (09.06.)
+- [~] **Paula-Delegation klären:** Wer setzt es um -- Henrik oder Andi? + Evaluation terminieren. 13.06.: Henrik gibt es **kommende Woche in Auftrag** (= Henrik delegiert an Paula, kein Andi-Abhängigkeits-Risiko). Offen nur noch: Evaluation/Checkup terminieren. `[Delegation]` (09.06.)
 - [~] Speicherform für die Standort-/Personen-Infos: mit Paula gelöst (Liste + Filter-Lösung, zwei Ebenen Standort⊃Person + Feedback-Typ). Offen nur noch: Arbeitsteilung/laufende Pflege final. `[Delegation]` (29.05., gelöst 10.06.)
 
 ### Compliance / Haftung
@@ -41,6 +40,8 @@ Die narrative Spur jeder Session steht im `session-log.md`.
 
 ## Erledigt
 
+- [x] **Henriks Commitment** zur zielgerichteten GF-Kommunikation -- positiv gefallen (12.06., Rückmeldung kam). `[KI-Welt]` (09.06.)
+- [x] **GF-Kanal beschreiben lassen** -- 13.06.: drei Email-Kanäle (weitergeleitet / Informationsanfrage / eigens ausgearbeitet) + 10-Jahre-Entwicklung dokumentiert (session-log + bestandsaufnahme). `[KI-Welt]` (09.06.)
 - [x] Workshop-Rekapitulation durchgeführt. `[Prozess]` (09.06.)
 - [x] **Andi:** Top-Level-Sicht erstellen -- als Workshop 04.06. (leeres Gerüst + Leitfragen, Henrik füllte überwiegend selbst). `[Prozess]` (02.06.)
 - [x] Mail an den zuletzt gut mitarbeitenden MA: warum gern mitgearbeitet? Nachgeschaut -- nichts Inhaltliches (Stadtverwaltung Bielefeld), kein Ertrag. `[Netzwerk]` (29.05./02.06.)
