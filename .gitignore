@@ -1,0 +1,8 @@
+config/
+.env
+*.pyc
+__pycache__/
+.DS_Store
+
+# Windows Alternate Data Stream-Artefakte (WSL)
+*:Zone.Identifier
