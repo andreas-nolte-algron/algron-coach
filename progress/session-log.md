@@ -12,7 +12,7 @@ Normale Coaching-Stunde. Aufhänger: Henriks Durchbruch vom 13.06. (der vierte, 
 
 **Die große Erkenntnis:** Diese Kanäle **gibt es bereits** -- Henrik kann den GF anrufen oder einen Termin vor Ort machen, hat er früher bei dringenden Klärungen getan, der GF hat nie nein gesagt und ist jederzeit wieder dafür offen. Der GF ist auch offen, wenn Umsetzungen dem Wohl der Mitarbeitenden dienen, selbst wenn es dann anders/größer wird als ursprünglich gedacht. **Aber: Henrik nutzt diese Kanäle fast nie** -- weil es ungewohnt ist und er wenig Erfahrung hat, solche Gespräche zu führen. → Der eigentliche Wunsch ist nicht ein neuer Kanal, sondern **fitter zu werden auf dem vierten Kanal**: eine Gewohnheit aufbauen und sich darin sicherer fühlen.
 
-**Wichtige Unterscheidung (Andi eingebracht):** Gespräche *nach* einem erteilten Auftrag (Details klären) sind etwas anderes als Gespräche *vor* einem Auftrag (gemeinsam erarbeiten, was überhaupt sinnvoll ist) -- bei Letzterem geht auch der GF aus seinem gewohnten Modus heraus.
+**Wichtige Unterscheidung:** Gespräche *nach* einem erteilten Auftrag (Details klären) sind etwas anderes als Gespräche *vor* einem Auftrag (gemeinsam erarbeiten, was überhaupt sinnvoll ist) -- bei Letzterem geht auch der GF aus seinem gewohnten Modus heraus.
 
 **Henriks Schluss:** Es gibt gar kein großes Problem -- es geht um eine Gewohnheit und um Sicherheit. Das Thema fühlt sich dadurch viel weniger unnahbar an als noch vor Kurzem. Beide jetzt auf der gleichen Spur und mit deutlich besserem Verständnis der GF-Lage.
 
@@ -37,7 +37,7 @@ Normale Coaching-Stunde, durch einen Termin unterbrochen (Henrik musste raus, ka
 
 **Abschluss** war zeit-/telefonbedingt abrupt; per Slack nachgereicht, dass das Meeting hilfreich war (vierter Kanal jetzt klar; deutlich besserer Einblick in die GF-Kommunikation).
 
-**Raus mit:** (Henrik) Wir brauchen einen neuen, vierten Kanal für die strategische Kommunikation. (Andi) Viel besserer Überblick über die bestehende GF-Kommunikation.
+**Raus mit:** Wir brauchen einen neuen, vierten Kanal für die strategische Kommunikation.
 
 ## 2026-06-09 -- Weiterarbeit an Ebene 2: Zwei-Welten-Teilung (WAS vs. WIE)
 
@@ -62,7 +62,7 @@ Normale Coaching-Stunde (kein Workshop). Aufhänger: Rekapitulation des Workshop
 
 Erstes Treffen im neuen Format -- Henrik nennt es selbst „Workshop" statt „Meeting". ~2 Stunden, Miro, bottom-up: von vielen konkreten Einzelthemen hoch zu Strängen/Bereichen und Zielen. Henrik hat überwiegend selbst gearbeitet -- Sticky Notes gesetzt, geordnet, auf Aufforderung mehrfach rausgezoomt („worum geht's hier wirklich?").
 
-**Einstieg:** Henrik kam mit einer eigenen Frage rein, die er sich schon am Ende des 02.06. gestellt hatte: „Wie hängt das Feedback-Thema mit den großen Themen von Algron zusammen?" -- genau die Verbindung, die ihm am 02.06. noch entfallen war, jetzt selbst mitgebracht. Seine Vorstellung vom Einstieg: „Wir gehen unsere Sichtweisen durch, dann ergibt sich was." Andis Vorschlag stattdessen: nicht direkt beim Feedback-Thema starten, sondern von konkreten Einzelthemen hochhangeln zu Strängen/Bereichen und Zielen.
+**Einstieg:** Henrik kam mit einer eigenen Frage rein, die er sich schon am Ende des 02.06. gestellt hatte: „Wie hängt das Feedback-Thema mit den großen Themen von Algron zusammen?" -- genau die Verbindung, die ihm am 02.06. noch entfallen war, jetzt selbst mitgebracht. Seine Vorstellung vom Einstieg: „Wir gehen unsere Sichtweisen durch, dann ergibt sich was." Stattdessen wurde nicht direkt beim Feedback-Thema gestartet, sondern von konkreten Einzelthemen hochgehangelt zu Strängen/Bereichen und Zielen.
 
 **Ergebnis -- die Miro-Map (3 Ebenen, bottom-up):**
 
@@ -101,7 +101,7 @@ Erstes Treffen im neuen Format -- Henrik nennt es selbst „Workshop" statt „M
 
 **Weiterführende Frage (von Henrik):** Wie kommen wir von den größeren Themen nun ins Handeln und in die Realität? -- der Aufhänger fürs nächste Mal.
 
-## 2026-06-02 -- Henrik-Gespräch: erster Delegations-Fall angesetzt + Haltungs-Spiegelung
+## 2026-06-02 -- Henrik-Gespräch: erster Delegations-Fall angesetzt
 
 1:1 mit Henrik. Zwei Ebenen -- ein operativer Schritt und ein Haltungs-Treffer.
 
@@ -117,12 +117,12 @@ Erstes Treffen im neuen Format -- Henrik nennt es selbst „Workshop" statt „M
 
 **GF-Rückendeckung diskutiert:** Idee, den GF einzubinden, damit MA Rückendeckung spüren („mein Chef findet's gut"). Henrik verschiebt das auf die NL-Leitungen (GF führt nicht die Quartalsgespräche mit den MA). Henriks Sorge: Was, wenn der GF nein sagt? Bisher arbeitet Algron am oft-abwesenden GF vorbei („wir suchen uns die Infos zusammen, wir machen einfach"), weil der GF sich lange Phasen nicht mit Projekten beschäftigt. Den GF aktiv einzubinden fühlt sich wie ein extrem starker Kurswechsel an -- Henrik hat Sorge, ihn nicht überzeugen zu können, dass strategische Arbeit „es wert" ist.
 
-**Haltungs-Spiegelung (Kern des Tages):** Henrik wusste nicht mehr, *warum* sie überhaupt über Feedback reden -- hielt es für ein isoliert delegierbares Thema. Tatsächlich hängt es am KI-Strategie-Strang: Um zu wissen, wo Skadi/KI in der Kanzlei hilft, braucht es Feedback. Andi spiegelte: Henrik notiert sich wenig, bereitet wenig vor und nach, hält selten mehrere Themen gleichzeitig sichtbar -- arbeitet fokussiert in der Tiefe eines Themas und verliert dabei die Zusammenhänge. Henrik nahm es an („könnte sein, dass da was dran ist").
+**Verknüpfung Feedback ↔ KI-Strategie (Kern des Tages):** Henrik wusste nicht mehr, *warum* sie überhaupt über Feedback reden -- hielt es für ein isoliert delegierbares Thema. Tatsächlich hängt es am KI-Strategie-Strang: Um zu wissen, wo Skadi/KI in der Kanzlei hilft, braucht es Feedback.
 
 **Raus mit:**
 - Wichtiger, sich mit den größeren Dingen zu beschäftigen.
 - Genauer schauen: woher kam das Feedback-Thema überhaupt (von Paula? aus dem strategischen Meeting)?
-- Andi baut eine Visualisierung der Top-Level-Themen + Feedback-Ursprung.
+- Visualisierung der Top-Level-Themen + Feedback-Ursprung erstellen.
 
 **Fürs nächste Mal:** strategische Top-Level-Sicht anschauen, erzeugt aus dem Feedback-Thema.
 
@@ -145,7 +145,7 @@ Erstes Treffen im neuen Format -- Henrik nennt es selbst „Workshop" statt „M
 - NL-Infos sammeln (Anzahl Mitarbeitende je Niederlassung) -- Henrik.
 - Speicherform dafür: Paula übernächste Woche ansprechen (Henrik egal, wie).
 - Den Mitarbeiter, der zuletzt gut mitgearbeitet hat, per Mail fragen, *warum* er so gern mitgearbeitet hat (Motivations-Recherche am echten Fall).
-- Coaching-Launcher (Andis Bau): Henrik hat Lust, weiter zu verfolgen -- vorerst Nebenthema.
+- Coaching-Launcher: Henrik hat Lust, weiter zu verfolgen -- vorerst Nebenthema.
 
 **Fürs nächste Mal:** Wie gehen wir mit dem Konflikt um, dass Delegieren ohne Wissensübertragung zu Ineffizienz führt? (Wissenstransfer-Schritt in der Praxis durchspielen.)
 
@@ -161,7 +161,7 @@ Kein Henrik-Gespräch, sondern ein Stand-Update (Erkenntnisse aus paralleler Str
 
 **Konsequenz:** Nächste Coaching-Session arbeitet an der Entflechtung (Frage A), nicht an neuer Vision.
 
-## 2026-04-16 -- Blank-Sheet-Session (Live-Meeting, Andi als Facilitator)
+## 2026-04-16 -- Blank-Sheet-Session (Live-Meeting)
 
 Greenfield-Visioning: „Algron morgen neu gründen, ohne Verpflichtungen." 70-Min-Meeting nach dem Briefing in `briefings/blank-sheet-session-2026-04-16.md`. Nachträglich ins Log eingespielt (2026-05-29, Admin-Session).
 
