@@ -2,6 +2,25 @@
 
 Chronologisches Log aller Sessions -- **neueste oben**.
 
+## 2026-06-25 -- KI-Produktivität: der Review-Engpass und ein erster realer Ausweg
+
+Neues Thema von Henrik: Wie misst man Produktivität, wenn KI verstärkt eingesetzt wird? Ziel: bessere Entscheidungsgrundlage für KI-Investitionen.
+
+**Ausgangslage:** Henrik denkt, KI macht das Team produktiver -- ist aber skeptisch, ob das Ausmaß der gefühlten Verbesserung real ist. Beobachtung: zwei größere Features hängen seit Monaten (externe Schnittstellen-Hürden / fehlendes Voigt-Feedback) -- in beiden Fällen hat KI nicht geholfen, weil der Engpass nicht beim Coden lag.
+
+**Kernerkenntnisse dieser Session:**
+
+1. **KI beschleunigt den falschen Schritt.** Bei Skadi liegt der Engpass im Code-Review, nicht in der Codeproduktion. KI schreibt mehr Code schneller → mehr Review-Last für Henrik → Engpass wird größer, nicht kleiner.
+
+2. **"KI übernimmt Reviews irgendwann" ist kein Plan.** Henriks Qualitätsstandard für Kundencode: Es darf nie etwas nicht-Marginales schiefgehen. Das ist ein Maßstab, den kein System erfüllt. Damit ist der Exit über KI-Reviews grundsätzlich nicht realistisch.
+
+3. **KI im Review ist aktuell Placebo.** Henrik nutzt KI bereits als Vorfilter, schaut aber trotzdem jede Zeile selbst an. Zeitersparnis: null. Vertrauen nicht hoch genug, um aufzuhören.
+
+4. **Erster realer Weg raus:** Style Guide und Linting-Regeln definieren, direkt in die KI-Code-Anforderungen einbauen (nicht erst im Review prüfen, sondern Qualität von vorne in den Prozess ziehen). Wenn das steht, wird Vertrauen aufbaubar -- und Henrik könnte schrittweise aufhören, jede Zeile zu prüfen. Ausgangspunkt: ganz von vorne (noch kein Style Guide, kein Linting definiert).
+
+**Raus mit:** Style Guide + Linting aufsetzen ist die nächste konkrete Aufgabe.  
+**Nicht behandelt:** Paula-Delegation, vierter Kanal, Vision/Delegations-Thema -- nächste Session.
+
 ## 2026-06-18 -- Der vierte Kanal existiert schon: vom Struktur- zum Gewohnheits-Thema
 
 Normale Coaching-Stunde. Aufhänger: Henriks Durchbruch vom 13.06. (der vierte, strategische Kanal) konkret machen -- am Beispiel des GF, nicht allgemein.

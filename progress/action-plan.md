@@ -18,6 +18,10 @@ Die narrative Spur jeder Session steht im `session-log.md`.
 - [ ] Schlankes Use-Case-Findungs-Vorgehen bauen, sobald Frage A greifbar wird (für den GF-Einsatz). `[KI-Welt]` (29.05.)
 - [ ] WAS/WIE-Denken auf andere Themen / auf Algron als Ganzes übertragen. `[KI-Welt]` (09.06.)
 
+### Review-Engpass / KI-Prozess
+- [ ] **Style Guide + Linting definieren** und direkt in KI-Code-Anforderungen einbauen (nicht erst im Review prüfen). Ziel: Qualität früher in den Prozess ziehen, damit Vertrauen in KI-Review aufgebaut werden kann. Ausgangspunkt: ganz von vorne. Fertig wenn: Regeln definiert + in KI-Anforderungen eingebaut. `[Prozess]` (25.06.)
+  - Offene Folgefrage (nächste Session): Wer setzt das auf -- Henrik oder Philipp?
+
 ### Delegation / Nadelöhr
 - [ ] **Wissenstransfer-Probelauf (erster echter Fall):** Leerlauf-Bindungsfrage an Paula delegieren. Vorgehen: Gespräch → Todo-Liste → Checkup nach 1–2 Wochen. Fertig wenn: delegiert + Checkup terminiert. `[Delegation]` (02.06.)
 - [~] **Paula-Delegation klären:** beauftragen + Evaluation/Checkup terminieren. 13.06.: Henrik will es kommende Woche in Auftrag geben. **18.06.: noch nicht passiert** -- Nachhalter nötig. `[Delegation]` (09.06.)
