@@ -13,7 +13,6 @@ Die narrative Spur jeder Session steht im `session-log.md`.
 ### KI-Welt / GF-Kommunikation
 - [ ] **Henrik fitter machen auf dem vierten Kanal.** 18.06. geklärt: der vierte Kanal **existiert bereits** (anrufen, Termin vor Ort; GF jederzeit offen) -- Henrik nutzt ihn nur fast nie, weil ungewohnt. Es geht NICHT um Konzeption eines neuen Kanals, sondern um **Gewohnheit + Sicherheit**: solche Gespräche führen lernen. Erster realer Versuch bewusst als Experiment rahmen (verschobene Messbarkeit). Fertig wenn: Henrik hat ein erstes solches strategisches GF-Gespräch geführt + gemeinsam ausgewertet. `[KI-Welt]` (18.06., ersetzt „vierten Kanal konzipieren" 13.06.)
 - [ ] **Know-how für den vierten Kanal erarbeiten** -- wie führt man so ein strategisches GF-Gespräch (GF in seiner Welt abholen UND für neue Ideen öffnen)? Material/Mini-Ablauf, an dem Henrik üben kann. `[KI-Welt]` (18.06.)
-- [ ] **Custom algron coach mit Henrik durchgehen** -- eigener Termin, **nächsten Dienstag**. `[Prozess]` (18.06.)
 - [~] **Frühwarn-Faden:** erkennen, wann eine eingehende Mail die Feature-Grenze überschreitet = Trigger, den vierten Kanal zu öffnen. Zurückgestuft: 18.06. hat sich das Thema von „Kanal öffnen" zu „Gewohnheit aufbauen" verschoben -- nur reaktivieren, wenn Henrik den Trigger-Bedarf selbst zeigt. `[KI-Welt]` (13.06.)
 - [ ] 1–2 mitwillige Voigt-Leute direkt ansprechen (NL-Leitungen oder bekannte MA) für direkte Mitarbeit. Fertig wenn: 1–2 Leute angesprochen. `[KI-Welt]` (29.05.)
 - [ ] Schlankes Use-Case-Findungs-Vorgehen bauen, sobald Frage A greifbar wird (für den GF-Einsatz). `[KI-Welt]` (29.05.)
@@ -47,6 +46,6 @@ Die narrative Spur jeder Session steht im `session-log.md`.
 - [x] **Henriks Commitment** zur zielgerichteten GF-Kommunikation -- positiv gefallen (12.06., Rückmeldung kam). `[KI-Welt]` (09.06.)
 - [x] **GF-Kanal beschreiben lassen** -- 13.06.: drei Email-Kanäle (weitergeleitet / Informationsanfrage / eigens ausgearbeitet) + 10-Jahre-Entwicklung dokumentiert (session-log + bestandsaufnahme). `[KI-Welt]` (09.06.)
 - [x] Workshop-Rekapitulation durchgeführt. `[Prozess]` (09.06.)
-- [x] **Andi:** Top-Level-Sicht erstellen -- als Workshop 04.06. (leeres Gerüst + Leitfragen, Henrik füllte überwiegend selbst). `[Prozess]` (02.06.)
+- [x] **Top-Level-Sicht erstellt** -- Workshop 04.06. (leeres Gerüst + Leitfragen, Henrik füllte überwiegend selbst). `[Prozess]` (02.06.)
 - [x] Mail an den zuletzt gut mitarbeitenden MA: warum gern mitgearbeitet? Nachgeschaut -- nichts Inhaltliches (Stadtverwaltung Bielefeld), kein Ertrag. `[Netzwerk]` (29.05./02.06.)
 - [x] Skadi-Wissen als Engpass identifizieren -- Ergebnis: ist NICHT der Engpass (Henrik nur 2-3x/Woche gefragt; das Problem ist das Vier-Augen-Prinzip). `[Delegation]` (17.03.)

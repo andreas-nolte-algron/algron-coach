@@ -8,18 +8,17 @@ Strategischer Sparringspartner für Henrik (CEO, Algron GmbH). Drei Aufgaben: Vi
 
 Leitthema: **KI nutzbar machen für die Kanzlei Voigt** (Hauptkunde). Der GF weiß, dass er KI braucht, aber nicht wohin -- gibt den Ball an Henrik. Move: nicht visionieren, sondern entflechten.
 
-18.06. **Der vierte Kanal existiert schon -- vom Struktur- zum Gewohnheits-Thema.** Große Erkenntnis (von Henrik): der strategische GF-Kanal *fehlt nicht* -- Henrik kann jederzeit anrufen / vor Ort kommen, der GF ist offen (auch für MA-orientierte, größer werdende Themen), Henrik nutzt es nur fast nie, weil ungewohnt. Damit verschiebt sich das Thema von Strang 2 (Struktur) auf Strang 1 (Haltung/Skill): **fitter werden auf dem vierten Kanal**, Gewohnheit + Sicherheit aufbauen. Henrik hat selbst entdramatisiert („kein großes Problem"). Abschluss diesmal sauber (13.06.-Lektion bestanden). **Big News:** Henrik will den custom algron coach selbst nutzen -- eigener Termin Dienstag.
+18.06. **Der vierte Kanal existiert schon -- vom Struktur- zum Gewohnheits-Thema.** Große Erkenntnis (von Henrik): der strategische GF-Kanal *fehlt nicht* -- Henrik kann jederzeit anrufen / vor Ort kommen, der GF ist offen (auch für MA-orientierte, größer werdende Themen), Henrik nutzt es nur fast nie, weil ungewohnt. Damit verschiebt sich das Thema von Strang 2 (Struktur) auf Strang 1 (Haltung/Skill): **fitter werden auf dem vierten Kanal**, Gewohnheit + Sicherheit aufbauen. Henrik hat selbst entdramatisiert („kein großes Problem"). Abschluss diesmal sauber (13.06.-Lektion bestanden).
 
 09.06. **Ebene-2-Durchbruch (Henrik selbst am Stift):** die Stränge teilen sich in zwei Welten -- **Klassische SE** (GF wenig involviert, „WIE?") vs. **KI-Entwicklung** (GF stark involviert, „WAS?" + „WIE?"). Kern: KI ist ein WAS-Thema (was will man überhaupt?), nicht nur WIE. Daraus die Erkenntnis des Tages: **zielgerichtete GF-Kommunikation ist dringend** -- die bisherigen KI-Versuche waren nie auf die echten Wünsche ausgelegt. (KI-spezifisch: bei klassischer SE kennt Henrik die GF-Wünsche gut.) Henrik überlegt schriftlich (Folgetag), ob er sich darauf committet. Stand gepflegt in `progress/strategie-landkarte.html` (Ground Truth).
 
-10.06. (kein Coaching): Vormittags Werkzeug-/Doku-Pflege -- Landkarte Ebene 2 auf die Zwei-Welten-Struktur + direkte Bearbeitung; `action-plan` auf Status-Achse, `session-log` neueste-oben. Nachmittags operativ: **Speicherform für die Standort-/Personen-Infos mit Paula gelöst** -- Paula baute die Liste mit einer Filter-Lösung; zwei Ebenen (Standort ⊃ Person) + Feedback-Typ-Feld.
+10.06. (kein Coaching): operativ: **Speicherform für die Standort-/Personen-Infos mit Paula gelöst** -- Paula baute die Liste mit einer Filter-Lösung; zwei Ebenen (Standort ⊃ Person) + Feedback-Typ-Feld.
 
 12.06. **Henriks Commitment ist da:** Er hat sich gemeldet -- bei der zielgerichteten GF-Kommunikation weiterhin dabei. Damit ist der Messpunkt vom 09.06. positiv gefallen.
 
 13.06. **Durchbruch -- der fehlende vierte Kanal.** Henrik beschrieb den GF-Draht über 10 Jahre: heute drei Email-Typen (weitergeleitet / Informationsanfrage / eigens ausgearbeitet), **alle feature-/auftragsgetrieben** = fertige WAS → WIE. Roter Faden: der GF macht die WAS-Arbeit vorgelagert und allein, in 10 Jahren nie ein gemeinsames Gespräch übers WAS -- genau deshalb scheiterte KI (kein fertiges WAS). Erkenntnis: es braucht einen **vierten, strategischen Kanal**, der nicht rein über Email laufen kann (Henriks Einwand, zugleich die nächste Spannung -- er ist nicht gern in Meetings). Abschluss zeit-/telefonbedingt abrupt, per Slack repariert.
-13.06. (Nachtrag, Prep/Pflege): **next-session für die Vierter-Kanal-Form-Session gebaut** (normale Stunde, Form-Knoten knacken; Schritt 1 spiegelt Henriks eigenen Durchbruch). **Kategorienfehler gestoppt:** Der vierte Kanal war versuchsweise als Karte in die `strategie-landkarte.html` gesetzt -- Landkarte ist aber WAS-verfolgen-wir (Themen), Kanäle sind WIE-kommunizieren (anderes Modell). Rückgängig. **Job des Kanäle-Modells geklärt:** Befund + einmaliges Gerüst, kein eigenes Artefakt -- Heimat ist Text in `bestandsaufnahme.md`. Dauer-Linse (Mail-Triage) nicht vorab entscheiden; nur wenn Henrik es selbst will.
 
-Vorlauf: 04.06. Workshop -- Top-Level-Sicht bottom-up zu 4 Strängen, Ziel-Ebene noch offen (nur „guten Gewissens höhere Rechnungen"). 29.05./02.06. Wissenstransfer-Übereinkunft + erster Delegations-Fall (Leerlauf → Paula) + Themen-Tunnel-Muster gespiegelt. Sessions 1–3: Schleife erkannt (Henrik im Code), Vision da, Brücke zum Heute fehlt.
+Vorlauf: 04.06. Workshop -- Top-Level-Sicht bottom-up zu 4 Strängen, Ziel-Ebene noch offen (nur „guten Gewissens höhere Rechnungen"). 29.05./02.06. Wissenstransfer-Übereinkunft + erster Delegations-Fall (Leerlauf → Paula) + Themen-Tunnel-Muster erkannt. Sessions 1–3: Schleife erkannt (Henrik im Code), Vision da, Brücke zum Heute fehlt.
 
 ## Die vier Fragen (aktueller Arbeitsrahmen)
 
@@ -51,7 +50,6 @@ Henrik ist das **Nadelöhr**: einziger Kanal zum GF Voigt *und* alleiniger Wisse
 
 ## Nächste Steps
 
-1. **Nächste Session: custom algron coach mit Henrik durchgehen -- Termin Dienstag.** Anderer Sessiontyp (Coach-Tool durchgehen, keine vierter-Kanal-Coachingstunde).
-2. **Henrik fitter machen auf dem vierten Kanal.** Kanal existiert, es geht um Gewohnheit + Sicherheit. Erster realer Versuch als Experiment mit verschobener Messbarkeit rahmen -- solche strategischen GF-Gespräche sind ein neuer, ungeübter Modus; danach gemeinsam auswerten, wie der GF reagiert. Know-how/Mini-Ablauf zum Üben erarbeiten.
-3. Paula-Delegation: noch nicht beauftragt (18.06.) -- Nachhalter nötig, Evaluation/Checkup terminieren.
-4. Datenschutz/Claude-Abos: eigenen Termin ansetzen.
+1. **Henrik fitter machen auf dem vierten Kanal.** Kanal existiert, es geht um Gewohnheit + Sicherheit. Erster realer Versuch als Experiment mit verschobener Messbarkeit rahmen -- solche strategischen GF-Gespräche sind ein neuer, ungeübter Modus; danach gemeinsam auswerten, wie der GF reagiert. Know-how/Mini-Ablauf zum Üben erarbeiten.
+2. Paula-Delegation: noch nicht beauftragt (18.06.) -- Nachhalter nötig, Evaluation/Checkup terminieren.
+3. Datenschutz/Claude-Abos: eigenen Termin ansetzen.

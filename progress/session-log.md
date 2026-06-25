@@ -18,7 +18,7 @@ Normale Coaching-Stunde. Aufhänger: Henriks Durchbruch vom 13.06. (der vierte, 
 
 **Paula-Delegation:** Noch nicht in Auftrag gegeben.
 
-**Raus mit:** custom algron coach für Henrik in einem eigenen Termin durchgehen (nächsten Dienstag). Geparkt fürs nächste Mal: das größere Delegations-/Vision-Thema (mit der Kanzlei gemeinsam komplexere Funktionen bauen statt Detailaufträge) + Know-how für den Kanal erarbeiten.
+**Raus mit:** Geparkt fürs nächste Mal: das größere Delegations-/Vision-Thema (mit der Kanzlei gemeinsam komplexere Funktionen bauen statt Detailaufträge) + Know-how für den Kanal erarbeiten.
 
 ## 2026-06-13 -- GF-Kommunikation: die drei Mail-Kanäle + der fehlende vierte (strategische) Kanal
 
@@ -163,7 +163,7 @@ Kein Henrik-Gespräch, sondern ein Stand-Update (Erkenntnisse aus paralleler Str
 
 ## 2026-04-16 -- Blank-Sheet-Session (Live-Meeting)
 
-Greenfield-Visioning: „Algron morgen neu gründen, ohne Verpflichtungen." 70-Min-Meeting nach dem Briefing in `briefings/blank-sheet-session-2026-04-16.md`. Nachträglich ins Log eingespielt (2026-05-29, Admin-Session).
+Greenfield-Visioning: „Algron morgen neu gründen, ohne Verpflichtungen." 70-Min-Meeting.
 
 **Kernerkenntnis:**
 
