@@ -8,7 +8,7 @@ Strategischer Sparringspartner für Henrik (CEO, Algron GmbH). Drei Aufgaben: Vi
 
 Leitthema: **KI nutzbar machen für die Kanzlei Voigt** (Hauptkunde). Der GF weiß, dass er KI braucht, aber nicht wohin -- gibt den Ball an Henrik. Move: nicht visionieren, sondern entflechten.
 
-18.06. **Der vierte Kanal existiert schon -- vom Struktur- zum Gewohnheits-Thema.** Große Erkenntnis (von Henrik): der strategische GF-Kanal *fehlt nicht* -- Henrik kann jederzeit anrufen / vor Ort kommen, der GF ist offen (auch für MA-orientierte, größer werdende Themen), Henrik nutzt es nur fast nie, weil ungewohnt. Damit verschiebt sich das Thema von Strang 2 (Struktur) auf Strang 1 (Haltung/Skill): **fitter werden auf dem vierten Kanal**, Gewohnheit + Sicherheit aufbauen. Henrik hat selbst entdramatisiert („kein großes Problem"). Abschluss diesmal sauber (13.06.-Lektion bestanden). **Big News:** Henrik will den custom algron coach selbst nutzen -- eigener Termin Dienstag. **Offen (Abbruch-Sauberkeit):** frische `next-session` noch nicht gebaut -- wird zu Beginn der nächsten Vorbereitung gebaut (nächste Session = custom-coach-Walkthrough, anderer Sessiontyp).
+18.06. **Der vierte Kanal existiert schon -- vom Struktur- zum Gewohnheits-Thema.** Große Erkenntnis (von Henrik): der strategische GF-Kanal *fehlt nicht* -- Henrik kann jederzeit anrufen / vor Ort kommen, der GF ist offen (auch für MA-orientierte, größer werdende Themen), Henrik nutzt es nur fast nie, weil ungewohnt. Damit verschiebt sich das Thema von Strang 2 (Struktur) auf Strang 1 (Haltung/Skill): **fitter werden auf dem vierten Kanal**, Gewohnheit + Sicherheit aufbauen. Henrik hat selbst entdramatisiert („kein großes Problem"). Abschluss diesmal sauber (13.06.-Lektion bestanden). **Big News:** Henrik will den custom algron coach selbst nutzen -- eigener Termin Dienstag.
 
 09.06. **Ebene-2-Durchbruch (Henrik selbst am Stift):** die Stränge teilen sich in zwei Welten -- **Klassische SE** (GF wenig involviert, „WIE?") vs. **KI-Entwicklung** (GF stark involviert, „WAS?" + „WIE?"). Kern: KI ist ein WAS-Thema (was will man überhaupt?), nicht nur WIE. Daraus die Erkenntnis des Tages: **zielgerichtete GF-Kommunikation ist dringend** -- die bisherigen KI-Versuche waren nie auf die echten Wünsche ausgelegt. (KI-spezifisch: bei klassischer SE kennt Henrik die GF-Wünsche gut.) Henrik überlegt schriftlich (Folgetag), ob er sich darauf committet. Stand gepflegt in `progress/strategie-landkarte.html` (Ground Truth).
 
@@ -51,7 +51,7 @@ Henrik ist das **Nadelöhr**: einziger Kanal zum GF Voigt *und* alleiniger Wisse
 
 ## Nächste Steps
 
-1. **Nächste Session: custom algron coach mit Henrik durchgehen -- Termin Dienstag.** Anderer Sessiontyp (Coach-Tool durchgehen, keine vierter-Kanal-Coachingstunde). `next-session`-Prep dafür noch zu bauen (Energie-Fork offen).
-2. **Henrik fitter machen auf dem vierten Kanal (= Pre-Auftragsgespräch).** Kanal existiert, es geht um Gewohnheit + Sicherheit. Erster realer Versuch als Experiment mit verschobener Messbarkeit rahmen -- Pre-Auftragsgespräche sind ein neuer, ungeübter Modus; danach gemeinsam auswerten, wie der GF reagiert. Know-how/Mini-Ablauf zum Üben erarbeiten.
+1. **Nächste Session: custom algron coach mit Henrik durchgehen -- Termin Dienstag.** Anderer Sessiontyp (Coach-Tool durchgehen, keine vierter-Kanal-Coachingstunde).
+2. **Henrik fitter machen auf dem vierten Kanal.** Kanal existiert, es geht um Gewohnheit + Sicherheit. Erster realer Versuch als Experiment mit verschobener Messbarkeit rahmen -- solche strategischen GF-Gespräche sind ein neuer, ungeübter Modus; danach gemeinsam auswerten, wie der GF reagiert. Know-how/Mini-Ablauf zum Üben erarbeiten.
 3. Paula-Delegation: noch nicht beauftragt (18.06.) -- Nachhalter nötig, Evaluation/Checkup terminieren.
-4. Claude-Abos/DSGVO: eigener Termin (Grundlage `knowledge/internal-ai-compliance.md`).
+4. Datenschutz/Claude-Abos: eigenen Termin ansetzen.
