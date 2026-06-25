@@ -103,7 +103,7 @@ Erstes Treffen im neuen Format -- Henrik nennt es selbst „Workshop" statt „M
 
 ## 2026-06-02 -- Henrik-Gespräch: erster Delegations-Fall angesetzt
 
-1:1 mit Henrik. Zwei Ebenen -- ein operativer Schritt und ein Haltungs-Treffer.
+1:1 mit Henrik. Zwei Ebenen -- ein operativer Schritt und eine grundlegendere Erkenntnis.
 
 **Abgeholt aus der Vorwoche:**
 - MR-Review-KI meckert manchmal bei Dingen, die ok sind (klein, operativ).
@@ -149,9 +149,9 @@ Erstes Treffen im neuen Format -- Henrik nennt es selbst „Workshop" statt „M
 
 **Fürs nächste Mal:** Wie gehen wir mit dem Konflikt um, dass Delegieren ohne Wissensübertragung zu Ineffizienz führt? (Wissenstransfer-Schritt in der Praxis durchspielen.)
 
-## 2026-05-29 -- Admin/Strategie-Update: KI-Thema für Voigt wird Leitthema
+## 2026-05-29 -- Stand-Update: KI-Thema für Voigt wird Leitthema
 
-Kein Henrik-Gespräch, sondern ein Stand-Update (Erkenntnisse aus paralleler Strategie-Arbeit eingepflegt).
+Stand-Update zwischen den Sessions (kein Coaching-Gespräch): der aktuelle Arbeitsstand zum KI-Thema, eingepflegt.
 
 **Neuer Stand:**
 - Leitthema verschiebt sich auf **KI nutzbar machen für die Kanzlei Voigt**. Der GF weiß, dass er KI braucht, aber nicht wohin -- gibt den Ball an Henrik.
