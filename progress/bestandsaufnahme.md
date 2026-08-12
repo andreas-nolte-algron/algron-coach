@@ -53,6 +53,14 @@ Rollen-Zuordnung bestätigt (2026-05-29):
 - **Korrektur 18.06. -- der vierte Kanal fehlt nicht, er ist ungenutzt.** Der strategische Kanal (gemeinsames WAS) existiert faktisch bereits: Henrik kann den GF **anrufen** oder einen **Termin vor Ort** machen -- hat er früher bei dringenden Klärungen getan, der GF hat nie nein gesagt und ist jederzeit wieder offen (auch für Umsetzungen zum Wohl der MA, selbst wenn größer als gedacht). Henrik **nutzt diese Kanäle aber fast nie** -- es ist ungewohnt, er hat wenig Erfahrung, solche Gespräche zu führen. Der eigentliche Bedarf ist daher **Gewohnheit + Sicherheit** („fitter werden"), nicht ein neuer Kanal.
 - **Pre- vs. Post-Auftrag (Fakt):** Die bisherigen Anrufe/Vor-Ort-Termine waren praktisch immer *nach* Auftragserteilung (operatives Klären). Strategische Gespräche *vor* einem Auftrag (gemeinsam erarbeiten, was sinnvoll ist) gab es so gut wie nie -- das ist der neue, noch ungeübte Modus.
 
+### Style Guide / Linting-Projekt (Stand 12.08.2026)
+- Ursprung 25.06.: Coding-Richtlinien definieren und in KI-Anforderungen einbauen, um Vertrauen für Review-Entlastung aufzubauen.
+- **Neu ausgerichtet 12.08.:** Dev-first statt KI-first -- Dokument primär für einen künftigen menschlichen Nachfolger geschrieben (Begründung, Kontext, Beispiele), KI/Linting setzt die gleichen Regeln automatisiert durch. Wendet das Wissenstransfer-Prinzip (29.05.) vorausschauend an.
+- **Kapazitätsplan für das Projekt:** Philipp 2-3h/Woche, Paula 2-3h/Woche, Henrik 1h/Woche, Andi 10h/Woche. Andis hoher Anteil im Verhältnis zu den anderen unbegründet -- Henrik selbst unsicher, ob sinnvoll genutzt.
+- Kein Geld-Budget vorgesehen (kein Abo-Service geplant).
+- Meilenstein: 4 Wochen ab 13.08., dann bewusste Cut-or-continue-Entscheidung.
+- **Andi:** Betreut/baut das Coaching-Tool, ist aber auch technisch bei Algron involviert (u.a. Vorschlag für das Scoping-Board dieses Projekts, mögliche Rolle bei technischer Umsetzung von Linting/Tooling -- nicht abschließend geklärt).
+
 ### Quality Connect (Nebenprojekt)
 - Lange Findungsphase, jetzt konkreter
 - Bestehende QA-Software modernisieren (wenig Weiterentwicklung in letzten 5-10 Jahren)
@@ -84,6 +92,22 @@ Henrik erfasst seine Arbeitszeit aktuell nicht systematisch.
 - Software ist für ihn Mittel, nicht Zweck
 - Will an sinnvollen Zielen arbeiten, die ihn persönlich berühren
 - Interessensgebiete: Bahn, Verwaltung -- "verkrustete Systeme verbessern"
+
+## WAS-Engpass im eigenen Team (Kernerkenntnis 12.08.2026)
+
+Das WAS/WIE-Muster vom 09.06. (der GF von Voigt macht die strategische WAS-Arbeit allein, Henrik bekommt nur fertige WIE-Aufträge) gilt spiegelverkehrt auch intern: **Henrik ist der einzige WAS-Geber im eigenen Team.**
+
+- Paula braucht 2-3x/Woche je ca. 1h Klärung von Henrik -- nicht weil sie ausgelastet ist, sondern weil Aufträge/Entscheidungen nur über ihn laufen.
+- Andi ist beim Style-Guide-Projekt mit 10h/Woche eingeplant, ohne dass klar ist, ob das WAS dafür trägt.
+- Philipp ist voll ausgelastet -- aber nur im WIE-Modus (Code schreiben), nicht weil er selbst WAS entscheidet.
+
+Fazit: Die Unterbeschäftigung eines Teils des Teams ist kein Kapazitätsproblem, sondern ein Entscheidungs-Engpass -- gleiche Struktur wie beim GF, nur nach innen gewendet. Noch nicht tiefer bearbeitet, Thema für kommende Sessions.
+
+## Verhaltensmuster: Entscheidungen extern verorten (beobachtet 12.08.2026)
+
+Zweimal in der Session vom 12.08. hat Henrik eigene Entscheidungen/Bewertungen im Nachhinein dem Coach zugeschrieben ("das kommt von dir"), obwohl sie erkennbar von ihm selbst kamen (z.B. das Wort "vertagen" beim Andi-Meeting). Vermutete Funktion: nimmt die Verantwortung in der eigenen Wahrnehmung ab. Henrik berichtet, ein ähnliches Muster auch mit Andi zu erleben -- konkretes Beispiel dafür fehlt noch.
+
+Verwandte Facette: thematische Nähe zwischen Themen (z.B. Style Guide / Dev-Einstellung / Paula) wird von Henrik als blockierende Abhängigkeit erlebt, obwohl die Themen faktisch unabhängig voneinander entscheidbar sind.
 
 ## Kernproblem: Die Schleife
 

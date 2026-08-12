@@ -10,6 +10,11 @@ Die narrative Spur jeder Session steht im `session-log.md`.
 
 ## Offen
 
+### WAS-Engpass im Team / Muster-Arbeit
+- [ ] **WAS-Engpass im eigenen Team bearbeiten.** 12.08.: Henrik ist intern der einzige WAS-Geber (Paula + Andi teils unterbeschäftigt, nicht aus Kapazitätsmangel sondern weil Aufträge nur über Henrik laufen). Spiegelbild des GF-WAS/WIE-Musters vom 09.06., nach innen gewendet. `[Muster]` (12.08.)
+- [ ] **Muster "Entscheidungen extern verorten" weiter beobachten.** 12.08.: zweimal in der Session eigene Entscheidungen dem Coach zugeschrieben. Henrik berichtet ähnliches Muster mit Andi, noch ohne konkretes Beispiel. Bei Gelegenheit ein reales Andi-Beispiel einfangen. `[Muster]` (12.08.)
+- [ ] **Dev-Vorbereitungszeit konkretisieren.** 12.08.: Zeit-Paradox erkannt (Einstellung kostet erst Zeit, bevor sie entlastet) -- analog zum Wissenstransfer-Prinzip vom 29.05., aber noch nicht auf Dev-Hire angewendet. Noch kein Plan, kein Datum. `[Delegation]` (12.08.)
+
 ### KI-Welt / GF-Kommunikation
 - [ ] **Henrik fitter machen auf dem vierten Kanal.** 18.06. geklärt: der vierte Kanal **existiert bereits** (anrufen, Termin vor Ort; GF jederzeit offen) -- Henrik nutzt ihn nur fast nie, weil ungewohnt. Es geht NICHT um Konzeption eines neuen Kanals, sondern um **Gewohnheit + Sicherheit**: solche Gespräche führen lernen. Erster realer Versuch bewusst als Experiment rahmen (verschobene Messbarkeit). Fertig wenn: Henrik hat ein erstes solches strategisches GF-Gespräch geführt + gemeinsam ausgewertet. `[KI-Welt]` (18.06., ersetzt „vierten Kanal konzipieren" 13.06.)
 - [ ] **Know-how für den vierten Kanal erarbeiten** -- wie führt man so ein strategisches GF-Gespräch (GF in seiner Welt abholen UND für neue Ideen öffnen)? Material/Mini-Ablauf, an dem Henrik üben kann. `[KI-Welt]` (18.06.)
@@ -19,12 +24,11 @@ Die narrative Spur jeder Session steht im `session-log.md`.
 - [ ] WAS/WIE-Denken auf andere Themen / auf Algron als Ganzes übertragen. `[KI-Welt]` (09.06.)
 
 ### Review-Engpass / KI-Prozess
-- [ ] **Style Guide + Linting definieren** und direkt in KI-Code-Anforderungen einbauen (nicht erst im Review prüfen). Ziel: Qualität früher in den Prozess ziehen, damit Vertrauen in KI-Review aufgebaut werden kann. Ausgangspunkt: ganz von vorne. Fertig wenn: Regeln definiert + in KI-Anforderungen eingebaut. `[Prozess]` (25.06.)
-  - Offene Folgefrage (nächste Session): Wer setzt das auf -- Henrik oder Philipp?
+- [~] **Style Guide + Linting definieren** und direkt in KI-Code-Anforderungen einbauen (nicht erst im Review prüfen). Ziel: Qualität früher in den Prozess ziehen, damit Vertrauen in KI-Review aufgebaut werden kann. **12.08.: neu ausgerichtet -- Dev-first statt KI-first** (Dokument primär für künftigen menschlichen Nachfolger, KI/Linting nutzt die gleichen Regeln automatisiert). Kapazität geplant: Philipp/Paula je 2-3h/Woche, Henrik 1h/Woche, Andi 10h/Woche (Andis Anteil unbegründet -- prüfen). Kein Budget vorgesehen. **Meilenstein: 4 Wochen ab 13.08., dann Cut-or-continue.** Andi-Meeting dazu: 13.08. Fertig wenn: Regeln definiert + in KI-Anforderungen eingebaut, ODER nach 4 Wochen bewusst gestoppt. `[Prozess]` (25.06., konkretisiert 12.08.)
 
 ### Delegation / Nadelöhr
-- [ ] **Wissenstransfer-Probelauf (erster echter Fall):** Leerlauf-Bindungsfrage an Paula delegieren. Vorgehen: Gespräch → Todo-Liste → Checkup nach 1–2 Wochen. Fertig wenn: delegiert + Checkup terminiert. `[Delegation]` (02.06.)
-- [~] **Paula-Delegation klären:** beauftragen + Evaluation/Checkup terminieren. 13.06.: Henrik will es kommende Woche in Auftrag geben. **18.06.: noch nicht passiert** -- Nachhalter nötig. `[Delegation]` (09.06.)
+- [~] **Wissenstransfer-Probelauf (erster echter Fall):** Leerlauf-Bindungsfrage an Paula delegiert -- ist passiert, Paula hat klare Aufgaben. **12.08.: neues Folgeproblem** -- Henrik muss trotzdem 2-3x/Woche je ~1h Fragen von Paula klären, die er nicht zwingend selbst beantworten müsste. **Neues Experiment:** Anfragen werden geloggt (Frage + "brauchte Henriks Wissen" vs. "hätte Paula selbst entscheiden können") über die bestehende ToDo-Liste. Laufzeit bis Ende August. Fertig wenn: Auswertung zeigt, wie viel strukturell nötig ist vs. Gewohnheit. `[Delegation]` (02.06., neu konkretisiert 12.08.)
+- [x] **Paula-Delegation beauftragt** -- war Stand 25.06. noch offen, ist mittlerweile passiert (Datum nicht mehr rekonstruierbar). Ersetzt durch das Tracking-Experiment oben. `[Delegation]` (09.06., erledigt vor 12.08.)
 - [ ] **GEPARKT -- Vision/Delegation (von Henrik 18.06.):** langfristig mit der Kanzlei *gemeinsam komplexere Funktionen bauen*, statt dass der GF konkrete Detailaufträge reingibt (Modell: „XY hilft weiter, Algron baut und kümmert sich drum"). Teilfrage: Ist das, was Algron macht, sinnvoll aus Sicht des GF? Nächstes Mal aufgreifen. `[Delegation]` (18.06.)
 - [~] Speicherform für die Standort-/Personen-Infos: mit Paula gelöst (Liste + Filter-Lösung, zwei Ebenen Standort⊃Person + Feedback-Typ). Offen nur noch: Arbeitsteilung/laufende Pflege final. `[Delegation]` (29.05., gelöst 10.06.)
 

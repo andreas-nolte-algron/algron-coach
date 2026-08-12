@@ -2,6 +2,32 @@
 
 Chronologisches Log aller Sessions -- **neueste oben**.
 
+## 2026-08-12 -- Vom Review-Engpass zum WAS-Engpass im eigenen Team
+
+Erste Session seit dem 25.06. (7 Wochen Pause, u.a. Urlaubszeit). Einstieg über den Style-Guide/Linting-Plan vom 25.06. -- Henrik bringt neue Überlegungen mit, dreht sich aber erkennbar wieder um den Review-Engpass.
+
+**Ausgangspunkt:** Henrik will primär seine eigene Last beim Review reduzieren. Knackpunkte: er ist alleiniger Reviewer für Philipp (strukturell, ein neuer Dev bräuchte erst Einarbeitung), Philipp ist ihm "zu willkürlich" in KI-getriebenen Phasen -- aber Henrik gesteht ein, das Problem betrifft ihn in seinen eigenen "KI-Phasen" genauso. KI kann das Problem nicht lösen, weil es um Verantwortungsübernahme geht.
+
+**Widerspruch aufgedeckt:** Henrik sagt, ein erfahrener Dev könnte das Problem lösen -- würde aber lieber einen jüngeren, frischeren Dev einstellen. Auf Nachfrage: der Grund ist Kosten, dann präzisiert er auf Risiko eines Fehlgriffs. Beim genaueren Hinschauen verschiebt sich der Blocker weiter: nicht (nur) Geld, sondern die Zeit, die eine Einstellung in den ersten 3-5 Monaten kostet (Onboarding, Review), bevor sie entlastet -- ein Zeit-Paradox analog zum Wissenstransfer-Prinzip vom 29.05., aber noch nie darauf angewendet. Kein konkreter Vorbereitungsplan oder Datum -- bleibt offen.
+
+**Paula-Delegation neu bewertet:** Nicht "nichts passiert" -- Paula hat klare Aufgaben, trotzdem muss Henrik 2-3x/Woche je eine Stunde Fragen beantworten, die er nicht zwingend selbst beantworten müsste. **Neues Experiment:** diese Anfragen werden ab jetzt geloggt (Frage + Einschätzung "brauchte Henriks Wissen" vs. "hätte Paula selbst entscheiden können"), über die ohnehin genutzte ToDo-Liste mit festen Terminen. Laufzeit bis Ende August (Urlaube eingerechnet, mehr Datenpunkte gewünscht).
+
+**Zwei Facetten eines Musters entdeckt:**
+1. *Entscheidungen werden extern verortet:* Zweimal in der Session hat Henrik eigene Entscheidungen/Bewertungen im Nachhinein dem Coach zugeschrieben ("das kommt von dir"), obwohl sie erkennbar von ihm selbst kamen. Vermutete Funktion: nimmt die Verantwortung in der eigenen Wahrnehmung ab. Henrik berichtet, das gleiche Muster mit Andi (Coaching-Tool-Betreuer, technisch auch bei Algron involviert) zu erleben -- konkretes Beispiel dafür fand sich in der Session nicht.
+2. *Thematische Nähe wird als Abhängigkeit erlebt:* Die verwandten Themen Style Guide, Dev-Einstellung und Paula fühlten sich für Henrik an wie eine Kette, in der eines erst gelöst sein muss, bevor das andere bearbeitbar ist -- obwohl sie faktisch unabhängig sind. Live im Gespräch aufgelöst: Henrik konnte die Style-Guide-Entscheidung unabhängig von den anderen beiden treffen.
+
+**Style Guide neu ausgerichtet -- Dev-first statt KI-first:** Statt das Dokument primär für die KI zu schreiben (knapp, lintbar) und von einem künftigen Dev mitzunutzen, wird es umgekehrt aufgezogen: primär für einen künftigen menschlichen Nachfolger (Begründung, Kontext, Beispiele), KI/Linting setzt dieselben Regeln automatisiert durch. Wendet das Wissenstransfer-Prinzip vom 29.05. vorausschauend auf einen noch nicht existierenden Dev an.
+
+**Board für das Andi-Meeting (13.08.) gemeinsam ausgefüllt:**
+- Geld-Box gestrichen (kein Abo-Service geplant)
+- Kapazität: Philipp 2-3h/Woche, Paula 2-3h/Woche, Henrik 1h/Woche, Andi 10h/Woche -- Andis hoher Anteil im Verhältnis zu den anderen unbegründet, Henrik selbst unsicher, ob sinnvoll genutzt
+- Meilenstein: 4 Wochen ab dem 13.08., dann bewusste Cut-or-continue-Entscheidung (bewusst gesetzt, weil das Thema organisch nicht dringend ist -- Henrik hat aus der Session gelernt, dass Undatiertes bei ihm nicht passiert)
+- Neues Nicht-Ziel ergänzt: "KI übernimmt keine Review-Verantwortung"
+
+**Kernerkenntnis des Tages:** Henrik hat das WAS/WIE-Muster vom 09.06. (der GF macht die strategische WAS-Arbeit allein, Henrik bekommt nur WIE-Aufträge) selbst auf sein eigenes Team gespiegelt: Er ist intern der einzige WAS-Geber. Paula und Andi sind teils unterbeschäftigt -- nicht aus Kapazitätsmangel, sondern weil Aufträge und Entscheidungen nur durch Henrik kommen. Philipp ist ausgelastet, aber nur im WIE-Modus.
+
+**Raus mit:** WAS-Engpass im eigenen Team ist das Thema fürs nächste Mal. Paula-Tracking läuft bis Ende August als Datengrundlage.
+
 ## 2026-06-25 -- KI-Produktivität: der Review-Engpass und ein erster realer Ausweg
 
 Neues Thema von Henrik: Wie misst man Produktivität, wenn KI verstärkt eingesetzt wird? Ziel: bessere Entscheidungsgrundlage für KI-Investitionen.
